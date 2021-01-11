@@ -57,13 +57,27 @@ const Navbar = () => {
         </button>
       </nav>
       <style jsx>{`
+<<<<<<< Updated upstream
         .navbar {
+=======
+      @import './styles/variables';
+      
+        .navbar__navbar {
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+>>>>>>> Stashed changes
           width: 100%;
           height: 150px;
           background-color: #000;
 
+<<<<<<< Updated upstream
           color: #00d3ff;
           font-size: 24px;
+=======
+          color: $font-secondary;
+          font-size: 1.5rem;
+>>>>>>> Stashed changes
           line-height: 38px;
         }
         .navbar__logo {
@@ -88,7 +102,7 @@ const Navbar = () => {
         .navbar__navitem {
           &:hover {
             cursor: pointer;
-            color: #4de0ff;
+            color: $font-secondary-hover;
           }
         }
 
