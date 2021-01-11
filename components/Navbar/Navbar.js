@@ -1,44 +1,24 @@
-import React, { useRef, useState } from 'react';
+import React, { useState } from 'react';
 import Link from 'next/link';
-import Image from 'next/image';
 
 const Navbar = () => {
-  const burgerRef = useRef(null);
-  const [burgerClasses, setBurgerClasses] = useState([
-    'hamburger',
-    'hamburger--squeeze',
-  ]);
-  const [navlistClasses, setNavlistClasses] = useState(['navbar__navlist']);
-  const toggleMenu = (e) => {
-    // e.preventDefault();
-    const activeBurgerClasses = [...burgerClasses];
-    const activeNavlistClasses = [...navlistClasses];
-    if (!activeBurgerClasses[2]) {
-      activeBurgerClasses.push('is-active');
-    } else {
-      activeBurgerClasses.pop('is-active');
-    }
-    if (!activeNavlistClasses[1]) {
-      activeNavlistClasses.push('navbar__navlist--active');
-    } else {
-      activeNavlistClasses.pop('navbar__navlist--active');
-    }
-    setBurgerClasses(activeBurgerClasses);
-    setNavlistClasses(activeNavlistClasses);
+  const [burgerActive, setBurgerActive] = useState(false);
+  const [navlistActive, setNavlistActive] = useState(false);
+  const toggleMenu = () => {
+    setBurgerActive(!burgerActive);
+    setNavlistActive(!navlistActive);
   };
 
   return (
-    <header className="navbar__navbar">
-      {/* <Image
-        src={require('../../assets/transparentLogo.webp')}
-        width="100"
-        height="100"
-      /> */}
+    <header className="navbar">
       <nav className="navbar__nav">
         <div className="navbar__logo">
           <a href="/">Logo</a>
         </div>
-        <ul className={navlistClasses.join(' ')}>
+        <ul
+          className={`navbar__navlist ${
+            navlistActive ? 'navbar__navlist--active' : ''
+          }`}>
           <li className="navbar__navitem" onClick={toggleMenu}>
             <Link href="/zajecia" className="navbar__navlink">
               Zajęcia
@@ -66,9 +46,10 @@ const Navbar = () => {
           </li>
         </ul>
         <button
-          className={burgerClasses.join(' ')}
+          className={`hamburger hamburger--squeeze ${
+            burgerActive ? 'is-active' : ''
+          }`}
           onClick={toggleMenu}
-          ref={burgerRef}
           type="button">
           <span className="hamburger-box">
             <span className="hamburger-inner"></span>
@@ -76,7 +57,7 @@ const Navbar = () => {
         </button>
       </nav>
       <style jsx>{`
-        .navbar__navbar {
+        .navbar {
           width: 100%;
           height: 150px;
           background-color: #000;
@@ -88,6 +69,7 @@ const Navbar = () => {
         .navbar__logo {
           background: url(require('../../assets/transparentLogo.webp'))
             no-repeat;
+            margin-left: 20px;
         }
         .navbar__nav {
           height: 100%;
@@ -207,9 +189,6 @@ const Navbar = () => {
           body {
             overflow-x: hidden;
           }
-          .navbar__logo {
-            margin-left: 20px;
-          }
           .navbar__navlist {
             height: 100vh;
             width: 60%;
@@ -231,6 +210,12 @@ const Navbar = () => {
           }
           .hamburger {
             display: inline-block;
+          }
+        }
+
+        @media screen and (max-width: 1200px) {
+          .navbar__navlist {
+            width: 65%;
           }
         }
       `}</style>
