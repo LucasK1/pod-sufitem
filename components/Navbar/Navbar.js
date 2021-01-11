@@ -1,5 +1,5 @@
-import React, { useState } from 'react';
-import Link from 'next/link';
+import React, { useState } from "react";
+import Link from "next/link";
 
 const Navbar = () => {
   const [burgerActive, setBurgerActive] = useState(false);
@@ -10,55 +10,57 @@ const Navbar = () => {
   };
 
   return (
-    <header className="navbar">
-      <nav className="navbar__nav">
-        <div className="navbar__logo">
-          <a href="/">Logo</a>
+    <header className='navbar'>
+      <nav className='navbar__nav'>
+        <div className='navbar__logo'>
+          <a href='/'>Logo</a>
         </div>
         <ul
           className={`navbar__navlist ${
-            navlistActive ? 'navbar__navlist--active' : ''
-          }`}>
-          <li className="navbar__navitem" onClick={toggleMenu}>
-            <Link href="/zajecia" className="navbar__navlink">
+            navlistActive ? "navbar__navlist--active" : ""
+          }`}
+        >
+          <li className='navbar__navitem' onClick={toggleMenu}>
+            <Link href='/zajecia' className='navbar__navlink'>
               Zajęcia
             </Link>
           </li>
-          <li className="navbar__navitem">
-            <Link href="/instruktorzy" className="navbar__navlink">
+          <li className='navbar__navitem'>
+            <Link href='/instruktorzy' className='navbar__navlink'>
               Instruktorzy
             </Link>
           </li>
-          <li className="navbar__navitem">
-            <Link href="/galeria" className="navbar__navlink">
+          <li className='navbar__navitem'>
+            <Link href='/galeria' className='navbar__navlink'>
               Galeria
             </Link>
           </li>
-          <li className="navbar__navitem">
-            <Link href="/studio" className="navbar__navlink">
+          <li className='navbar__navitem'>
+            <Link href='/studio' className='navbar__navlink'>
               Studio
             </Link>
           </li>
-          <li className="navbar__navitem">
-            <Link href="/cennik" className="navbar__navlink">
+          <li className='navbar__navitem'>
+            <Link href='/cennik' className='navbar__navlink'>
               Cennik
             </Link>
           </li>
         </ul>
         <button
           className={`hamburger hamburger--squeeze ${
-            burgerActive ? 'is-active' : ''
+            burgerActive ? "is-active" : ""
           }`}
           onClick={toggleMenu}
-          type="button">
-          <span className="hamburger-box">
-            <span className="hamburger-inner"></span>
+          type='button'
+        >
+          <span className='hamburger-box'>
+            <span className='hamburger-inner'></span>
           </span>
         </button>
       </nav>
       <style jsx>{`
-      @import './styles/variables';
-      
+        @import "./styles/variables";
+
         .navbar {
           display: flex;
           justify-content: space-between;
@@ -72,9 +74,9 @@ const Navbar = () => {
           line-height: 38px;
         }
         .navbar__logo {
-          background: url(require('../../assets/transparentLogo.webp'))
+          background: url(require("../../assets/transparentLogo.webp"))
             no-repeat;
-            margin-left: 20px;
+          margin-left: 20px;
         }
         .navbar__nav {
           height: 100%;
@@ -153,7 +155,7 @@ const Navbar = () => {
         }
         .hamburger-inner::before,
         .hamburger-inner::after {
-          content: '';
+          content: "";
           display: block;
         }
         .hamburger-inner::before {
