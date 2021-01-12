@@ -51,6 +51,7 @@ const Navbar = () => {
         </button>
       </nav>
       <style jsx>{`
+
         body {
           overflow-x: hidden;
         }
