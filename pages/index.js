@@ -77,7 +77,7 @@ const Home = () => {
             <div className={styles.contact__item_content}></div>
           </div>
         </section>
-        <section className={styles.classes}>
+        <section className={styles.classes} id="classes">
           <aside className={styles.classes__selection}>
             {classesSelectionBtns}
           </aside>
