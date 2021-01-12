@@ -1,6 +1,12 @@
 body {
   font-family: "Baloo 2";
 }
+button {
+  padding: 0;
+  margin: 0;
+  border: none;
+  background-color: inherit;
+}
 .container {
   margin: 0 auto;
   max-width: 1200px;

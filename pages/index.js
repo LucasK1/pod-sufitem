@@ -1,9 +1,25 @@
-export default function Home() {
+import styles from '../styles/landingPage.module.scss';
+
+const Home = () => {
+  const classesArray = [
+    'Pole dance',
+    'Acro Pole',
+    'Aerial Hoop',
+    'Joga kręgosłupa',
+    'Stretching',
+    'Trening mobilności',
+    'Pilates',
+  ];
+
+  const classesSelectionBtns = classesArray.map((item) => {
+    return <button className={styles.classes__selectionBtn}>{item}</button>;
+  });
+
   return (
     <>
-      <div className="main">
-        <main>
-          <article className="lead__text">
+      <div className={styles.main}>
+        <main className={styles.lead}>
+          <article className={styles.lead__text}>
             <h1>Hohooo ale szkoła</h1>
             <p>
               Lorem ipsum dolor sit amet consectetur, adipisicing elit.
@@ -22,28 +38,53 @@ export default function Home() {
             </p>
           </article>
           <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="_blank">
-            <div className="lead__booking-btn">
+            <div className={styles.lead__bookingBtn}>
               <p>Zapisy na zajęcia</p>
               <p>-kliknij TU-</p>
             </div>
           </a>
         </main>
-        <footer className="footer">
-          <div className="footer-item footer-contact">
-            <span className="footer-item--title">Skontaktuj się z nami</span>
-            <div className="footer-item--content"></div>
+        <section className={styles.contact}>
+          <div className={`${styles.contact__item} ${styles.contact_phone}`}>
+            <span className={styles.contact__item_title}>
+              Skontaktuj się z nami
+            </span>
+            <div className={styles.contact__item_content}></div>
           </div>
-          <div className="footer-item footer-social">
-            <span className="footer-item--title">Znajdź nas w sieci</span>
-            <div className="footer-item--content"></div>
+          <div className={`${styles.contact__item} ${styles.contact_social}`}>
+            <span className={styles.contact__item_title}>
+              Znajdź nas w sieci
+            </span>
+            <div className={styles.contact__item_content}></div>
           </div>
-          <div className="footer-item footer-address">
-            <span className="footer-item--title">Odwiedź nas</span>
-            <div className="footer-item--content"></div>
+          <div className={`${styles.contact__item} ${styles.contact_address}`}>
+            <span className={styles.contact__item_title}>Odwiedź nas</span>
+            <div className={styles.contact__item_content}></div>
           </div>
-        </footer>
+        </section>
+        <section className={styles.classes}>
+          <aside className={styles.classes__selection}>
+            {classesSelectionBtns}
+            {/* <button className={styles.classes__selectionBtn}>Pole dance</button>
+            <button className={styles.classes__selectionBtn}>Acro Pole</button>
+            <button className={styles.classes__selectionBtn}>
+              Aerial Hoop
+            </button>
+            <button className={styles.classes__selectionBtn}>
+              Joga kręgosłupa
+            </button>
+            <button className={styles.classes__selectionBtn}>Stretching</button>
+            <button className={styles.classes__selectionBtn}>
+              Trening mobilności
+            </button>
+            <button className={styles.classes__selectionBtn}>Pilates</button> */}
+          </aside>
+          <div className={styles.classes__content}></div>
+        </section>
       </div>
-      <style jsx>{`
+      {/* <style jsx>{`
+        @import './styles/variables';
+
         main {
           display: flex;
           flex-direction: column;
@@ -63,6 +104,7 @@ export default function Home() {
           width: 200px;
           color: #fff;
           font-size: 18px;
+          margin-top: 100px;
           padding: 20px;
           border-radius: 20px;
           background-color: #000;
@@ -71,7 +113,7 @@ export default function Home() {
           }
         }
 
-        .footer {
+        .contact {
           width: 100%;
           max-width: 1200px;
           display: grid;
@@ -79,22 +121,60 @@ export default function Home() {
           margin-top: 50px;
 
           &-social {
-            & > .footer-item--content {
+            & > .contact__item--content {
               border-right: 1px solid #000;
               border-left: 1px solid #000;
             }
           }
 
-          &-item--title {
+          &__item--title {
             font-size: 18px;
             line-height: 28px;
             font-weight: 500;
           }
-          &-item--content {
+          &__item--content {
             height: 100px;
           }
         }
-      `}</style>
+
+        .classes {
+          margin-top: 50px;
+          display: grid;
+          grid-template-columns: 1fr 3fr;
+          gap: 22px;
+          height: 540px;
+          &__selection {
+            border-radius: 20px;
+            padding: 30px;
+            background-color: $content-background;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            align-items: left;
+            text-align: left;
+
+            &-btn {
+              line-height: 38px;
+              font-size: 24px;
+              font-weight: 500;
+              text-align: left;
+              border-radius: 10px;
+              padding: 10px;
+              transition: background-color 100ms linear;
+              &:hover {
+                cursor: pointer;
+                background-color: #fff;
+              }
+            }
+          }
+          &__content {
+            border-radius: 20px;
+            background-color: $content-background;
+          }
+        }
+      `}</style> */}
     </>
   );
-}
+};
+
+export default Home;
