@@ -3,7 +3,7 @@ export default function Home() {
     <>
       <div className="main">
         <main>
-          <article className="main__text">
+          <article className="lead__text">
             <h1>Hohooo ale szkoła</h1>
             <p>
               Lorem ipsum dolor sit amet consectetur, adipisicing elit.
@@ -22,26 +22,24 @@ export default function Home() {
             </p>
           </article>
           <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="_blank">
-            <div className="main__booking-btn">
+            <div className="lead__booking-btn">
               <p>Zapisy na zajęcia</p>
               <p>-kliknij TU-</p>
             </div>
           </a>
         </main>
-        <footer className="main__footer">
-          <div className="main__footer-item main__footer-contact">
-            <span className="main__footer-item--title">
-              Skontaktuj się z nami
-            </span>
-            <div className="main__footer-item--content"></div>
+        <footer className="footer">
+          <div className="footer-item footer-contact">
+            <span className="footer-item--title">Skontaktuj się z nami</span>
+            <div className="footer-item--content"></div>
           </div>
-          <div className="main__footer-item main__footer-social">
-            <span className="main__footer-item--title">Znajdź nas w sieci</span>
-            <div className="main__footer-item--content"></div>
+          <div className="footer-item footer-social">
+            <span className="footer-item--title">Znajdź nas w sieci</span>
+            <div className="footer-item--content"></div>
           </div>
-          <div className="main__footer-item main__footer-address">
-            <span className="main__footer-item--title">Odwiedź nas</span>
-            <div className="main__footer-item--content"></div>
+          <div className="footer-item footer-address">
+            <span className="footer-item--title">Odwiedź nas</span>
+            <div className="footer-item--content"></div>
           </div>
         </footer>
       </div>
@@ -56,33 +54,32 @@ export default function Home() {
           display: flex;
           flex-direction: column;
           align-items: center;
-          &__text {
-            text-align: center;
-          }
-          &__booking-btn {
-            text-align: center;
-            width: 200px;
-            color: #fff;
-            font-size: 18px;
-            padding: 20px;
-            border-radius: 20px;
-            background-color: #000;
-            & > p {
-              line-height: 15px;
-            }
+        }
+        .lead__text {
+          text-align: center;
+        }
+        .lead__booking-btn {
+          text-align: center;
+          width: 200px;
+          color: #fff;
+          font-size: 18px;
+          padding: 20px;
+          border-radius: 20px;
+          background-color: #000;
+          & > p {
+            line-height: 15px;
           }
         }
 
-        .main__footer {
+        .footer {
           width: 100%;
           max-width: 1200px;
           display: grid;
           grid-template-columns: repeat(3, 1fr);
-          position: fixed;
-          bottom: 0;
+          margin-top: 50px;
 
           &-social {
-            & > .main__footer-item--content {
+            & > .footer-item--content {
               border-right: 1px solid #000;
               border-left: 1px solid #000;
             }
