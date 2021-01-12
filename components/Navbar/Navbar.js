@@ -200,7 +200,7 @@ const Navbar = () => {
             width: 60%;
             margin-right: 0px;
             background-color: rgba(0, 0, 0, 0.9);
-            position: absolute;
+            position: fixed;
             display: flex;
             flex-direction: column;
             justify-content: space-around;
