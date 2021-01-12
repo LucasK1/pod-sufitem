@@ -24,7 +24,9 @@ const Home = () => {
         className={`${styles.classes__selectionBtn} ${
           activeClassDesc === item ? styles.classes__selectionBtn_isActive : ''
         }`}
-        onClick={(e) => classClickHandler(e, item)}>
+        onClick={(e) => classClickHandler(e, item)}
+        key={item}
+      >
         {item}
       </a>
     );
@@ -81,7 +83,8 @@ const Home = () => {
           </div>
 
           <div
-            className={`${styles.contact__column} ${styles.contact__social}`}>
+            className={`${styles.contact__column} ${styles.contact__social}`}
+          >
             <span className={styles.contact__column_title}>
               Znajdź nas w sieci
             </span>
@@ -91,7 +94,8 @@ const Home = () => {
           </div>
 
           <div
-            className={`${styles.contact__column} ${styles.contact__address}`}>
+            className={`${styles.contact__column} ${styles.contact__address}`}
+          >
             <span className={styles.contact__column_title}>Odwiedź nas</span>
             <div className={styles.contact__column_content}>
               <address>
