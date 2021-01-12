@@ -21,7 +21,7 @@ export default function Home() {
               laboriosam. Facilis autem eum recusandae.
             </p>
           </article>
-          <a href="#">
+          <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="_blank">
             <div className="main__booking-btn">
               <p>Zapisy na zajęcia</p>
               <p>-kliknij TU-</p>
