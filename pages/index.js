@@ -1,65 +1,118 @@
-import Head from 'next/head'
-import styles from '../styles/Home.module.css'
+import { useEffect, useState } from 'react';
+import styles from '../styles/landingPage.module.scss';
 
-export default function Home() {
+const Home = () => {
+  const [activeClassDesc, setActiveClassDesc] = useState('Pole Dance');
+
+  const classesObj = {
+    'Pole Dance': <p>Tańcowanie na polu</p>,
+    'Acro Pole': <p>Duże pole</p>,
+    'Aerial Hoop': <p>Skaakanie powietrzne</p>,
+    'Joga kręgosłupa': <p>Wyrównanie ćakramów</p>,
+    Stretching: <p>Gumkowanie majtek</p>,
+    'Trening mobilności': <p>Kategoria B</p>,
+    Pilates: <p>Sokrates</p>,
+  };
+
+  const classClickHandler = (e, classType) => {
+    setActiveClassDesc(classType);
+  };
+
+  const classesSelectionBtns = Object.keys(classesObj).map((item) => {
+    return (
+      <a
+        className={`${styles.classes__selectionBtn} ${
+          activeClassDesc === item ? styles.classes__selectionBtn_isActive : ''
+        }`}
+        onClick={(e) => classClickHandler(e, item)}>
+        {item}
+      </a>
+    );
+  });
+
   return (
-    <div className={styles.container}>
-      <Head>
-        <title>Create Next App</title>
-        <link rel="icon" href="/favicon.ico" />
-      </Head>
-
-      <main className={styles.main}>
-        <h1 className={styles.title}>
-          Welcome to <a href="https://nextjs.org">Next.js!</a>
-        </h1>
-
-        <p className={styles.description}>
-          Get started by editing{' '}
-          <code className={styles.code}>pages/index.js</code>
-        </p>
-
-        <div className={styles.grid}>
-          <a href="https://nextjs.org/docs" className={styles.card}>
-            <h3>Documentation &rarr;</h3>
-            <p>Find in-depth information about Next.js features and API.</p>
-          </a>
-
-          <a href="https://nextjs.org/learn" className={styles.card}>
-            <h3>Learn &rarr;</h3>
-            <p>Learn about Next.js in an interactive course with quizzes!</p>
-          </a>
-
-          <a
-            href="https://github.com/vercel/next.js/tree/master/examples"
-            className={styles.card}
-          >
-            <h3>Examples &rarr;</h3>
-            <p>Discover and deploy boilerplate example Next.js projects.</p>
-          </a>
-
-          <a
-            href="https://vercel.com/import?filter=next.js&utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-            className={styles.card}
-          >
-            <h3>Deploy &rarr;</h3>
+    <>
+      <div className={styles.main}>
+        <main className={styles.lead}>
+          <article className={styles.lead__text}>
+            <h1>Hohooo ale szkoła</h1>
             <p>
-              Instantly deploy your Next.js site to a public URL with Vercel.
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+              Voluptatum deserunt maxime quis consectetur minus architecto!
+              Officia voluptatum, autem, fugit, beatae dolorem repellat commodi
+              repudiandae libero culpa nisi quasi nam amet magnam? Mollitia
+              beatae voluptates, porro impedit ullam ipsum culpa ad illo labore
+              cupiditate tempore incidunt, repellendus sapiente, laudantium nisi
+              inventore consequuntur ducimus perferendis! Mollitia aliquid
+              velit, a dolorum deserunt impedit suscipit nisi praesentium sequi.
+              Qui aut pariatur cumque accusamus consequatur ratione ullam
+              aliquid, doloribus soluta inventore rem vero, tempora saepe
+              asperiores odio adipisci nisi. Beatae sunt cupiditate ipsa!
+              Necessitatibus dicta consequuntur nam soluta voluptatum pariatur
+              laboriosam. Facilis autem eum recusandae.
             </p>
+          </article>
+          <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="_blank">
+            <div className={styles.lead__bookingBtn}>
+              <p>Zapisy na zajęcia</p>
+              <p>-kliknij TU-</p>
+            </div>
           </a>
-        </div>
-      </main>
+        </main>
+        <section className={styles.contact}>
+          <div className={`${styles.contact__column} ${styles.contact__tel}`}>
+            <span className={styles.contact__column_title}>
+              Skontaktuj się z nami
+            </span>
+            <div className={styles.contact__column_content}>
+              <address>
+                <ul className={styles.contact__tel_list}>
+                  <li className={styles.contact__tel_listItem}>
+                    <a href="tel:+48799079809">+48 799 079 809</a>
+                  </li>
+                  <li className={styles.contact__tel_listItem}>
+                    <a href="mailto:zapisy.podsufitem@gmail.com">
+                      zapisy.podsufitem@gmail.com
+                    </a>
+                  </li>
+                </ul>
+              </address>
+            </div>
+          </div>
 
-      <footer className={styles.footer}>
-        <a
-          href="https://vercel.com?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Powered by{' '}
-          <img src="/vercel.svg" alt="Vercel Logo" className={styles.logo} />
-        </a>
-      </footer>
-    </div>
-  )
-}
+          <div
+            className={`${styles.contact__column} ${styles.contact__social}`}>
+            <span className={styles.contact__column_title}>
+              Znajdź nas w sieci
+            </span>
+            <div className={styles.contact__column_content}>
+              Facebook i Instagram
+            </div>
+          </div>
+
+          <div
+            className={`${styles.contact__column} ${styles.contact__address}`}>
+            <span className={styles.contact__column_title}>Odwiedź nas</span>
+            <div className={styles.contact__column_content}>
+              <address>
+                <p>Skoczylasa 10/12 lok. 81</p>
+                <p>03-465 Warszawa</p>
+              </address>
+            </div>
+          </div>
+        </section>
+
+        <section className={styles.classes} id="classes">
+          <aside className={styles.classes__selection}>
+            {classesSelectionBtns}
+          </aside>
+          <div className={styles.classes__content}>
+            {classesObj[activeClassDesc]}
+          </div>
+        </section>
+      </div>
+    </>
+  );
+};
+
+export default Home;
