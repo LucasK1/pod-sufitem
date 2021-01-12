@@ -1,18 +1,33 @@
+import { useEffect, useState } from 'react';
 import styles from '../styles/landingPage.module.scss';
 
 const Home = () => {
-  const classesArray = [
-    'Pole dance',
-    'Acro Pole',
-    'Aerial Hoop',
-    'Joga kręgosłupa',
-    'Stretching',
-    'Trening mobilności',
-    'Pilates',
-  ];
+  const [activeClassDesc, setActiveClassDesc] = useState('Pole Dance');
 
-  const classesSelectionBtns = classesArray.map((item) => {
-    return <button className={styles.classes__selectionBtn}>{item}</button>;
+  const classesObj = {
+    'Pole Dance': <p>Tańcowanie na polu</p>,
+    'Acro Pole': 'Duże pole',
+    'Aerial Hoop': 'Skaakanie powietrzne',
+    'Joga kręgosłupa': 'Wyrównanie ćakramów',
+    Stretching: 'Gumkowanie majtek',
+    'Trening mobilności': 'Kategoria B',
+    Pilates: 'Sokrates',
+  };
+
+  const classClickHandler = (e, classType) => {
+    setActiveClassDesc(classType);
+  };
+
+  const classesSelectionBtns = Object.keys(classesObj).map((item) => {
+    return (
+      <a
+        className={`${styles.classes__selectionBtn} ${
+          activeClassDesc === item ? styles.classes__selectionBtn_isActive : ''
+        }`}
+        onClick={(e) => classClickHandler(e, item)}>
+        {item}
+      </a>
+    );
   });
 
   return (
@@ -65,114 +80,12 @@ const Home = () => {
         <section className={styles.classes}>
           <aside className={styles.classes__selection}>
             {classesSelectionBtns}
-            {/* <button className={styles.classes__selectionBtn}>Pole dance</button>
-            <button className={styles.classes__selectionBtn}>Acro Pole</button>
-            <button className={styles.classes__selectionBtn}>
-              Aerial Hoop
-            </button>
-            <button className={styles.classes__selectionBtn}>
-              Joga kręgosłupa
-            </button>
-            <button className={styles.classes__selectionBtn}>Stretching</button>
-            <button className={styles.classes__selectionBtn}>
-              Trening mobilności
-            </button>
-            <button className={styles.classes__selectionBtn}>Pilates</button> */}
           </aside>
-          <div className={styles.classes__content}></div>
+          <div className={styles.classes__content}>
+            {classesObj[activeClassDesc]}
+          </div>
         </section>
       </div>
-      {/* <style jsx>{`
-        @import './styles/variables';
-
-        main {
-          display: flex;
-          flex-direction: column;
-          align-items: center;
-        }
-
-        .main {
-          display: flex;
-          flex-direction: column;
-          align-items: center;
-        }
-        .lead__text {
-          text-align: center;
-        }
-        .lead__booking-btn {
-          text-align: center;
-          width: 200px;
-          color: #fff;
-          font-size: 18px;
-          margin-top: 100px;
-          padding: 20px;
-          border-radius: 20px;
-          background-color: #000;
-          & > p {
-            line-height: 15px;
-          }
-        }
-
-        .contact {
-          width: 100%;
-          max-width: 1200px;
-          display: grid;
-          grid-template-columns: repeat(3, 1fr);
-          margin-top: 50px;
-
-          &-social {
-            & > .contact__item--content {
-              border-right: 1px solid #000;
-              border-left: 1px solid #000;
-            }
-          }
-
-          &__item--title {
-            font-size: 18px;
-            line-height: 28px;
-            font-weight: 500;
-          }
-          &__item--content {
-            height: 100px;
-          }
-        }
-
-        .classes {
-          margin-top: 50px;
-          display: grid;
-          grid-template-columns: 1fr 3fr;
-          gap: 22px;
-          height: 540px;
-          &__selection {
-            border-radius: 20px;
-            padding: 30px;
-            background-color: $content-background;
-            display: flex;
-            flex-direction: column;
-            justify-content: space-around;
-            align-items: left;
-            text-align: left;
-
-            &-btn {
-              line-height: 38px;
-              font-size: 24px;
-              font-weight: 500;
-              text-align: left;
-              border-radius: 10px;
-              padding: 10px;
-              transition: background-color 100ms linear;
-              &:hover {
-                cursor: pointer;
-                background-color: #fff;
-              }
-            }
-          }
-          &__content {
-            border-radius: 20px;
-            background-color: $content-background;
-          }
-        }
-      `}</style> */}
     </>
   );
 };
