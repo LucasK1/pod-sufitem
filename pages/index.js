@@ -6,12 +6,12 @@ const Home = () => {
 
   const classesObj = {
     'Pole Dance': <p>Tańcowanie na polu</p>,
-    'Acro Pole': 'Duże pole',
-    'Aerial Hoop': 'Skaakanie powietrzne',
-    'Joga kręgosłupa': 'Wyrównanie ćakramów',
-    Stretching: 'Gumkowanie majtek',
-    'Trening mobilności': 'Kategoria B',
-    Pilates: 'Sokrates',
+    'Acro Pole': <p>Duże pole</p>,
+    'Aerial Hoop': <p>Skaakanie powietrzne</p>,
+    'Joga kręgosłupa': <p>Wyrównanie ćakramów</p>,
+    Stretching: <p>Gumkowanie majtek</p>,
+    'Trening mobilności': <p>Kategoria B</p>,
+    Pilates: <p>Sokrates</p>,
   };
 
   const classClickHandler = (e, classType) => {
@@ -60,23 +60,48 @@ const Home = () => {
           </a>
         </main>
         <section className={styles.contact}>
-          <div className={`${styles.contact__item} ${styles.contact_phone}`}>
-            <span className={styles.contact__item_title}>
+          <div className={`${styles.contact__column} ${styles.contact__tel}`}>
+            <span className={styles.contact__column_title}>
               Skontaktuj się z nami
             </span>
-            <div className={styles.contact__item_content}></div>
+            <div className={styles.contact__column_content}>
+              <address>
+                <ul className={styles.contact__tel_list}>
+                  <li className={styles.contact__tel_listItem}>
+                    <a href="tel:+48799079809">+48 799 079 809</a>
+                  </li>
+                  <li className={styles.contact__tel_listItem}>
+                    <a href="mailto:zapisy.podsufitem@gmail.com">
+                      zapisy.podsufitem@gmail.com
+                    </a>
+                  </li>
+                </ul>
+              </address>
+            </div>
           </div>
-          <div className={`${styles.contact__item} ${styles.contact_social}`}>
-            <span className={styles.contact__item_title}>
+
+          <div
+            className={`${styles.contact__column} ${styles.contact__social}`}>
+            <span className={styles.contact__column_title}>
               Znajdź nas w sieci
             </span>
-            <div className={styles.contact__item_content}></div>
+            <div className={styles.contact__column_content}>
+              Facebook i Instagram
+            </div>
           </div>
-          <div className={`${styles.contact__item} ${styles.contact_address}`}>
-            <span className={styles.contact__item_title}>Odwiedź nas</span>
-            <div className={styles.contact__item_content}></div>
+
+          <div
+            className={`${styles.contact__column} ${styles.contact__address}`}>
+            <span className={styles.contact__column_title}>Odwiedź nas</span>
+            <div className={styles.contact__column_content}>
+              <address>
+                <p>Skoczylasa 10/12 lok. 81</p>
+                <p>03-465 Warszawa</p>
+              </address>
+            </div>
           </div>
         </section>
+
         <section className={styles.classes} id="classes">
           <aside className={styles.classes__selection}>
             {classesSelectionBtns}
