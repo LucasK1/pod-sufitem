@@ -1,5 +1,11 @@
 @import "./styles/variables";
 
+.scrollHelper {
+  height: 150px;
+  width: 100%;
+  margin: 0 auto;
+}
+
 .container {
   display: flex;
   flex-direction: column;
@@ -7,11 +13,12 @@
 }
 
 .main {
+  height: 85vh;
+  margin-top: 150px;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: space-between;
-  height: 85vh;
 }
 
 .lead {
@@ -95,10 +102,10 @@
 .classes {
   width: 100%;
   display: grid;
-  grid-template-columns: 30% 70%;
+  grid-template-columns: 1.5fr 3fr;
   gap: 22px;
   height: 85vh;
-  margin-top: 50px;
+  margin-top: 20px;
 
   &__selection {
     border-radius: 20px;
