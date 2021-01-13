@@ -1,4 +1,5 @@
 import { useEffect, useState } from 'react';
+import InfoBox from '../components/InfoBox/InfoBox';
 import styles from '../styles/landingPage.module.scss';
 
 const Home = () => {
@@ -25,8 +26,7 @@ const Home = () => {
           activeClassDesc === item ? styles.classes__selectionBtn_isActive : ''
         }`}
         onClick={(e) => classClickHandler(e, item)}
-        key={item}
-      >
+        key={item}>
         {item}
       </a>
     );
@@ -34,25 +34,47 @@ const Home = () => {
 
   return (
     <>
-      <div className={styles.main}>
-        <main className={styles.lead}>
+      <div className={styles.container}>
+        <main className={styles.main}>
           <article className={styles.lead__text}>
-            <h1>Hohooo ale szkoła</h1>
-            <p>
-              Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-              Voluptatum deserunt maxime quis consectetur minus architecto!
-              Officia voluptatum, autem, fugit, beatae dolorem repellat commodi
-              repudiandae libero culpa nisi quasi nam amet magnam? Mollitia
-              beatae voluptates, porro impedit ullam ipsum culpa ad illo labore
-              cupiditate tempore incidunt, repellendus sapiente, laudantium nisi
-              inventore consequuntur ducimus perferendis! Mollitia aliquid
-              velit, a dolorum deserunt impedit suscipit nisi praesentium sequi.
-              Qui aut pariatur cumque accusamus consequatur ratione ullam
-              aliquid, doloribus soluta inventore rem vero, tempora saepe
-              asperiores odio adipisci nisi. Beatae sunt cupiditate ipsa!
-              Necessitatibus dicta consequuntur nam soluta voluptatum pariatur
-              laboriosam. Facilis autem eum recusandae.
-            </p>
+            <h1 className={styles.lead__title}>Hohooo ale szkoła</h1>
+            <div className={styles.lead__content}>
+              <p>
+                Doggo ipsum heckin good boys borking doggo shibe borking doggo
+                blop sub woofer, such treat fluffer ruff corgo wow very biscit
+                sub woofer, woofer very hand that feed shibe doggorino much ruin
+                diet. Noodle horse the neighborhood pupper borking doggo most
+                angery pupper I have ever seen, very good spot long doggo. boof
+                very taste wow. Boof mlem wow such tempt doggo ur givin me a
+                spook, heckin angery woofer wow such tempt mlem big ol pupper,
+                extremely cuuuuuute clouds puggo. Such treat doge fluffer most
+                angery pupper I have ever seen borkf many pats long woofer, big
+                ol much ruin diet what a nice floof noodle horse yapper shoob
+                smol borking doggo with a long snoot for pats, super chub
+                shoober doggorino wrinkler shooberino. Very hand that feed shibe
+                extremely cuuuuuute ruff smol borking doggo with a long snoot
+                for pats shoober, pats ruff borkf. Thicc h*ck sub woofer porgo
+                big ol, length boy puggo. Yapper wrinkler puggorino puggo much
+                ruin diet porgo wow such tempt, shoober h*ck much ruin diet
+                super chub thicc.
+              </p>
+              <p>
+                Shibe h*ck he made many woofs doge length boy, porgo floofs
+                shoob. length boy adorable doggo. Super chub waggy wags blop
+                h*ck length boy long doggo, aqua doggo very jealous pupper
+                maximum borkdrive pupper. Pupper borkdrive most angery pupper I
+                have ever seen borkdrive, heckin angery woofer boofers. The
+                neighborhood pupper porgo most angery pupper I have ever seen
+                lotsa pats big ol h*ck, borking doggo wow very biscit doggorino
+                I am bekom fat. heck many pats wow very biscit. Borkf super chub
+                wow such tempt, ruff. Stop it fren thicc you are doin me a
+                concern shibe, blop puggo. Heck length boy extremely cuuuuuute
+                boofers tungg, adorable doggo smol clouds stop it fren, I am
+                bekom fat borkf boofers. Waggy wags woofer tungg such treat
+                h*ck, ur givin me a spook you are doing me the shock woofer wow
+                such tempt lotsa pats, heck bork heck.
+              </p>
+            </div>
           </article>
           <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="_blank">
             <div className={styles.lead__bookingBtn}>
@@ -60,60 +82,69 @@ const Home = () => {
               <p>-kliknij TU-</p>
             </div>
           </a>
+          <section className={styles.contact}>
+            <div className={`${styles.contact__column} ${styles.contact__tel}`}>
+              <span className={styles.contact__column_title}>
+                Skontaktuj się z nami
+              </span>
+              <div className={styles.contact__column_content}>
+                <address>
+                  <ul className={styles.contact__tel_list}>
+                    <li className={styles.contact__tel_listItem}>
+                      <a href="tel:+48799079809">+48 799 079 809</a>
+                    </li>
+                    <li className={styles.contact__tel_listItem}>
+                      <a href="mailto:zapisy.podsufitem@gmail.com">
+                        zapisy.podsufitem@gmail.com
+                      </a>
+                    </li>
+                  </ul>
+                </address>
+              </div>
+            </div>
+
+            <div
+              className={`${styles.contact__column} ${styles.contact__social}`}>
+              <span className={styles.contact__column_title}>
+                Znajdź nas w sieci
+              </span>
+              <div className={styles.contact__column_content}>
+                Facebook i Instagram
+              </div>
+            </div>
+
+            <div
+              className={`${styles.contact__column} ${styles.contact__address}`}>
+              <span className={styles.contact__column_title}>Odwiedź nas</span>
+              <div className={styles.contact__column_content}>
+                <address>
+                  <p>Skoczylasa 10/12 lok. 81</p>
+                  <p>03-465 Warszawa</p>
+                </address>
+              </div>
+            </div>
+          </section>
         </main>
-        <section className={styles.contact}>
-          <div className={`${styles.contact__column} ${styles.contact__tel}`}>
-            <span className={styles.contact__column_title}>
-              Skontaktuj się z nami
-            </span>
-            <div className={styles.contact__column_content}>
-              <address>
-                <ul className={styles.contact__tel_list}>
-                  <li className={styles.contact__tel_listItem}>
-                    <a href="tel:+48799079809">+48 799 079 809</a>
-                  </li>
-                  <li className={styles.contact__tel_listItem}>
-                    <a href="mailto:zapisy.podsufitem@gmail.com">
-                      zapisy.podsufitem@gmail.com
-                    </a>
-                  </li>
-                </ul>
-              </address>
+        <div className={styles.classes__container}>
+          <div className={styles.scrollHelper} id="classes"></div>
+          <section className={styles.classes}>
+            <aside className={styles.classes__selection}>
+              {classesSelectionBtns}
+            </aside>
+            <div className={styles.classes__content}>
+              {classesObj[activeClassDesc]}
             </div>
-          </div>
-
-          <div
-            className={`${styles.contact__column} ${styles.contact__social}`}
-          >
-            <span className={styles.contact__column_title}>
-              Znajdź nas w sieci
-            </span>
-            <div className={styles.contact__column_content}>
-              Facebook i Instagram
-            </div>
-          </div>
-
-          <div
-            className={`${styles.contact__column} ${styles.contact__address}`}
-          >
-            <span className={styles.contact__column_title}>Odwiedź nas</span>
-            <div className={styles.contact__column_content}>
-              <address>
-                <p>Skoczylasa 10/12 lok. 81</p>
-                <p>03-465 Warszawa</p>
-              </address>
-            </div>
-          </div>
-        </section>
-
-        <section className={styles.classes} id="classes">
-          <aside className={styles.classes__selection}>
-            {classesSelectionBtns}
-          </aside>
-          <div className={styles.classes__content}>
-            {classesObj[activeClassDesc]}
-          </div>
-        </section>
+          </section>
+        </div>
+        <InfoBox title="Instruktorzy" id="teachers">
+          Dupachej
+        </InfoBox>
+        <InfoBox title="Grafik" id="timetable">
+          Dupachej
+        </InfoBox>
+        <InfoBox title="Cennik" id="prices">
+          Dupachej
+        </InfoBox>
       </div>
     </>
   );

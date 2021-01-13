@@ -1,17 +1,46 @@
 @import "./styles/variables";
 
-.main {
+.scrollHelper {
+  position: absolute;
+  top: -150px;
+}
+
+.container {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 
-.lead {
+.main {
+  height: 85vh;
+  margin-top: 150px;
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: space-between;
+}
+
+.lead {
   &__text {
     text-align: center;
+  }
+  &__title {
+    font-size: 3rem;
+    font-weight: 800;
+    text-decoration: underline;
+    font-style: italic;
+    color: dodgerblue;
+    transition: all 500ms linear;
+    &:hover {
+      transform: rotate(360deg) scale(2);
+    }
+  }
+  &__content {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    text-align: left;
+    gap: 20px;
+    line-height: 1.5rem;
   }
   &__bookingBtn {
     text-align: center;
@@ -22,6 +51,10 @@
     padding: 20px;
     border-radius: 20px;
     background-color: #000;
+    transition: all 300ms linear;
+    &:hover {
+      transform: scale(1.5) rotate(45deg);
+    }
     & > p {
       line-height: 15px;
     }
@@ -65,12 +98,22 @@
   }
 }
 
+.classes__container {
+  width: 100%;
+  margin: 0 auto;
+  position: relative;
+  z-index: -1;
+  margin: 40px 0 20px 0;
+}
+
 .classes {
-  margin-top: 50px;
+  width: 100%;
   display: grid;
-  grid-template-columns: 1fr 3fr;
+  grid-template-columns: 1.5fr 3fr;
   gap: 22px;
-  height: 540px;
+  height: 85vh;
+
+
 
   &__selection {
     border-radius: 20px;
