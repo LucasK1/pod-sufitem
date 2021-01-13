@@ -1,4 +1,5 @@
 import { useEffect, useState } from 'react';
+import InfoBox from '../components/InfoBox/InfoBox';
 import styles from '../styles/landingPage.module.scss';
 
 const Home = () => {
@@ -132,6 +133,10 @@ const Home = () => {
             {classesObj[activeClassDesc]}
           </div>
         </section>
+
+        <InfoBox title="Instruktorzy" id="teachers">
+          Dupachej
+        </InfoBox>
       </div>
     </>
   );
