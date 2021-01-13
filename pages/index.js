@@ -40,38 +40,39 @@ const Home = () => {
             <h1 className={styles.lead__title}>Hohooo ale szkoła</h1>
             <div className={styles.lead__content}>
               <p>
-                Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-                Voluptatum deserunt maxime quis consectetur minus architecto!
-                Officia voluptatum, autem, fugit, beatae dolorem repellat
-                commodi repudiandae libero culpa nisi quasi nam amet magnam?
-                Mollitia beatae voluptates, porro impedit ullam ipsum culpa ad
-                illo labore cupiditate tempore incidunt, repellendus sapiente,
-                laudantium nisi inventore consequuntur ducimus perferendis!
-                Mollitia aliquid velit, a dolorum deserunt impedit suscipit nisi
-                praesentium sequi. Qui aut pariatur cumque accusamus consequatur
-                ratione ullam aliquid, doloribus soluta inventore rem vero,
-                tempora saepe asperiores odio adipisci nisi. Beatae sunt
-                cupiditate ipsa! Necessitatibus dicta consequuntur nam soluta
-                voluptatum pariatur laboriosam. Facilis autem eum recusandae.
+                Doggo ipsum heckin good boys borking doggo shibe borking doggo
+                blop sub woofer, such treat fluffer ruff corgo wow very biscit
+                sub woofer, woofer very hand that feed shibe doggorino much ruin
+                diet. Noodle horse the neighborhood pupper borking doggo most
+                angery pupper I have ever seen, very good spot long doggo. boof
+                very taste wow. Boof mlem wow such tempt doggo ur givin me a
+                spook, heckin angery woofer wow such tempt mlem big ol pupper,
+                extremely cuuuuuute clouds puggo. Such treat doge fluffer most
+                angery pupper I have ever seen borkf many pats long woofer, big
+                ol much ruin diet what a nice floof noodle horse yapper shoob
+                smol borking doggo with a long snoot for pats, super chub
+                shoober doggorino wrinkler shooberino. Very hand that feed shibe
+                extremely cuuuuuute ruff smol borking doggo with a long snoot
+                for pats shoober, pats ruff borkf. Thicc h*ck sub woofer porgo
+                big ol, length boy puggo. Yapper wrinkler puggorino puggo much
+                ruin diet porgo wow such tempt, shoober h*ck much ruin diet
+                super chub thicc.
               </p>
               <p>
-                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sequi
-                voluptate deserunt eligendi ab, deleniti atque ex natus
-                molestiae eveniet commodi eum quae nam explicabo, numquam illum
-                repellat nihil modi unde. Lorem ipsum dolor sit, amet
-                consectetur adipisicing elit. Iusto ut eaque doloribus fugiat
-                reprehenderit quisquam sunt nesciunt voluptatem animi
-                accusantium libero hic, eius eum temporibus similique repellat
-                expedita. Iste voluptates perspiciatis, voluptas explicabo quas
-                labore saepe quis eaque molestias omnis, officia deleniti
-                eligendi unde. Aperiam, quia nisi. Eligendi reprehenderit
-                quisquam aliquid ipsa autem voluptatum et repellat
-                exercitationem officiis consequatur distinctio eius tempore ex
-                magni doloribus quaerat aperiam harum maiores, odio
-                consequuntur! Officia eum dolorem iure aut, architecto
-                voluptatum, hic ratione repellat placeat adipisci quibusdam
-                quam, et esse. Temporibus totam cumque expedita quisquam laborum
-                perspiciatis libero fugit, praesentium illum. Numquam, minus.
+                Shibe h*ck he made many woofs doge length boy, porgo floofs
+                shoob. length boy adorable doggo. Super chub waggy wags blop
+                h*ck length boy long doggo, aqua doggo very jealous pupper
+                maximum borkdrive pupper. Pupper borkdrive most angery pupper I
+                have ever seen borkdrive, heckin angery woofer boofers. The
+                neighborhood pupper porgo most angery pupper I have ever seen
+                lotsa pats big ol h*ck, borking doggo wow very biscit doggorino
+                I am bekom fat. heck many pats wow very biscit. Borkf super chub
+                wow such tempt, ruff. Stop it fren thicc you are doin me a
+                concern shibe, blop puggo. Heck length boy extremely cuuuuuute
+                boofers tungg, adorable doggo smol clouds stop it fren, I am
+                bekom fat borkf boofers. Waggy wags woofer tungg such treat
+                h*ck, ur givin me a spook you are doing me the shock woofer wow
+                such tempt lotsa pats, heck bork heck.
               </p>
             </div>
           </article>
@@ -124,8 +125,8 @@ const Home = () => {
             </div>
           </section>
         </main>
-
-        <section className={styles.classes} id="classes">
+        <div className={styles.scrollHelper} id="classes"></div>
+        <section className={styles.classes}>
           <aside className={styles.classes__selection}>
             {classesSelectionBtns}
           </aside>
@@ -133,8 +134,13 @@ const Home = () => {
             {classesObj[activeClassDesc]}
           </div>
         </section>
-
         <InfoBox title="Instruktorzy" id="teachers">
+          Dupachej
+        </InfoBox>
+        <InfoBox title="Grafik" id="timetable">
+          Dupachej
+        </InfoBox>
+        <InfoBox title="Cennik" id="prices">
           Dupachej
         </InfoBox>
       </div>

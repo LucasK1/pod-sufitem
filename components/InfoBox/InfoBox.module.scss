@@ -1,9 +1,16 @@
 @import "./styles/variables";
 
+.scrollHelper {
+  height: 150px;
+  width: 100%;
+  margin: 0 auto;
+}
+
 .main {
-  height: 80vh;
+  height: 85vh;
   width: 100%;
   border-radius: 20px;
   padding: 30px;
   background-color: $content-background;
+  margin-top: 20px;
 }
