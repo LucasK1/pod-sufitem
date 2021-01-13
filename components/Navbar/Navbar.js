@@ -15,8 +15,8 @@ const Navbar = () => {
     Zajęcia: '#classes',
     Instruktorzy: '#teachers',
     Galeria: '/galeria',
-    Studio: '#studio',
-    Cennik: '#cennik',
+    Cennik: '#prices',
+    Grafik: '#timetable',
   };
 
   const navListItems = Object.keys(navItems).map((item) => (
@@ -36,8 +36,7 @@ const Navbar = () => {
         <ul
           className={`${styles.navbar__navlist} ${
             navlistActive ? styles.navbar__navlist_active : ''
-          }`}
-        >
+          }`}>
           {navListItems}
         </ul>
         <button
@@ -45,8 +44,7 @@ const Navbar = () => {
             burgerActive ? styles['is-active'] : ''
           }`}
           onClick={toggleMenu}
-          type="button"
-        >
+          type="button">
           <span className={styles['hamburger-box']}>
             <span className={styles['hamburger-inner']}></span>
           </span>
