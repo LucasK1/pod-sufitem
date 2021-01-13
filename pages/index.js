@@ -125,15 +125,17 @@ const Home = () => {
             </div>
           </section>
         </main>
-        <div className={styles.scrollHelper} id="classes"></div>
-        <section className={styles.classes}>
-          <aside className={styles.classes__selection}>
-            {classesSelectionBtns}
-          </aside>
-          <div className={styles.classes__content}>
-            {classesObj[activeClassDesc]}
-          </div>
-        </section>
+        <div className={styles.classes_container}>
+          <div className={styles.scrollHelper} id="classes"></div>
+          <section className={styles.classes}>
+            <aside className={styles.classes__selection}>
+              {classesSelectionBtns}
+            </aside>
+            <div className={styles.classes__content}>
+              {classesObj[activeClassDesc]}
+            </div>
+          </section>
+        </div>
         <InfoBox title="Instruktorzy" id="teachers">
           Dupachej
         </InfoBox>

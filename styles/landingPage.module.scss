@@ -1,9 +1,8 @@
 @import "./styles/variables";
 
 .scrollHelper {
-  height: 150px;
-  width: 100%;
-  margin: 0 auto;
+  position: absolute;
+  top: -150px;
 }
 
 .container {
@@ -105,7 +104,14 @@
   grid-template-columns: 1.5fr 3fr;
   gap: 22px;
   height: 85vh;
-  margin-top: 20px;
+
+  &_container {
+    width: 100%;
+    margin: 0 auto;
+    position: relative;
+    z-index: -1;
+    margin: 40px 0 20px 0;
+  }
 
   &__selection {
     border-radius: 20px;
