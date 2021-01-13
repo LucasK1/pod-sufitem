@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import Link from 'next/link';
+import Image from 'next/image';
 
 import styles from './Navbar.module.scss';
 
@@ -31,13 +32,19 @@ const Navbar = () => {
     <header className={styles.navbar}>
       <nav className={styles.navbar__nav}>
         <div className={styles.navbar__logo}>
-          <a href="/">Logo</a>
+          <Link href="/">
+            <Image
+              src="/static/images/transparentLogo.png"
+              alt="Homepage"
+              height="140"
+              width="241"
+            />
+          </Link>
         </div>
         <ul
           className={`${styles.navbar__navlist} ${
             navlistActive ? styles.navbar__navlist_active : ''
-          }`}
-        >
+          }`}>
           {navListItems}
         </ul>
         <button
@@ -45,8 +52,7 @@ const Navbar = () => {
             burgerActive ? styles['is-active'] : ''
           }`}
           onClick={toggleMenu}
-          type="button"
-        >
+          type="button">
           <span className={styles['hamburger-box']}>
             <span className={styles['hamburger-inner']}></span>
           </span>
