@@ -1,0 +1,9 @@
+@import "./styles/variables";
+
+.main {
+  height: 80vh;
+  width: 100%;
+  border-radius: 20px;
+  padding: 30px;
+  background-color: $content-background;
+}
