@@ -1,8 +1,14 @@
 @import "./styles/variables";
 
 .scrollHelper {
+<<<<<<< HEAD
   position: absolute;
   top: -150px;
+=======
+  height: 150px;
+  width: 100%;
+  margin: 0 auto;
+>>>>>>> 5bacbf8926f63f36f48e14ae71d45e57baeeb3cf
 }
 
 .container {
@@ -104,6 +110,7 @@
   grid-template-columns: 1.5fr 3fr;
   gap: 22px;
   height: 85vh;
+<<<<<<< HEAD
 
   &_container {
     width: 100%;
@@ -112,6 +119,9 @@
     z-index: -1;
     margin: 40px 0 20px 0;
   }
+=======
+  margin-top: 20px;
+>>>>>>> 5bacbf8926f63f36f48e14ae71d45e57baeeb3cf
 
   &__selection {
     border-radius: 20px;
