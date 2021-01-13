@@ -125,7 +125,7 @@ const Home = () => {
             </div>
           </section>
         </main>
-        <div className={styles.classes_container}>
+        <div className={styles.classes__container}>
           <div className={styles.scrollHelper} id="classes"></div>
           <section className={styles.classes}>
             <aside className={styles.classes__selection}>
