@@ -16,8 +16,8 @@ const Navbar = () => {
     Zajęcia: '#classes',
     Instruktorzy: '#teachers',
     Galeria: '/galeria',
-    Cennik: '#prices',
     Grafik: '#timetable',
+    Cennik: '#prices',
   };
 
   const navListItems = Object.keys(navItems).map((item) => (
