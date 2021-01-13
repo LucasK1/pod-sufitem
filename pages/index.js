@@ -125,7 +125,6 @@ const Home = () => {
             </div>
           </section>
         </main>
-<<<<<<< HEAD
         <div className={styles.classes_container}>
           <div className={styles.scrollHelper} id="classes"></div>
           <section className={styles.classes}>
@@ -137,17 +136,6 @@ const Home = () => {
             </div>
           </section>
         </div>
-=======
-        <div className={styles.scrollHelper} id="classes"></div>
-        <section className={styles.classes}>
-          <aside className={styles.classes__selection}>
-            {classesSelectionBtns}
-          </aside>
-          <div className={styles.classes__content}>
-            {classesObj[activeClassDesc]}
-          </div>
-        </section>
->>>>>>> 5bacbf8926f63f36f48e14ae71d45e57baeeb3cf
         <InfoBox title="Instruktorzy" id="teachers">
           Dupachej
         </InfoBox>
