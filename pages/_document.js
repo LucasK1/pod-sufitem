@@ -15,6 +15,9 @@ class MyDocument extends Document {
             href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@400;500&display=swap"
             rel="stylesheet"
           />
+          <script
+            src="https://kit.fontawesome.com/7b3d5481f7.js"
+            crossorigin="anonymous"></script>
         </Head>
         <body>
           <Main />
