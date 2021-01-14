@@ -47,7 +47,6 @@
     width: 200px;
     color: #fff;
     font-size: 18px;
-    margin-top: 100px;
     padding: 20px;
     border-radius: 20px;
     background-color: #000;
@@ -67,6 +66,7 @@
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   margin-top: 50px;
+  font-size: 1.2rem;
 
   &__tel {
     &_list {
@@ -74,14 +74,44 @@
       text-align: left;
       display: flex;
       flex-direction: column;
-      gap: 10px;
+      gap: 35px;
+
+      &Item {
+        display: flex;
+        align-items: center;
+        gap: 35px;
+
+        & > a {
+          text-decoration: underline;
+          &:hover {
+            color: $font-primary-hover;
+          }
+          &:active {
+            color: $font-primary-active;
+          }
+        }
+      }
     }
   }
 
   &__social {
     & > .contact__column_content {
+      display: flex;
+      align-items: center;
+      justify-content: space-evenly;
+      padding-top: 30px;
       border-right: 1px solid #000;
       border-left: 1px solid #000;
+    }
+  }
+
+  &__address {
+    & > .contact__column_content {
+      padding-top: 30px;
+      display: flex;
+      align-items: center;
+      gap: 30px;
+      margin-left: 75px;
     }
   }
 
@@ -112,8 +142,6 @@
   grid-template-columns: 1.5fr 3fr;
   gap: 22px;
   height: 85vh;
-
-
 
   &__selection {
     border-radius: 20px;
