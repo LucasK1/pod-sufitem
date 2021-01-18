@@ -13,17 +13,25 @@ const Navbar = () => {
   };
 
   const navItems = {
-    Zajęcia: '#zajecia',
-    Instruktorki: '#instruktorki',
+    Zajęcia: '/#zajecia',
+    Instruktorki: '/#instruktorki',
+    Cennik: '/#cennik',
+    Grafik: 'https://app.fitssey.com/podsufitem/frontoffice',
     Galeria: '/galeria',
-    Cennik: '#cennik',
   };
 
   const navListItems = Object.keys(navItems).map((item) => (
     <li className={styles.navbar__navitem} onClick={toggleMenu} key={item}>
-      <Link href={navItems[item]} className={styles.navbar__navlink}>
-        {item}
-      </Link>
+      {item !== 'Grafik' ? (
+        <Link
+          href={navItems[item]}
+          className={styles.navbar__navlink}
+          target="_blank">
+          {item}
+        </Link>
+      ) : (
+        <a href={navItems[item]} target="_blank">{item}</a>
+      )}
     </li>
   ));
 
