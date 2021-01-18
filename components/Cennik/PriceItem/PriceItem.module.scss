@@ -1,0 +1,30 @@
+@import "./styles/variables";
+
+.priceItem {
+  display: flex;
+  justify-content: space-between;
+  list-style: none;
+  text-align: left;
+  line-height: 0.9rem;
+
+  &:hover {
+    cursor: pointer;
+    color: $font-primary-hover;
+  }
+}
+
+.moreInfo {
+  height: 200px;
+  width: 300px;
+  left: 200px;
+  border: 1px solid #000;
+  border-radius: 20px;
+  background-color: #ccc;
+  list-style: none;
+  display: none;
+  &_active {
+    position: absolute;
+    display: block;
+    z-index: 2;
+  }
+}
