@@ -37,7 +37,7 @@ const Home = () => {
       <div className={styles.container}>
         <main className={styles.main}>
           <article className={styles.lead__text}>
-            <h1 className={styles.lead__title}>Hohooo ale szkoła</h1>
+            <h1 className={styles.lead__title}>Szkoła akrobatyki powietrznej</h1>
             <div className={styles.lead__content}>
               <p>
                 Pod Sufitem to studio akrobatyki powietrznej, zlokalizowane w

@@ -72,10 +72,11 @@
       &Item {
         display: flex;
         align-items: center;
-        gap: 35px;
+        gap: 30px;
 
         & > a {
-          text-decoration: underline;
+          // text-decoration: underline;
+          font-weight: bold;
           &:hover {
             color: $font-primary-hover;
           }
