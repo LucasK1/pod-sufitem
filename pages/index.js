@@ -142,7 +142,7 @@ const Home = () => {
           </section>
         </main>
         <div className={styles.classes__container}>
-          <div className={styles.scrollHelper} id="classes"></div>
+          <div className={styles.scrollHelper} id="zajecia"></div>
           <section className={styles.classes}>
             <aside className={styles.classes__selection}>
               {classesSelectionBtns}
@@ -152,13 +152,10 @@ const Home = () => {
             </div>
           </section>
         </div>
-        <InfoBox title="Instruktorzy" id="teachers">
+        <InfoBox title="Instruktorki" id="instruktorki">
           Dupachej
         </InfoBox>
-        <InfoBox title="Grafik" id="timetable">
-          Dupachej
-        </InfoBox>
-        <InfoBox title="Cennik" id="prices">
+        <InfoBox title="Cennik" id="cennik">
           Dupachej
         </InfoBox>
       </div>

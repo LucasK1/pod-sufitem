@@ -13,11 +13,10 @@ const Navbar = () => {
   };
 
   const navItems = {
-    Zajęcia: '#classes',
-    Instruktorzy: '#teachers',
+    Zajęcia: '#zajecia',
+    Instruktorki: '#instruktorki',
     Galeria: '/galeria',
-    Grafik: '#timetable',
-    Cennik: '#prices',
+    Cennik: '#cennik',
   };
 
   const navListItems = Object.keys(navItems).map((item) => (
