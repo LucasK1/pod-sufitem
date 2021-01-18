@@ -1,5 +1,5 @@
 import { useEffect, useState } from 'react';
-import Cennik from '../components/Cennik/Cennik';
+import Prices from '../components/Cennik/Prices';
 import InfoBox from '../components/InfoBox/InfoBox';
 import styles from '../styles/landingPage.module.scss';
 
@@ -157,7 +157,7 @@ const Home = () => {
           Dupachej
         </InfoBox>
         <InfoBox title="Cennik" id="cennik">
-          <Cennik />
+          <Prices />
         </InfoBox>
       </div>
       <style jsx>{`
