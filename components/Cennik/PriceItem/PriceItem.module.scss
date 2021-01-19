@@ -1,0 +1,14 @@
+@import "./styles/variables";
+
+.priceItem {
+  display: flex;
+  justify-content: space-between;
+  list-style: none;
+  text-align: left;
+  line-height: 0.9rem;
+
+  &:hover {
+    cursor: pointer;
+    color: $font-primary-hover;
+  }
+}
