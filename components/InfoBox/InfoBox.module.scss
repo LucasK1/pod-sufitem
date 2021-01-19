@@ -1,4 +1,5 @@
 @import "./styles/variables";
+@import "./styles/mediaQuery";
 
 .container {
   position: relative;
@@ -24,7 +25,7 @@
   margin: 20px 0;
 }
 
-@media only screen and (max-width: 768px) {
+@include for-phone-only {
   .content {
     width: 95vw;
     height: 250vh;
