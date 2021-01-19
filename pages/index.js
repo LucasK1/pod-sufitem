@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import Image from 'next/image';
 
 import Prices from '../components/Cennik/Prices';
 import InfoBox from '../components/InfoBox/InfoBox';
@@ -41,42 +42,36 @@ const Home = () => {
       <div className={styles.container}>
         <main className={styles.main}>
           <article className={styles.lead__text}>
-            <h1 className={styles.lead__title}>Hohooo ale szkoła</h1>
+            <h1 className={styles.lead__title}>
+              Szkoła akrobatyki powietrznej
+            </h1>
             <div className={styles.lead__content}>
+              <Image
+                src="/static/images/pod-sufitem.jpeg"
+                alt="pod sufitem"
+                width=""
+                height=""
+              />
               <p>
-                Doggo ipsum heckin good boys borking doggo shibe borking doggo
-                blop sub woofer, such treat fluffer ruff corgo wow very biscit
-                sub woofer, woofer very hand that feed shibe doggorino much ruin
-                diet. Noodle horse the neighborhood pupper borking doggo most
-                angery pupper I have ever seen, very good spot long doggo. boof
-                very taste wow. Boof mlem wow such tempt doggo ur givin me a
-                spook, heckin angery woofer wow such tempt mlem big ol pupper,
-                extremely cuuuuuute clouds puggo. Such treat doge fluffer most
-                angery pupper I have ever seen borkf many pats long woofer, big
-                ol much ruin diet what a nice floof noodle horse yapper shoob
-                smol borking doggo with a long snoot for pats, super chub
-                shoober doggorino wrinkler shooberino. Very hand that feed shibe
-                extremely cuuuuuute ruff smol borking doggo with a long snoot
-                for pats shoober, pats ruff borkf. Thicc h*ck sub woofer porgo
-                big ol, length boy puggo. Yapper wrinkler puggorino puggo much
-                ruin diet porgo wow such tempt, shoober h*ck much ruin diet
-                super chub thicc.
-              </p>
-              <p>
-                Shibe h*ck he made many woofs doge length boy, porgo floofs
-                shoob. length boy adorable doggo. Super chub waggy wags blop
-                h*ck length boy long doggo, aqua doggo very jealous pupper
-                maximum borkdrive pupper. Pupper borkdrive most angery pupper I
-                have ever seen borkdrive, heckin angery woofer boofers. The
-                neighborhood pupper porgo most angery pupper I have ever seen
-                lotsa pats big ol h*ck, borking doggo wow very biscit doggorino
-                I am bekom fat. heck many pats wow very biscit. Borkf super chub
-                wow such tempt, ruff. Stop it fren thicc you are doin me a
-                concern shibe, blop puggo. Heck length boy extremely cuuuuuute
-                boofers tungg, adorable doggo smol clouds stop it fren, I am
-                bekom fat borkf boofers. Waggy wags woofer tungg such treat
-                h*ck, ur givin me a spook you are doing me the shock woofer wow
-                such tempt lotsa pats, heck bork heck.
+                Pod Sufitem to studio akrobatyki powietrznej, zlokalizowane w
+                Warszawie, w samym centrum Pragi Północ. Założycielką studia
+                jest Anna Łukasiak - mistrzyni Polski Pole Sport Professional
+                POSA 2019, mistrzyni Polski i Świata Aerial Hoop Amateur POSA
+                2019. Specjalizujemy się w zajęciach pole dance i aerial hoop,
+                ale w naszej ofercie znajdziesz również szereg zajęć
+                uzupełniających, takich jak: pole choreo, acro pole, spinning
+                pole, stretching, kalistenika, joga kręgosłupa. Posiadamy sprzęt
+                najwyższej jakości: rurki SunPole o wysokości 4 m:
+                chromowo-niklowe, malowane proszkowo i mosiężne, koła oraz
+                osprzęt aerial hoop firmy Flying Rose. Bezpieczeństwo zapewniają
+                certyfikowane materace asekuracyjne o wielkości 160cmx160cm i
+                grubości 15 cm. Zapewniamy wszystkie przybory niezbędne do
+                pełnowartościowego treningu: maty, gumy oporowe, ciężarki, rolki
+                Blackroll, yoga wheel. Na pierwszym miejscu stawiamy jakość
+                zajęć oraz komfort uczestników, dlatego pracujemy w kameralnych
+                grupach i gwarantujemy indywidualne podejście do kursanta. Wiek,
+                rozmiar i płeć nie ma znaczenia - u nas poczujesz się jak w
+                domu!
               </p>
             </div>
           </article>
