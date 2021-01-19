@@ -1,5 +1,8 @@
-import { useEffect, useState } from 'react';
+import { useState } from 'react';
+import Image from 'next/image';
+
 import InfoBox from '../components/InfoBox/InfoBox';
+
 import styles from '../styles/landingPage.module.scss';
 
 const Home = () => {
@@ -37,8 +40,16 @@ const Home = () => {
       <div className={styles.container}>
         <main className={styles.main}>
           <article className={styles.lead__text}>
-            <h1 className={styles.lead__title}>Szkoła akrobatyki powietrznej</h1>
+            <h1 className={styles.lead__title}>
+              Szkoła akrobatyki powietrznej
+            </h1>
             <div className={styles.lead__content}>
+              <Image
+                src="/static/images/pod-sufitem.jpeg"
+                alt="pod sufitem"
+                width=""
+                height=""
+              />
               <p>
                 Pod Sufitem to studio akrobatyki powietrznej, zlokalizowane w
                 Warszawie, w samym centrum Pragi Północ. Założycielką studia
