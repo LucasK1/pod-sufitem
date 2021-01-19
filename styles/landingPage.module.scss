@@ -12,6 +12,7 @@
 }
 
 .main {
+  height: 82vh;
   margin-top: 150px;
   display: flex;
   flex-direction: column;
@@ -174,6 +175,9 @@
 }
 
 @media (max-width: 599px) {
+  .main {
+    height: 100%;
+  }
   .lead {
     &__text {
       text-align: center;
