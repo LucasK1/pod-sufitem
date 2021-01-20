@@ -43,8 +43,8 @@ const Navbar = () => {
             <Image
               src="/static/images/transparentLogo.png"
               alt="Homepage"
-              height="140"
-              width="241"
+              height="120"
+              width="206"
             />
           </Link>
         </div>
