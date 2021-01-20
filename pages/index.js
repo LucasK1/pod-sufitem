@@ -154,7 +154,7 @@ const Home = () => {
         <InfoBox title="Instruktorki" id="instruktorki">
           <Teachers />
         </InfoBox>
-        <InfoBox title="Cennik" id="cennik" black>
+        <InfoBox title="Cennik" id="cennik" black border>
           <Prices />
         </InfoBox>
       </div>
