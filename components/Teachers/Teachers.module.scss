@@ -4,10 +4,12 @@
 .container {
   height: 100%;
   padding-top: 30px;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-around;
-  align-items: stretch;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  // display: flex;
+  // flex-wrap: wrap;
+  // justify-content: flex-start;
+  // align-items: stretch;
 }
 
 .teacher {
@@ -18,13 +20,11 @@
     align-items: center;
     height: 250px;
     width: 250px;
-    // border: 1px solid black;
   }
 
   &__photo {
     height: 70%;
     width: 70%;
-    // border-radius: 50%;
     transition: transform 200ms linear, box-shadow 200ms linear;
     &:hover {
       cursor: pointer;
