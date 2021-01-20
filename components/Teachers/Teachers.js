@@ -20,7 +20,7 @@ const Teachers = () => {
   return (
     <section className={styles.container}>
       {teachers.map((teacher) => (
-        <div className={styles.teacher__container}>
+        <div className={styles.teacher__container} key={teacher}>
           <img
             src="/static/images/portrait.jpeg"
             alt="Picture of a doggo"
