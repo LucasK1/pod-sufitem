@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import Image from 'next/image';
+import Head from 'next/head';
 
 import Prices from '../components/Cennik/Prices';
 import InfoBox from '../components/InfoBox/InfoBox';
@@ -39,6 +40,9 @@ const Home = () => {
 
   return (
     <>
+      <Head>
+        <title>pod sufitem // Szkoła akrobatyki powietrznej</title>
+      </Head>
       <div className={styles.container}>
         <main className={styles.main}>
           <article className={styles.lead__text}>
