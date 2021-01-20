@@ -1,0 +1,38 @@
+@import "./styles/variables";
+@import "./styles/mediaQuery";
+
+.container {
+  height: 100%;
+  padding-top: 30px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: stretch;
+}
+
+.teacher {
+  &__container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    height: 250px;
+    width: 250px;
+    border: 1px solid black;
+    transition: transform 200ms linear, box-shadow 200ms linear;
+    &:hover {
+      transform: scale(1.1);
+      box-shadow: 2px 2px 20px black;
+    }
+  }
+  &__photo {
+    height: 70%;
+    width: 70%;
+    border: 1px solid black;
+    border-radius: 50%;
+  }
+  &__name {
+    font-size: 1.2rem;
+    line-height: 1rem;
+  }
+}
