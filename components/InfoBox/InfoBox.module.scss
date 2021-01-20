@@ -3,8 +3,17 @@
 
 .container {
   position: relative;
-  width: 100%;
-  margin: 0 auto;
+  text-align: center;
+  width: 100vw;
+  height: 90vh;
+  overflow-y: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  &_black {
+    background-color: $dark-background;
+    color: $font-secondary;
+  }
 }
 
 .scrollHelper {
@@ -17,12 +26,11 @@
 }
 
 .content {
-  height: 85vh;
-  width: 100%;
-  border-radius: 20px;
+  height: 80vh;
+  width: 90%;
+  max-width: 1200px;
+  border: 5px solid $font-secondary;
   padding: 30px;
-  background-color: $content-background;
-  margin: 20px 0;
 }
 
 @include for-phone-only {
