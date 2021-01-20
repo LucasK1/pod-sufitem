@@ -1,5 +1,6 @@
 import React from 'react';
 import Head from 'next/head';
+import {v1} from 'uuid';
 
 import prices from './prices.json';
 
@@ -14,10 +15,12 @@ const Prices = () => {
       </Head>
       <section className={styles.content}>
         <div className={styles.content__section}>
-          <h3 className={styles.content__sectionTitle}>Pole Dance/Aerial Hoop</h3>
+          <h3 className={styles.content__sectionTitle}>
+            Pole Dance/Aerial Hoop
+          </h3>
           <ul className={styles.content__priceList}>
             {prices.poleAerial.map(({ name, price, desc }) => (
-              <PriceItem name={name} price={price} desc={desc} />
+              <PriceItem key={v1()} name={name} price={price} desc={desc} />
             ))}
           </ul>
         </div>
@@ -25,8 +28,7 @@ const Prices = () => {
           <h3 className={styles.content__sectionTitle}>Fitness</h3>
           <ul className={styles.content__priceList}>
             {prices.fitness.map(({ name, price, desc }) => (
-              <PriceItem name={name} price={price} desc={desc} />
-
+              <PriceItem key={v1()} name={name} price={price} desc={desc} />
             ))}
           </ul>
         </div>
@@ -34,8 +36,7 @@ const Prices = () => {
           <h3 className={styles.content__sectionTitle}>Mix</h3>
           <ul className={styles.content__priceList}>
             {prices.mix.map(({ name, price, desc }) => (
-              <PriceItem name={name} price={price} desc={desc} />
-
+              <PriceItem key={v1()} name={name} price={price} desc={desc} />
             ))}
           </ul>
         </div>
@@ -43,8 +44,7 @@ const Prices = () => {
           <h3 className={styles.content__sectionTitle}>Wynajem sali</h3>
           <ul className={styles.content__priceList}>
             {prices.rent.map(({ name, price, desc }) => (
-              <PriceItem name={name} price={price} desc={desc} />
-
+              <PriceItem key={v1()} name={name} price={price} desc={desc} />
             ))}
           </ul>
         </div>
