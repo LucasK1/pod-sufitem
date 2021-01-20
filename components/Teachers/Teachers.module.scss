@@ -18,19 +18,21 @@
     align-items: center;
     height: 250px;
     width: 250px;
-    border: 1px solid black;
-    transition: transform 200ms linear, box-shadow 200ms linear;
-    &:hover {
-      transform: scale(1.1);
-      box-shadow: 2px 2px 20px black;
-    }
+    // border: 1px solid black;
   }
+
   &__photo {
     height: 70%;
     width: 70%;
-    border: 1px solid black;
     border-radius: 50%;
+    transition: transform 200ms linear, box-shadow 200ms linear;
+    &:hover {
+      cursor: pointer;
+      transform: scale(1.1);
+      box-shadow: 0 0 20px black;
+    }
   }
+
   &__name {
     font-size: 1.2rem;
     line-height: 1rem;

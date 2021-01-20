@@ -21,8 +21,11 @@ const Teachers = () => {
     <section className={styles.container}>
       {teachers.map((teacher) => (
         <div className={styles.teacher__container}>
-          {/* <Image src="" width="" height="" className={styles.teacher__photo} /> */}
-          <div className={styles.teacher__photo}></div>
+          <img
+            src="/static/images/portrait.jpeg"
+            alt="Picture of a doggo"
+            className={styles.teacher__photo}
+          />
           <span className={styles.teacher__name}>{teacher}</span>
         </div>
       ))}
