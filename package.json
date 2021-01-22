@@ -13,7 +13,12 @@
     "next": "10.0.4",
     "react": "17.0.1",
     "react-dom": "17.0.1",
+<<<<<<< HEAD
     "react-image-lightbox": "^5.1.1"
+=======
+    "react-image-lightbox": "^5.1.1",
+    "webp-loader": "^0.6.0"
+>>>>>>> Uninstall unnecessary galleries
   },
   "devDependencies": {
     "node-sass": "^5.0.0",

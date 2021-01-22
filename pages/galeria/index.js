@@ -1,6 +1,5 @@
 import React, { useState } from 'react';
 import Lightbox from 'react-image-lightbox';
-import Gallery from 'react-grid-gallery';
 
 import 'react-image-lightbox/style.css';
 import styles from '../../styles/galeria.module.scss';
@@ -73,12 +72,7 @@ const index = () => {
 
   return (
     <section className={styles.container}>
-      {/* <h1 onClick={() => setIsOpen(true)}>Łoooo ile fotek</h1> */}
-      <Gallery
-        images={imagesGallery}
-        // backdropClosesModal={true}
-        // enableImageSelection={false}
-      />
+      <h1 onClick={() => setIsOpen(true)}>Łoooo ile fotek</h1>
       {isOpen ? (
         <Lightbox
           mainSrc={images[photoIndex]}
