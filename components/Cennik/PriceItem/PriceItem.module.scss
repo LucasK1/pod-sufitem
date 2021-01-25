@@ -7,8 +7,31 @@
   text-align: left;
   line-height: 0.9rem;
 
+  &__name {
+    border-bottom: 1px dotted #aaa;
+  }
+
   &:hover {
     cursor: pointer;
     color: $font-secondary-hover;
+  }
+}
+
+.tooltipBox {
+  text-align: center;
+  padding: 15px;
+  width: 300px;
+  height: 150px;
+  border-radius: 20px;
+  background-color: darkgrey;
+  &::after {
+    content: "";
+    position: absolute;
+    top: -20px;
+    left: 15%;
+    margin-left: -10px;
+    border-width: 10px;
+    border-style: solid;
+    border-color: transparent transparent darkgrey transparent;
   }
 }
