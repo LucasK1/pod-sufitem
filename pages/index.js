@@ -49,14 +49,8 @@ const Home = () => {
             <h1 className={styles.lead__title}>
               Szkoła akrobatyki powietrznej
             </h1>
-            <div className={styles.lead__content}>
-              <Image
-                src="/static/images/pod-sufitem.jpeg"
-                alt="pod sufitem"
-                width=""
-                height=""
-              />
-              <p>
+            {/* <div className={styles.lead__content}> */}
+              <p className={styles.lead__content}>
                 Pod Sufitem to studio akrobatyki powietrznej, zlokalizowane w
                 Warszawie, w samym centrum Pragi Północ. Założycielką studia
                 jest Anna Łukasiak - mistrzyni Polski Pole Sport Professional
@@ -77,7 +71,7 @@ const Home = () => {
                 rozmiar i płeć nie ma znaczenia - u nas poczujesz się jak w
                 domu!
               </p>
-            </div>
+            {/* </div> */}
           </article>
           <section className={styles.contact}>
             <div className={`${styles.contact__column} ${styles.contact__tel}`}>

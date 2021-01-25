@@ -1,5 +1,5 @@
-@import './styles/variables';
-@import './styles/mediaQuery';
+@import "./styles/variables";
+@import "./styles/mediaQuery";
 
 .scrollHelper {
   position: absolute;
@@ -19,11 +19,21 @@
   flex-direction: column;
   align-items: center;
   justify-content: space-between;
+  &::after {
+    content: "";
+    background: url("/static/images/background1.jpeg") center no-repeat;
+    background-size: cover;
+    position: absolute;
+    width: 100vw;
+    height: 88vh;
+    z-index: -1;
+  }
 }
 
 .lead {
   &__text {
     text-align: center;
+    height: 100%;
   }
   &__title {
     font-size: 3rem;
@@ -31,7 +41,9 @@
   }
   &__content {
     display: grid;
+    height: 90%;
     grid-template-columns: repeat(2, 1fr);
+    align-items: end;
     text-align: left;
     gap: 20px;
     line-height: 1.5rem;
