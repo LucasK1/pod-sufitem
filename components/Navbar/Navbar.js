@@ -16,12 +16,17 @@ const Navbar = () => {
     Zajęcia: '/#zajecia',
     Instruktorki: '/#instruktorki',
     Cennik: '/#cennik',
-    Grafik: 'https://app.fitssey.com/podsufitem/frontoffice',
     Galeria: '/galeria',
+    Zapisy: 'https://app.fitssey.com/podsufitem/frontoffice',
   };
 
   const navListItems = Object.keys(navItems).map((item) => (
-    <li className={styles.navbar__navitem} onClick={toggleMenu} key={item}>
+    <li
+      className={`${styles.navbar__navitem} ${
+        item === 'Zapisy' ? styles.navbar__navitem_red : ''
+      }`}
+      onClick={toggleMenu}
+      key={item}>
       {item !== 'Grafik' ? (
         <Link
           href={navItems[item]}
@@ -30,7 +35,9 @@ const Navbar = () => {
           {item}
         </Link>
       ) : (
-        <a href={navItems[item]} target="_blank">{item}</a>
+        <a href={navItems[item]} target="_blank">
+          {item}
+        </a>
       )}
     </li>
   ));

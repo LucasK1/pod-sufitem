@@ -79,12 +79,6 @@ const Home = () => {
               </p>
             </div>
           </article>
-          <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="_blank">
-            <div className={styles.lead__bookingBtn}>
-              <p>Zapisy na zajęcia</p>
-              <p>-kliknij TU-</p>
-            </div>
-          </a>
           <section className={styles.contact}>
             <div className={`${styles.contact__column} ${styles.contact__tel}`}>
               <span className={styles.contact__column_title}>
