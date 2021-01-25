@@ -16,8 +16,8 @@ const Navbar = () => {
     Zajęcia: '/#zajecia',
     Instruktorki: '/#instruktorki',
     Cennik: '/#cennik',
-    Zapisy: 'https://app.fitssey.com/podsufitem/frontoffice',
     Galeria: '/galeria',
+    Zapisy: 'https://app.fitssey.com/podsufitem/frontoffice',
   };
 
   const navListItems = Object.keys(navItems).map((item) => (
