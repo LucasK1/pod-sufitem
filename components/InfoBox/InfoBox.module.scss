@@ -29,8 +29,10 @@
   height: 80vh;
   width: 90%;
   max-width: 1200px;
-  border: 5px solid $font-secondary;
   padding: 30px;
+  &_border {
+    border: 5px solid $font-secondary;
+  }
 }
 
 @include for-phone-only {

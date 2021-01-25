@@ -1,5 +1,4 @@
 import React from 'react';
-import Head from 'next/head';
 
 import prices from './prices.json';
 
@@ -9,9 +8,6 @@ import PriceItem from './PriceItem/PriceItem';
 const Prices = () => {
   return (
     <>
-      <Head>
-        <title>Cennik // pod sufitem</title>
-      </Head>
       <section className={styles.content}>
         <div className={styles.content__section}>
           <h3 className={styles.content__sectionTitle}>

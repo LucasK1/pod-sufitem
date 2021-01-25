@@ -1,10 +1,12 @@
 import { useState } from 'react';
 import Image from 'next/image';
+import Head from 'next/head';
 
 import Prices from '../components/Cennik/Prices';
 import InfoBox from '../components/InfoBox/InfoBox';
 
 import styles from '../styles/landingPage.module.scss';
+import Teachers from '../components/Teachers/Teachers';
 
 const Home = () => {
   const [activeClassDesc, setActiveClassDesc] = useState('Pole Dance');
@@ -30,8 +32,7 @@ const Home = () => {
           activeClassDesc === item ? styles.classes__selectionBtn_isActive : ''
         }`}
         onClick={(e) => classClickHandler(e, item)}
-        key={item}
-      >
+        key={item}>
         {item}
       </a>
     );
@@ -39,6 +40,9 @@ const Home = () => {
 
   return (
     <>
+      <Head>
+        <title>pod sufitem // Szkoła akrobatyki powietrznej</title>
+      </Head>
       <div className={styles.container}>
         <main className={styles.main}>
           <article className={styles.lead__text}>
@@ -109,8 +113,7 @@ const Home = () => {
             </div>
 
             <div
-              className={`${styles.contact__column} ${styles.contact__social}`}
-            >
+              className={`${styles.contact__column} ${styles.contact__social}`}>
               <span className={styles.contact__column_title}>
                 Znajdź nas w sieci
               </span>
@@ -120,16 +123,14 @@ const Home = () => {
                 </a>
                 <a
                   href="https://www.instagram.com/pod.sufitem/"
-                  target="_blank"
-                >
+                  target="_blank">
                   <i className="fab fa-instagram-square"></i>
                 </a>
               </div>
             </div>
 
             <div
-              className={`${styles.contact__column} ${styles.contact__address}`}
-            >
+              className={`${styles.contact__column} ${styles.contact__address}`}>
               <span className={styles.contact__column_title}>Odwiedź nas</span>
               <div className={styles.contact__column_content}>
                 <a href="https://goo.gl/maps/vRQJRCQE7JP4J6CWA" target="_blank">
@@ -155,9 +156,9 @@ const Home = () => {
           </section>
         </div>
         <InfoBox title="Instruktorki" id="instruktorki">
-          Dupachej
+          <Teachers />
         </InfoBox>
-        <InfoBox title="Cennik" id="cennik" black>
+        <InfoBox title="Cennik" id="cennik" black border>
           <Prices />
         </InfoBox>
       </div>
