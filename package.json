@@ -8,6 +8,7 @@
     "start": "next start"
   },
   "dependencies": {
+    "@tippyjs/react": "^4.2.0",
     "file-loader": "^6.2.0",
     "next": "10.0.4",
     "react": "17.0.1",
