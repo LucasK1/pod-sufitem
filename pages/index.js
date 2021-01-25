@@ -30,8 +30,7 @@ const Home = () => {
           activeClassDesc === item ? styles.classes__selectionBtn_isActive : ''
         }`}
         onClick={(e) => classClickHandler(e, item)}
-        key={item}
-      >
+        key={item}>
         {item}
       </a>
     );
@@ -75,12 +74,6 @@ const Home = () => {
               </p>
             </div>
           </article>
-          {/* <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="_blank">
-            <div className={styles.lead__bookingBtn}>
-              <p>Zapisy na zajęcia</p>
-              <p>-kliknij TU-</p>
-            </div>
-          </a> */}
           <section className={styles.contact}>
             <div className={`${styles.contact__column} ${styles.contact__tel}`}>
               <span className={styles.contact__column_title}>
@@ -109,8 +102,7 @@ const Home = () => {
             </div>
 
             <div
-              className={`${styles.contact__column} ${styles.contact__social}`}
-            >
+              className={`${styles.contact__column} ${styles.contact__social}`}>
               <span className={styles.contact__column_title}>
                 Znajdź nas w sieci
               </span>
@@ -120,16 +112,14 @@ const Home = () => {
                 </a>
                 <a
                   href="https://www.instagram.com/pod.sufitem/"
-                  target="_blank"
-                >
+                  target="_blank">
                   <i className="fab fa-instagram-square"></i>
                 </a>
               </div>
             </div>
 
             <div
-              className={`${styles.contact__column} ${styles.contact__address}`}
-            >
+              className={`${styles.contact__column} ${styles.contact__address}`}>
               <span className={styles.contact__column_title}>Odwiedź nas</span>
               <div className={styles.contact__column_content}>
                 <a href="https://goo.gl/maps/vRQJRCQE7JP4J6CWA" target="_blank">
