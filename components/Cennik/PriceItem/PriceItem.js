@@ -15,9 +15,7 @@ const PriceItem = ({ name, price, desc }) => {
           )}
           placement="bottom-start"
           delay={[50, 200]}>
-          <span
-            tabIndex="0"
-            style={{ borderBottom: '1px dotted #aaa', position: 'relative' }}>
+          <span tabIndex="0" className={styles.priceItem__name}>
             {name}
           </span>
         </Tippy>
