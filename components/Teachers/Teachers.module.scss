@@ -6,7 +6,6 @@
   padding-top: 30px;
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-
 }
 
 .teacher {
@@ -33,5 +32,15 @@
   &__name {
     font-size: 1.2rem;
     line-height: 1rem;
+  }
+}
+
+.modal {
+  &__title {
+    font-size: 1.8rem;
+    line-height: 1rem;
+  }
+  &__desc {
+    text-align: left;
   }
 }
