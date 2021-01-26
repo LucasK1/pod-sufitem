@@ -169,7 +169,7 @@
   }
 }
 
-@include for-tablet-portrait-up {
+@include for-tablet-portrait {
   .navbar__navlist {
     height: 87vh;
     width: 60%;
@@ -194,7 +194,7 @@
   }
 }
 
-@include for-tablet-landscape-up {
+@include for-tablet-landscape {
   .navbar__navlist {
     width: 65%;
   }
