@@ -124,19 +124,27 @@
 }
 
 .classes__container {
-  width: 100%;
-  margin: 0 auto;
   position: relative;
-  margin: 60px 0 20px 0;
+  width: 100vw;
+  height: 89vh;
+  padding: 20px 0;
+  overflow-y: hidden;
+  margin-top: 90px;
+}
+
+.classes__content {
+  width: 100%;
+  height: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
 }
 
 .classes {
-  margin-top: 20px;
   width: 100%;
+  height: 100%;
   display: grid;
   grid-template-columns: 1.5fr 3fr;
-  gap: 22px;
-  height: 85vh;
+  gap: 20px;
 
   &__selection {
     border-radius: 20px;
@@ -168,7 +176,7 @@
     }
   }
 
-  &__content {
+  &__desc {
     border-radius: 20px;
     background-color: $content-background;
   }
@@ -239,5 +247,10 @@
     &__column_content {
       font-size: 1rem;
     }
+  }
+}
+@include for-desktop-up {
+  .classes__container {
+    height: 87vh;
   }
 }

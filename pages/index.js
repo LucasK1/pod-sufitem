@@ -140,14 +140,16 @@ const Home = () => {
         </main>
         <div className={styles.classes__container}>
           <div className={styles.scrollHelper} id="zajecia"></div>
-          <section className={styles.classes}>
-            <aside className={styles.classes__selection}>
-              {classesSelectionBtns}
-            </aside>
-            <div className={styles.classes__content}>
-              {classesObj[activeClassDesc]}
-            </div>
-          </section>
+          <div className={styles.classes__content}>
+            <section className={styles.classes}>
+              <aside className={styles.classes__selection}>
+                {classesSelectionBtns}
+              </aside>
+              <div className={styles.classes__desc}>
+                {classesObj[activeClassDesc]}
+              </div>
+            </section>
+          </div>
         </div>
         <InfoBox title="Instruktorki" id="instruktorki">
           <Teachers />
