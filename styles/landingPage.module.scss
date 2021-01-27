@@ -142,13 +142,43 @@
   }
 }
 
+.equipment {
+  &__container {
+    width: 100vw;
+    height: 30vh;
+    padding-top: 60px;
+    margin-top: 150px;
+  }
+  &__content {
+    width: 100%;
+    height: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-around;
+  }
+  &__item {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+  }
+  &__desc {
+    text-align: center;
+    height: 200px;
+    width: 300px;
+    font-size: 1.2rem;
+    line-height: 1.3rem;
+  }
+}
+
 .classes__container {
   position: relative;
   width: 100vw;
   height: 89vh;
   padding: 20px 0;
-  overflow-y: hidden;
-  margin-top: 90px;
+  margin-top: 60px;
 }
 
 .classes__content {

@@ -128,6 +128,47 @@ const Home = () => {
             </div>
           </section>
         </main>
+        <div className={styles.equipment__container}>
+          <div className={styles.equipment__content}>
+            <div className={styles.equipment__item}>
+              <i className="fas fa-check"></i>
+              <p className={styles.equipment__desc}>
+                Specjalizujemy się w zajęciach{' '}
+                <span className={styles.bold}>pole dance i aerial hoop,</span>{' '}
+                ale w naszej ofercie znajdziesz również szereg zajęć
+                uzupełniających, takich jak:
+                <ul style={{textAlign: 'left', marginLeft: '70px'}}>
+                  <li>Pole Choreo</li>
+                  <li>Acro Pole</li>
+                  <li>Spinning Pole</li>
+                  <li>Stretching</li>
+                  <li> Kalistenika</li>
+                  <li>Joga Kręgosłupa</li>
+                </ul>
+              </p>
+            </div>
+            <div className={styles.equipment__item}>
+              <i className="fas fa-check"></i>
+              <p className={styles.equipment__desc}>
+                Posiadamy sprzęt najwyższej jakości:
+                <ul>
+                  <li>
+                    Rurki SunPole o wysokości 4 m: chromowo-niklowe, malowane
+                    proszkowo i mosiężne,
+                  </li>
+                  <li>Koła oraz osprzęt aerial hoop firmy Flying Rose.</li>
+                </ul>
+              </p>
+            </div>
+            <div className={styles.equipment__item}>
+              <i className="fas fa-check"></i>
+              <p className={styles.equipment__desc}>
+                Bezpieczeństwo zapewniają certyfikowane materace asekuracyjne o
+                wielkości 160cmx160cm i grubości 15 cm.{' '}
+              </p>
+            </div>
+          </div>
+        </div>
         <div className={styles.classes__container}>
           <div className={styles.scrollHelper} id="zajecia"></div>
           <div className={styles.classes__content}>
@@ -161,6 +202,9 @@ const Home = () => {
           &:active {
             color: $font-secondary-active;
           }
+        }
+        .fa-check {
+          transform: scale(5);
         }
       `}</style>
     </>
