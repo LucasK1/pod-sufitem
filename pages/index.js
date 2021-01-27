@@ -49,29 +49,25 @@ const Home = () => {
             <h1 className={styles.lead__title}>
               Szkoła akrobatyki powietrznej
             </h1>
-            {/* <div className={styles.lead__content}> */}
+            <div className={styles.lead__content_container}>
               <p className={styles.lead__content}>
                 Pod Sufitem to studio akrobatyki powietrznej, zlokalizowane w
-                Warszawie, w samym centrum Pragi Północ. Założycielką studia
-                jest Anna Łukasiak - mistrzyni Polski Pole Sport Professional
-                POSA 2019, mistrzyni Polski i Świata Aerial Hoop Amateur POSA
-                2019. Specjalizujemy się w zajęciach pole dance i aerial hoop,
-                ale w naszej ofercie znajdziesz również szereg zajęć
-                uzupełniających, takich jak: pole choreo, acro pole, spinning
-                pole, stretching, kalistenika, joga kręgosłupa. Posiadamy sprzęt
-                najwyższej jakości: rurki SunPole o wysokości 4 m:
-                chromowo-niklowe, malowane proszkowo i mosiężne, koła oraz
-                osprzęt aerial hoop firmy Flying Rose. Bezpieczeństwo zapewniają
-                certyfikowane materace asekuracyjne o wielkości 160cmx160cm i
-                grubości 15 cm. Zapewniamy wszystkie przybory niezbędne do
-                pełnowartościowego treningu: maty, gumy oporowe, ciężarki, rolki
-                Blackroll, yoga wheel. Na pierwszym miejscu stawiamy jakość
-                zajęć oraz komfort uczestników, dlatego pracujemy w kameralnych
-                grupach i gwarantujemy indywidualne podejście do kursanta. Wiek,
-                rozmiar i płeć nie ma znaczenia - u nas poczujesz się jak w
-                domu!
+                Warszawie, w samym centrum Pragi Północ.
+                <br />
+                Założycielką studia jest Anna Łukasiak - mistrzyni Polski Pole
+                Sport Professional POSA 2019, mistrzyni Polski i Świata Aerial
+                Hoop Amateur POSA 2019.
+                <br />
+                Na pierwszym miejscu stawiamy jakość zajęć oraz komfort
+                uczestników, dlatego pracujemy w kameralnych grupach i
+                gwarantujemy indywidualne podejście do kursanta.
+                <br />
+                <span className={styles.bold}>
+                  Wiek, rozmiar i płeć nie ma znaczenia - u nas poczujesz się
+                  jak w domu!
+                </span>
               </p>
-            {/* </div> */}
+            </div>
           </article>
           <section className={styles.contact}>
             <div className={`${styles.contact__column} ${styles.contact__tel}`}>
