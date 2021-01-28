@@ -15,17 +15,7 @@ const Home = () => {
     desc: <p>Tańcowanie na polu</p>,
   });
 
-  // const classesObj = {
-  //   'Pole Dance': <p>Tańcowanie na polu</p>,
-  //   'Acro Pole': <p>Duże pole</p>,
-  //   'Aerial Hoop': <p>Skaakanie powietrzne</p>,
-  //   'Joga kręgosłupa': <p>Wyrównanie ćakramów</p>,
-  //   Stretching: <p>Gumkowanie majtek</p>,
-  //   'Trening mobilności': <p>Kategoria B</p>,
-  //   Pilates: <p>Sokrates</p>,
-  // };
-
-  const classesArr = [
+  const classes = [
     {
       id: 'poleDance',
       name: 'Pole Dance',
