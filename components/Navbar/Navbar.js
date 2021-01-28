@@ -7,6 +7,7 @@ import styles from './Navbar.module.scss';
 const Navbar = () => {
   const [burgerActive, setBurgerActive] = useState(false);
   const [navlistActive, setNavlistActive] = useState(false);
+
   const toggleMenu = () => {
     setBurgerActive(!burgerActive);
     setNavlistActive(!navlistActive);
@@ -44,14 +45,6 @@ const Navbar = () => {
       isLink: false,
     },
   ];
-
-  // const navItems = {
-  //   Zajęcia: '/#zajecia',
-  //   Instruktorki: '/#instruktorki',
-  //   Cennik: '/#cennik',
-  //   Galeria: '/galeria',
-  //   Zapisy: 'https://app.fitssey.com/podsufitem/frontoffice',
-  // };
 
   const navListItems = navItems.map((item) => (
     <li
@@ -102,11 +95,13 @@ const Navbar = () => {
           </span>
         </button>
       </nav>
-      <style jsx>{`
-        body {
-          overflow-x: hidden;
-        }
-      `}</style>
+      <style jsx>
+        {`
+          body {
+            overflow-x: hidden;
+          }
+        `}
+      </style>
     </header>
   );
 };
