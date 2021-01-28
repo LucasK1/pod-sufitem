@@ -1,12 +1,11 @@
 import { useState } from 'react';
-import Image from 'next/image';
 import Head from 'next/head';
 
-import Prices from '../components/Cennik/Prices';
-import InfoBox from '../components/InfoBox/InfoBox';
+import Prices from '@/components/Prices/Prices';
+import InfoBox from '@/components/InfoBox/InfoBox';
 
-import styles from '../styles/landingPage.module.scss';
-import Teachers from '../components/Teachers/Teachers';
+import styles from '@/styles/landingPage.module.scss';
+import Teachers from '@/components/Teachers/Teachers';
 
 const Home = () => {
   const [activeClassDesc, setActiveClassDesc] = useState('Pole Dance');

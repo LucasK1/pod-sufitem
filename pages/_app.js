@@ -1,6 +1,6 @@
-import Navbar from '../components/Navbar/Navbar';
-import '../styles/styles.scss';
-import '../styles/normalize.css';
+import Navbar from '@/components/Navbar/Navbar';
+import '@/styles/styles.scss';
+import '@/styles/normalize.css';
 
 function MyApp({ Component, pageProps }) {
   return (
