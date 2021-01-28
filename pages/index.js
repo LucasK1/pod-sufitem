@@ -9,31 +9,75 @@ import styles from '../styles/landingPage.module.scss';
 import Teachers from '../components/Teachers/Teachers';
 
 const Home = () => {
-  const [activeClassDesc, setActiveClassDesc] = useState('Pole Dance');
+  const [activeClass, setActiveClass] = useState({
+    id: 'poleDance',
+    name: 'Pole Dance',
+    desc: <p>Tańcowanie na polu</p>,
+  });
 
-  const classesObj = {
-    'Pole Dance': <p>Tańcowanie na polu</p>,
-    'Acro Pole': <p>Duże pole</p>,
-    'Aerial Hoop': <p>Skaakanie powietrzne</p>,
-    'Joga kręgosłupa': <p>Wyrównanie ćakramów</p>,
-    Stretching: <p>Gumkowanie majtek</p>,
-    'Trening mobilności': <p>Kategoria B</p>,
-    Pilates: <p>Sokrates</p>,
+  // const classesObj = {
+  //   'Pole Dance': <p>Tańcowanie na polu</p>,
+  //   'Acro Pole': <p>Duże pole</p>,
+  //   'Aerial Hoop': <p>Skaakanie powietrzne</p>,
+  //   'Joga kręgosłupa': <p>Wyrównanie ćakramów</p>,
+  //   Stretching: <p>Gumkowanie majtek</p>,
+  //   'Trening mobilności': <p>Kategoria B</p>,
+  //   Pilates: <p>Sokrates</p>,
+  // };
+
+  const classesArr = [
+    {
+      id: 'poleDance',
+      name: 'Pole Dance',
+      desc: <p>Tańcowanie na polu</p>,
+    },
+    {
+      id: 'acroPole',
+      name: 'Acro Pole',
+      desc: <p>Duże pole</p>,
+    },
+    {
+      id: 'aerialHoop',
+      name: 'Aerial Hoop',
+      desc: <p>Skakanie powietrzne</p>,
+    },
+    {
+      id: 'spineYoga',
+      name: 'Joga kręgosłupa',
+      desc: <p>Wyrównanie Ćakramów</p>,
+    },
+    {
+      id: 'stretching',
+      name: 'Stretching',
+      desc: <p>Gumkowanie majtek</p>,
+    },
+    {
+      id: 'mobility',
+      name: 'Trening mobilności',
+      desc: <p>Kategoria B</p>,
+    },
+    {
+      id: 'pilates',
+      name: 'Pilates',
+      desc: <p>Sokrates</p>,
+    },
+  ];
+
+  const classClickHandler = (classItem) => {
+    setActiveClass(classItem);
   };
 
-  const classClickHandler = (e, classType) => {
-    setActiveClassDesc(classType);
-  };
-
-  const classesSelectionBtns = Object.keys(classesObj).map((item) => {
+  const classesSelectionBtns = classesArr.map((classItem) => {
     return (
       <a
         className={`${styles.classes__selectionBtn} ${
-          activeClassDesc === item ? styles.classes__selectionBtn_isActive : ''
+          activeClass.id === classItem.id
+            ? styles.classes__selectionBtn_isActive
+            : ''
         }`}
-        onClick={(e) => classClickHandler(e, item)}
-        key={item}>
-        {item}
+        onClick={() => classClickHandler(classItem)}
+        key={classItem.id}>
+        {classItem.name}
       </a>
     );
   });
@@ -146,7 +190,7 @@ const Home = () => {
                 {classesSelectionBtns}
               </aside>
               <div className={styles.classes__desc}>
-                {classesObj[activeClassDesc]}
+                {activeClass ? activeClass.desc : ''}
               </div>
             </section>
           </div>
