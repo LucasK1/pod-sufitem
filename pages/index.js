@@ -1,12 +1,11 @@
 import { useState } from 'react';
-import Image from 'next/image';
 import Head from 'next/head';
 
-import Prices from '../components/Cennik/Prices';
-import InfoBox from '../components/InfoBox/InfoBox';
+import Prices from '@/components/Prices/Prices';
+import InfoBox from '@/components/InfoBox/InfoBox';
 
-import styles from '../styles/landingPage.module.scss';
-import Teachers from '../components/Teachers/Teachers';
+import styles from '@/styles/landingPage.module.scss';
+import Teachers from '@/components/Teachers/Teachers';
 
 const Home = () => {
   const [activeClass, setActiveClass] = useState({
@@ -83,33 +82,23 @@ const Home = () => {
             <h1 className={styles.lead__title}>
               Szkoła akrobatyki powietrznej
             </h1>
-            <div className={styles.lead__content}>
-              <Image
-                src="/static/images/pod-sufitem.jpeg"
-                alt="pod sufitem"
-                width=""
-                height=""
-              />
-              <p>
+            <div className={styles.lead__content_container}>
+              <p className={styles.lead__content}>
                 Pod Sufitem to studio akrobatyki powietrznej, zlokalizowane w
-                Warszawie, w samym centrum Pragi Północ. Założycielką studia
-                jest Anna Łukasiak - mistrzyni Polski Pole Sport Professional
-                POSA 2019, mistrzyni Polski i Świata Aerial Hoop Amateur POSA
-                2019. Specjalizujemy się w zajęciach pole dance i aerial hoop,
-                ale w naszej ofercie znajdziesz również szereg zajęć
-                uzupełniających, takich jak: pole choreo, acro pole, spinning
-                pole, stretching, kalistenika, joga kręgosłupa. Posiadamy sprzęt
-                najwyższej jakości: rurki SunPole o wysokości 4 m:
-                chromowo-niklowe, malowane proszkowo i mosiężne, koła oraz
-                osprzęt aerial hoop firmy Flying Rose. Bezpieczeństwo zapewniają
-                certyfikowane materace asekuracyjne o wielkości 160cmx160cm i
-                grubości 15 cm. Zapewniamy wszystkie przybory niezbędne do
-                pełnowartościowego treningu: maty, gumy oporowe, ciężarki, rolki
-                Blackroll, yoga wheel. Na pierwszym miejscu stawiamy jakość
-                zajęć oraz komfort uczestników, dlatego pracujemy w kameralnych
-                grupach i gwarantujemy indywidualne podejście do kursanta. Wiek,
-                rozmiar i płeć nie ma znaczenia - u nas poczujesz się jak w
-                domu!
+                Warszawie, w samym centrum Pragi Północ.
+                <br />
+                Założycielką studia jest Anna Łukasiak - mistrzyni Polski Pole
+                Sport Professional POSA 2019, mistrzyni Polski i Świata Aerial
+                Hoop Amateur POSA 2019.
+                <br />
+                Na pierwszym miejscu stawiamy jakość zajęć oraz komfort
+                uczestników, dlatego pracujemy w kameralnych grupach i
+                gwarantujemy indywidualne podejście do kursanta.
+                <br />
+                <strong className={styles.bold}>
+                  Wiek, rozmiar i płeć nie ma znaczenia - u nas poczujesz się
+                  jak w domu!
+                </strong>
               </p>
             </div>
           </article>
@@ -172,6 +161,47 @@ const Home = () => {
             </div>
           </section>
         </main>
+        <div className={styles.equipment__container}>
+          <div className={styles.equipment__content}>
+            <div className={styles.equipment__item}>
+              <i className="fas fa-check"></i>
+              <p className={styles.equipment__desc}>
+                Specjalizujemy się w zajęciach{' '}
+                <strong className={styles.bold}>pole dance i aerial hoop,</strong>{' '}
+                ale w naszej ofercie znajdziesz również szereg zajęć
+                uzupełniających, takich jak:
+                <ul className={styles.equipment__list}>
+                  <li>Pole Choreo</li>
+                  <li>Acro Pole</li>
+                  <li>Spinning Pole</li>
+                  <li>Stretching</li>
+                  <li> Kalistenika</li>
+                  <li>Joga Kręgosłupa</li>
+                </ul>
+              </p>
+            </div>
+            <div className={styles.equipment__item}>
+              <i className="fas fa-check"></i>
+              <p className={styles.equipment__desc}>
+                Posiadamy sprzęt najwyższej jakości:
+                <ul>
+                  <li>
+                    Rurki SunPole o wysokości 4 m: chromowo-niklowe, malowane
+                    proszkowo i mosiężne,
+                  </li>
+                  <li>Koła oraz osprzęt aerial hoop firmy Flying Rose.</li>
+                </ul>
+              </p>
+            </div>
+            <div className={styles.equipment__item}>
+              <i className="fas fa-check"></i>
+              <p className={styles.equipment__desc}>
+                Bezpieczeństwo zapewniają certyfikowane materace asekuracyjne o
+                wielkości 160cmx160cm i grubości 15 cm.
+              </p>
+            </div>
+          </div>
+        </div>
         <div className={styles.classes__container}>
           <div className={styles.scrollHelper} id="zajecia"></div>
           <div className={styles.classes__content}>
@@ -205,6 +235,9 @@ const Home = () => {
           &:active {
             color: $font-secondary-active;
           }
+        }
+        .fa-check {
+          transform: scale(5);
         }
       `}</style>
     </>
