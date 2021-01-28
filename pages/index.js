@@ -57,7 +57,7 @@ const Home = () => {
     setActiveClass(classItem);
   };
 
-  const classesSelectionBtns = classesArr.map((classItem) => {
+  const classesSelectionBtns = classes.map((classItem) => {
     return (
       <a
         className={`${styles.classes__selectionBtn} ${
