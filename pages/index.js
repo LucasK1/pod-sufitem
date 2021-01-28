@@ -61,10 +61,10 @@ const Home = () => {
                 uczestników, dlatego pracujemy w kameralnych grupach i
                 gwarantujemy indywidualne podejście do kursanta.
                 <br />
-                <span className={styles.bold}>
+                <strong className={styles.bold}>
                   Wiek, rozmiar i płeć nie ma znaczenia - u nas poczujesz się
                   jak w domu!
-                </span>
+                </strong>
               </p>
             </div>
           </article>
@@ -133,10 +133,10 @@ const Home = () => {
               <i className="fas fa-check"></i>
               <p className={styles.equipment__desc}>
                 Specjalizujemy się w zajęciach{' '}
-                <span className={styles.bold}>pole dance i aerial hoop,</span>{' '}
+                <strong className={styles.bold}>pole dance i aerial hoop,</strong>{' '}
                 ale w naszej ofercie znajdziesz również szereg zajęć
                 uzupełniających, takich jak:
-                <ul style={{textAlign: 'left', marginLeft: '70px'}}>
+                <ul className={styles.equipment__list}>
                   <li>Pole Choreo</li>
                   <li>Acro Pole</li>
                   <li>Spinning Pole</li>
@@ -163,7 +163,7 @@ const Home = () => {
               <i className="fas fa-check"></i>
               <p className={styles.equipment__desc}>
                 Bezpieczeństwo zapewniają certyfikowane materace asekuracyjne o
-                wielkości 160cmx160cm i grubości 15 cm.{' '}
+                wielkości 160cmx160cm i grubości 15 cm.
               </p>
             </div>
           </div>
