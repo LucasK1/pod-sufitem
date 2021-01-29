@@ -18,20 +18,40 @@
 }
 
 .tooltipBox {
+  position: relative;
   text-align: center;
-  padding: 15px;
   width: 300px;
-  height: 150px;
-  border-radius: 20px;
-  background-color: darkgrey;
-  &::after {
-    content: "";
-    position: absolute;
-    top: -20px;
-    left: 15%;
-    margin-left: -10px;
-    border-width: 10px;
-    border-style: solid;
-    border-color: transparent transparent darkgrey transparent;
-  }
+  height: 175px;
+  background-color: $font-secondary;
+}
+
+.tooltipArrowLeft::after {
+  content: "";
+  position: absolute;
+  top: 45%;
+  right: 100%;
+  margin-top: -10px;
+  border-width: 10px;
+  border-style: solid;
+  border-color: transparent $font-secondary transparent transparent;
+}
+
+.tooltipArrowRight::after {
+  content: "";
+  position: absolute;
+  top: 45%;
+  left: 100%;
+  margin-top: -10px;
+  border-width: 10px;
+  border-style: solid;
+  border-color: transparent transparent transparent $font-secondary;
+}
+
+.descList {
+  list-style: square;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  text-align: left;
 }

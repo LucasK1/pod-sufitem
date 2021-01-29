@@ -15,7 +15,13 @@ const Prices = () => {
           </h3>
           <ul className={styles.content__priceList}>
             {prices.poleAerial.map(({ id, name, price, desc }) => (
-              <PriceItem key={id} name={name} price={price} desc={desc} />
+              <PriceItem
+                key={id}
+                name={name}
+                price={price}
+                desc={desc}
+                tippyPlacement="right"
+              />
             ))}
           </ul>
         </div>
@@ -23,7 +29,13 @@ const Prices = () => {
           <h3 className={styles.content__sectionTitle}>Fitness</h3>
           <ul className={styles.content__priceList}>
             {prices.fitness.map(({ id, name, price, desc }) => (
-              <PriceItem key={id} name={name} price={price} desc={desc} />
+              <PriceItem
+                key={id}
+                name={name}
+                price={price}
+                desc={desc}
+                tippyPlacement="left"
+              />
             ))}
           </ul>
         </div>
@@ -31,7 +43,13 @@ const Prices = () => {
           <h3 className={styles.content__sectionTitle}>Mix</h3>
           <ul className={styles.content__priceList}>
             {prices.mix.map(({ id, name, price, desc }) => (
-              <PriceItem key={id} name={name} price={price} desc={desc} />
+              <PriceItem
+                key={id}
+                name={name}
+                price={price}
+                desc={desc}
+                tippyPlacement="right"
+              />
             ))}
           </ul>
         </div>
@@ -39,7 +57,13 @@ const Prices = () => {
           <h3 className={styles.content__sectionTitle}>Wynajem sali</h3>
           <ul className={styles.content__priceList}>
             {prices.rent.map(({ id, name, price, desc }) => (
-              <PriceItem key={id} name={name} price={price} desc={desc} />
+              <PriceItem
+                key={id}
+                name={name}
+                price={price}
+                desc={desc}
+                tippyPlacement="left"
+              />
             ))}
           </ul>
         </div>

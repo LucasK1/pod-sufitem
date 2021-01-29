@@ -3,18 +3,37 @@ import React from 'react';
 
 import styles from './PriceItem.module.scss';
 
-const PriceItem = ({ name, price, desc }) => {
+const PriceItem = ({ name, price, desc, tippyPlacement }) => {
+  desc = desc.split('. ');
+  desc.map((item, index) => {
+    if (index < desc.length - 1) {
+      return `${item}.`;
+    } else {
+      return item;
+    }
+  });
+
   return (
     <>
       <li className={styles.priceItem}>
         <Tippy
           render={(attrs) => (
-            <div className={styles.tooltipBox} {...attrs}>
-              {desc}
+            <div
+              className={`${styles.tooltipBox} ${
+                tippyPlacement === 'right'
+                  ? styles.tooltipArrowLeft
+                  : styles.tooltipArrowRight
+              }`}
+              {...attrs}>
+              <ul className={styles.descList}>
+                {desc.map((item) => (
+                  <li>{item}</li>
+                ))}
+              </ul>
             </div>
           )}
-          placement="bottom-start"
-          delay={[50, 200]}>
+          placement={tippyPlacement}
+          delay={[50, 150]}>
           <span tabIndex="0" className={styles.priceItem__name}>
             {name}
           </span>
