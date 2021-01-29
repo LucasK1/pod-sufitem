@@ -7,36 +7,59 @@ import styles from './Navbar.module.scss';
 const Navbar = () => {
   const [burgerActive, setBurgerActive] = useState(false);
   const [navlistActive, setNavlistActive] = useState(false);
+
   const toggleMenu = () => {
     setBurgerActive(!burgerActive);
     setNavlistActive(!navlistActive);
   };
 
-  const navItems = {
-    Zajęcia: '/#zajecia',
-    Instruktorki: '/#instruktorki',
-    Cennik: '/#cennik',
-    Galeria: '/galeria',
-    Zapisy: 'https://app.fitssey.com/podsufitem/frontoffice',
-  };
+  const navItems = [
+    {
+      id: 'classes',
+      name: 'Zajęcia',
+      url: '/#zajecia',
+      isLink: true,
+    },
+    {
+      id: 'teachers',
+      name: 'Instruktorki',
+      url: '/#instruktorki',
+      isLink: true,
+    },
+    {
+      id: 'prices',
+      name: 'Cennik',
+      url: '/#cennik',
+      isLink: true,
+    },
+    {
+      id: 'gallery',
+      name: 'Galeria',
+      url: '/galeria',
+      isLink: true,
+    },
+    {
+      id: 'booking',
+      name: 'Zapisy',
+      url: 'https://app.fitssey.com/podsufitem/frontoffice',
+      isLink: false,
+    },
+  ];
 
-  const navListItems = Object.keys(navItems).map((item) => (
+  const navListItems = navItems.map((item) => (
     <li
       className={`${styles.navbar__navitem} ${
-        item === 'Zapisy' ? styles.navbar__navitem_red : ''
+        !item.isLink ? styles.navbar__navitem_red : ''
       }`}
       onClick={toggleMenu}
-      key={item}>
-      {item !== 'Grafik' ? (
-        <Link
-          href={navItems[item]}
-          className={styles.navbar__navlink}
-          target="_blank">
-          {item}
+      key={item.id}>
+      {item.isLink ? (
+        <Link href={item.url} className={styles.navbar__navlink}>
+          {item.name}
         </Link>
       ) : (
-        <a href={navItems[item]} target="_blank">
-          {item}
+        <a href={item.url} target="_blank">
+          {item.name}
         </a>
       )}
     </li>
@@ -72,11 +95,13 @@ const Navbar = () => {
           </span>
         </button>
       </nav>
-      <style jsx>{`
-        body {
-          overflow-x: hidden;
-        }
-      `}</style>
+      <style jsx>
+        {`
+          body {
+            overflow-x: hidden;
+          }
+        `}
+      </style>
     </header>
   );
 };
