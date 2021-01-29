@@ -4,9 +4,9 @@ import React from 'react';
 import styles from './PriceItem.module.scss';
 
 const PriceItem = ({ name, price, desc, tippyPlacement }) => {
-  desc = desc.split('. ');
-  desc.map((item, index) => {
-    if (index < desc.length - 1) {
+  let splitDesc = desc.split('. ');
+  splitDesc = splitDesc.map((item, index) => {
+    if (index < splitDesc.length - 1) {
       return `${item}.`;
     } else {
       return item;
@@ -26,7 +26,7 @@ const PriceItem = ({ name, price, desc, tippyPlacement }) => {
               }`}
               {...attrs}>
               <ul className={styles.descList}>
-                {desc.map((item) => (
+                {splitDesc.map((item) => (
                   <li>{item}</li>
                 ))}
               </ul>
