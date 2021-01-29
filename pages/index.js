@@ -1,76 +1,14 @@
-import { useState } from 'react';
+import React from 'react';
 import Head from 'next/head';
 
 import Prices from '@/components/Prices/Prices';
 import InfoBox from '@/components/InfoBox/InfoBox';
+import Teachers from '@/components/Teachers/Teachers';
+import Classes from '@/components/Classes/Classes';
 
 import styles from '@/styles/landingPage.module.scss';
-import Teachers from '@/components/Teachers/Teachers';
 
 const Home = () => {
-  const [activeClass, setActiveClass] = useState({
-    id: 'poleDance',
-    name: 'Pole Dance',
-    desc: <p>Tańcowanie na polu</p>,
-  });
-
-  const classes = [
-    {
-      id: 'poleDance',
-      name: 'Pole Dance',
-      desc: <p>Tańcowanie na polu</p>,
-    },
-    {
-      id: 'acroPole',
-      name: 'Acro Pole',
-      desc: <p>Duże pole</p>,
-    },
-    {
-      id: 'aerialHoop',
-      name: 'Aerial Hoop',
-      desc: <p>Skakanie powietrzne</p>,
-    },
-    {
-      id: 'spineYoga',
-      name: 'Joga kręgosłupa',
-      desc: <p>Wyrównanie Ćakramów</p>,
-    },
-    {
-      id: 'stretching',
-      name: 'Stretching',
-      desc: <p>Gumkowanie majtek</p>,
-    },
-    {
-      id: 'mobility',
-      name: 'Trening mobilności',
-      desc: <p>Kategoria B</p>,
-    },
-    {
-      id: 'pilates',
-      name: 'Pilates',
-      desc: <p>Sokrates</p>,
-    },
-  ];
-
-  const classClickHandler = (classItem) => {
-    setActiveClass(classItem);
-  };
-
-  const classesSelectionBtns = classes.map((classItem) => {
-    return (
-      <a
-        className={`${styles.classes__selectionBtn} ${
-          activeClass.id === classItem.id
-            ? styles.classes__selectionBtn_isActive
-            : ''
-        }`}
-        onClick={() => classClickHandler(classItem)}
-        key={classItem.id}>
-        {classItem.name}
-      </a>
-    );
-  });
-
   return (
     <>
       <Head>
@@ -167,7 +105,9 @@ const Home = () => {
               <i className="fas fa-check"></i>
               <p className={styles.equipment__desc}>
                 Specjalizujemy się w zajęciach{' '}
-                <strong className={styles.bold}>pole dance i aerial hoop,</strong>{' '}
+                <strong className={styles.bold}>
+                  pole dance i aerial hoop,
+                </strong>{' '}
                 ale w naszej ofercie znajdziesz również szereg zajęć
                 uzupełniających, takich jak:
                 <ul className={styles.equipment__list}>
@@ -202,19 +142,9 @@ const Home = () => {
             </div>
           </div>
         </div>
-        <div className={styles.classes__container}>
-          <div className={styles.scrollHelper} id="zajecia"></div>
-          <div className={styles.classes__content}>
-            <section className={styles.classes}>
-              <aside className={styles.classes__selection}>
-                {classesSelectionBtns}
-              </aside>
-              <div className={styles.classes__desc}>
-                {activeClass ? activeClass.desc : ''}
-              </div>
-            </section>
-          </div>
-        </div>
+        <InfoBox id="zajecia">
+          <Classes />
+        </InfoBox>
         <InfoBox title="Instruktorki" id="instruktorki">
           <Teachers />
         </InfoBox>
@@ -222,6 +152,7 @@ const Home = () => {
           <Prices />
         </InfoBox>
       </div>
+      
       <style jsx>{`
         @import './styles/variables';
         /* Styling the fontawesome icons */

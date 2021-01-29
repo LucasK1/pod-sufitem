@@ -178,63 +178,6 @@
   }
 }
 
-.classes__container {
-  position: relative;
-  width: 100vw;
-  height: 89vh;
-  padding: 20px 0;
-}
-
-.classes__content {
-  width: 100%;
-  height: 100%;
-  max-width: 1200px;
-  margin: 0 auto;
-}
-
-.classes {
-  width: 100%;
-  height: 100%;
-  display: grid;
-  grid-template-columns: 1.5fr 3fr;
-  gap: 20px;
-
-  &__selection {
-    border-radius: 20px;
-    padding: 30px;
-    background-color: $content-background;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    align-items: left;
-    text-align: left;
-
-    &Btn {
-      line-height: 38px;
-      font-size: 24px;
-      font-weight: 600;
-      text-align: left;
-      border-radius: 10px;
-      padding: 10px;
-      transition: background-color 100ms linear;
-
-      &:hover {
-        cursor: pointer;
-        background-color: #fff;
-      }
-
-      &_isActive {
-        background-color: #fff;
-      }
-    }
-  }
-
-  &__desc {
-    border-radius: 20px;
-    background-color: $content-background;
-  }
-}
-
 @include for-phone-only {
   .main {
     height: 100%;
