@@ -33,9 +33,13 @@ const PriceItem = ({ name, price, desc, tippyPlacement }) => {
           )}
           placement={tippyPlacement}
           delay={[50, 150]}>
-          <span tabIndex="0" className={styles.priceItem__name}>
+          <a
+            href="https://app.fitssey.com/podsufitem/frontoffice/pricing/cards"
+            target="_blank"
+            tabIndex="0"
+            className={styles.priceItem__name}>
             {name}
-          </span>
+          </a>
         </Tippy>
         <span>{price}zł</span>
       </li>
