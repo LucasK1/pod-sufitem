@@ -1,0 +1,29 @@
+@import "./styles/variables";
+
+.modal {
+  position: fixed;
+  width: 70%;
+  max-width: $max-width;
+  top: 25%;
+  left: 15%;
+  margin: 0 auto;
+  padding: 20px;
+  border: 1px solid #ccc;
+  background-color: white;
+  opacity: 0;
+  transition: all 0.3s ease-out;
+  visibility: hidden;
+  z-index: 500;
+
+  &_show {
+    visibility: visible;
+    opacity: 1;
+  }
+}
+
+@media (min-width: 600px) {
+  .modal {
+    width: 840px;
+    left: calc(50% - 420px);
+  }
+}

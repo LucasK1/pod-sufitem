@@ -6,7 +6,8 @@
   padding-top: 30px;
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-
+  // align-content: space-evenly;
+  // gap: 250px 0;
 }
 
 .teacher {
@@ -15,23 +16,45 @@
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
-    height: 250px;
-    width: 250px;
+    height: 280px;
+    width: 280px;
   }
 
-  &__photo {
+  &__thumbnail {
     height: 70%;
     width: 70%;
     transition: transform 200ms linear, box-shadow 200ms linear;
     &:hover {
       cursor: pointer;
       transform: scale(1.1);
-      box-shadow: 0 0 20px black;
+      box-shadow: 0 0 20px #000;
     }
   }
 
   &__name {
-    font-size: 1.2rem;
+    font-size: 1.4rem;
     line-height: 1rem;
+  }
+}
+
+.modal {
+  &__container {
+    display: flex;
+    gap: 20px;
+  }
+  &__photo {
+    width: 300px;
+    height: 300px;
+  }
+  &__content {
+    display: inline-block;
+  }
+  &__title {
+    font-size: 1.8rem;
+    line-height: 1rem;
+  }
+  &__desc {
+    text-align: left;
+    line-height: 1.3rem;
   }
 }
