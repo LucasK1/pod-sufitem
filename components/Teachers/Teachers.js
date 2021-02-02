@@ -29,16 +29,25 @@ const Teachers = () => {
           <img
             src="/static/images/portrait.jpeg"
             alt="Picture of a doggo"
-            className={styles.teacher__photo}
+            className={styles.teacher__thumbnail}
           />
           <span className={styles.teacher__name}>{teacher.name}</span>
         </div>
       ))}
       <Modal show={modalOpen} closeModal={closeModal}>
-        <h4 className={styles.modal__title}>{selectedTeacher.name}</h4>
-        <p
-          className={styles.modal__desc}
-          dangerouslySetInnerHTML={{ __html: selectedTeacher.desc }}></p>
+        <div className={styles.modal__container}>
+          <img
+            src="/static/images/portrait.jpeg"
+            alt="doggo"
+            className={styles.modal__photo}
+          />
+          <aside className={styles.modal__content}>
+            <h4 className={styles.modal__title}>{selectedTeacher.name}</h4>
+            <p
+              className={styles.modal__desc}
+              dangerouslySetInnerHTML={{ __html: selectedTeacher.desc }}></p>
+          </aside>
+        </div>
       </Modal>
     </section>
   );

@@ -18,7 +18,7 @@
     width: 250px;
   }
 
-  &__photo {
+  &__thumbnail {
     height: 70%;
     width: 70%;
     transition: transform 200ms linear, box-shadow 200ms linear;
@@ -36,6 +36,17 @@
 }
 
 .modal {
+  &__container {
+    display: flex;
+    gap: 20px;
+  }
+  &__photo {
+    width: 300px;
+    height: 300px;
+  }
+  &__content {
+    display: inline-block;
+  }
   &__title {
     font-size: 1.8rem;
     line-height: 1rem;
