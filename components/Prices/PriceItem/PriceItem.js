@@ -4,7 +4,7 @@ import React from 'react';
 import styles from './PriceItem.module.scss';
 
 const PriceItem = ({ name, price, desc, tippyPlacement }) => {
-  let splitDesc = desc.split('. ').map((item, index, array) => {
+  const splitDesc = desc.split('. ').map((item, index, array) => {
     if (index < array.length - 1) {
       return `${item}.`;
     } else {
