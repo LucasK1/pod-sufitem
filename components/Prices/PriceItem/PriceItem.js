@@ -4,13 +4,11 @@ import React from 'react';
 import styles from './PriceItem.module.scss';
 
 const PriceItem = ({ name, price, desc, tippyPlacement }) => {
-  const splitDesc = desc.split('. ').map((item, index, array) => {
-    if (index < array.length - 1) {
-      return `${item}.`;
-    } else {
-      return item;
-    }
-  });
+  const splitDesc = desc
+    .split('. ')
+    .map((item, index, array) =>
+      index < array.length - 1 ? `${item}.` : item
+    );
 
   return (
     <>
