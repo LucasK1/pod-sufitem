@@ -1,16 +1,19 @@
+@import "./styles/variables";
 
 .modal {
   position: fixed;
-  z-index: 500;
-  background-color: white;
   width: 70%;
-  border: 1px solid #ccc;
-  padding: 20px;
+  max-width: $max-width;
+  top: 25%;
   left: 15%;
-  top: 30%;
+  margin: 0 auto;
+  padding: 20px;
+  border: 1px solid #ccc;
+  background-color: white;
+  opacity: 0;
   transition: all 0.3s ease-out;
   visibility: hidden;
-  opacity: 0;
+  z-index: 500;
 
   &_show {
     visibility: visible;
@@ -20,7 +23,7 @@
 
 @media (min-width: 600px) {
   .modal {
-    width: 70%;
-    left: 15%;
+    width: 840px;
+    left: calc(50% - 420px);
   }
 }

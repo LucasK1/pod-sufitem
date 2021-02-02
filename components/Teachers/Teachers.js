@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 
 import Modal from '../UI/Modal/Modal';
 
@@ -8,8 +8,14 @@ import teachers from './teachers.json';
 const Teachers = () => {
   const [modalOpen, setModalOpen] = useState(false);
   const [selectedTeacher, setSelectedTeacher] = useState({});
+  const [_document, set_document] = useState(null);
+
+  useEffect(() => {
+    set_document(document);
+  }, []);
 
   function openModal(teacher) {
+    _document.body.style.overflowY = 'hidden';
     setSelectedTeacher(teacher);
     setModalOpen(true);
   }

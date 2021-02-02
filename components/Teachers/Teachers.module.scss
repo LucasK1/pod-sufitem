@@ -6,6 +6,8 @@
   padding-top: 30px;
   display: grid;
   grid-template-columns: repeat(4, 1fr);
+  // align-content: space-evenly;
+  // gap: 250px 0;
 }
 
 .teacher {
@@ -14,8 +16,8 @@
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
-    height: 250px;
-    width: 250px;
+    height: 280px;
+    width: 280px;
   }
 
   &__thumbnail {
@@ -25,12 +27,12 @@
     &:hover {
       cursor: pointer;
       transform: scale(1.1);
-      box-shadow: 0 0 20px black;
+      box-shadow: 0 0 20px #000;
     }
   }
 
   &__name {
-    font-size: 1.2rem;
+    font-size: 1.4rem;
     line-height: 1rem;
   }
 }

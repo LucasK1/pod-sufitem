@@ -28,7 +28,7 @@
 .content {
   height: 85vh;
   width: 90%;
-  max-width: 1200px;
+  max-width: $max-width;
   padding: 20px;
   &_border {
     border: 5px solid $font-secondary;

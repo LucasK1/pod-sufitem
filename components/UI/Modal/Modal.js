@@ -7,9 +7,10 @@ const Modal = (props) => {
   return (
     <>
       <Overlay show={props.show} clicked={props.closeModal} />
-      <div className={`${styles.modal} ${props.show ? styles.modal_show : ''}`}>
-        {props.children}
-      </div>
+        <div
+          className={`${styles.modal} ${props.show ? styles.modal_show : ''}`}>
+          {props.children}
+        </div>
     </>
   );
 };
