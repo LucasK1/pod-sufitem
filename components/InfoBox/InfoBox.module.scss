@@ -5,9 +5,9 @@
   position: relative;
   text-align: center;
   width: 100vw;
-  height: 90vh;
+  height: 89vh;
   overflow-y: hidden;
-  display: flex;
+  display: block;
   justify-content: center;
   align-items: center;
   &_black {
@@ -18,7 +18,7 @@
 
 .scrollHelper {
   position: absolute;
-  top: -150px;
+  top: -11vh;
 }
 
 .title {
@@ -36,9 +36,9 @@
 }
 
 @include for-phone-only {
-  .content {
+  .container {
     width: 95vw;
-    height: 250vh;
+    height: 200vh;
     margin: 20px auto;
     padding: 30px;
   }

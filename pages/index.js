@@ -155,6 +155,7 @@ const Home = () => {
       
       <style jsx>{`
         @import './styles/variables';
+        @import './styles/mediaQuery';
         /* Styling the fontawesome icons */
         .fas,
         .fab {
@@ -169,6 +170,11 @@ const Home = () => {
         }
         .fa-check {
           transform: scale(5);
+        }
+        @include for-phone-only {
+          .fa-check {
+            padding: 0;
+          }
         }
       `}</style>
     </>
