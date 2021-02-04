@@ -181,26 +181,29 @@
 
 @include for-phone-only {
   .main {
-    height: 200vh;
+    height: 160vh;
   }
   .lead {
     &__text {
-      text-align: center;
-      display: flex;
-      flex-direction: column;
+   height: 50%;
     }
     &__title {
       margin: 0;
       font-size: 2.2rem;
+      position: relative;
     }
     &__content {
-      display: grid;
-      grid-template-columns: 100%;
-      grid-template-rows: repeat(2, 1fr);
+      padding: 0;
+      top: 400px;
+      position: absolute;
       text-align: left;
       font-size: 1rem;
-      gap: 20px;
       line-height: 1.5rem;
+      &_container {
+        height: 50%;
+        grid-template-columns: repeat(2, 1fr);
+        align-items: end;
+      }
     }
   }
 

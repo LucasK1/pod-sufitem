@@ -61,27 +61,28 @@
 
 @include for-phone-only {
   .container {
-    height: 200vh;
+    height: 100%;
+    width: 100%;
     padding-top: 30px;
     display: grid;
-    grid-template-columns: 1fr;
+    grid-template-columns: 1fr 1fr;
     // align-content: space-evenly;
     // gap: 250px 0;
   }
-  
+
   .teacher {
     &__container {
       display: flex;
       flex-direction: column;
       justify-content: space-around;
       align-items: center;
-      height: 280px;
-      width: 280px;
+      height: 110px;
+      width: 110px;
     }
-  
+
     &__thumbnail {
-      height: 70%;
-      width: 70%;
+      height: 60%;
+      width: 60%;
       transition: transform 200ms linear, box-shadow 200ms linear;
       &:hover {
         cursor: pointer;
@@ -89,9 +90,9 @@
         box-shadow: 0 0 20px #000;
       }
     }
-  
+
     &__name {
-      font-size: 1.4rem;
+      font-size: 1.2rem;
       line-height: 1rem;
     }
   }
