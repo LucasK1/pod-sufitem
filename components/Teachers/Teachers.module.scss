@@ -3,9 +3,11 @@
 
 .container {
   height: 100%;
-  padding-top: 30px;
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  width: 100%;
+  padding: 50px 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
 }
 
 .teacher {
@@ -14,8 +16,9 @@
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
-    height: 280px;
-    width: 280px;
+    height: 270px;
+    width: 270px;
+    margin: 0;
   }
 
   &__thumbnail {
@@ -62,8 +65,10 @@
     height: 100%;
     width: 100%;
     padding-top: 30px;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
+    justify-content: space-around;
+    // display: grid;
+    // display: flex;
+    // grid-template-columns: 1fr 1fr;
   }
 
   .teacher {
@@ -72,8 +77,9 @@
       flex-direction: column;
       justify-content: space-around;
       align-items: center;
-      height: 110px;
-      width: 110px;
+      height: 150px;
+      width: 150px;
+      margin-bottom: 10px;
     }
 
     &__thumbnail {

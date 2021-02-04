@@ -28,10 +28,9 @@
 
 .content {
   height: 85vh;
-  width: 90%;
+  width: 100%;
   margin: 0 auto;
   max-width: $max-width;
-  padding: 20px;
   &_border {
     border: 5px solid $font-secondary;
   }
@@ -40,11 +39,11 @@
 @include for-phone-only {
   .container {
     width: 100vw;
-    height: 100vh;
+    height: 110vh;
     margin: 20px auto;
     margin-bottom: 0;
     &__prices {
-      height: 205vh;
+      height: 230vh;
     }
   }
   .content {
