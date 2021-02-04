@@ -49,13 +49,15 @@ const Home = () => {
                 <address>
                   <ul className={styles.contact__tel_list}>
                     <li className={styles.contact__tel_listItem}>
-                      <a href="tel:+48799079809">
+                      <a href="tel:+48799079809" aria-hidden="true">
                         <i className="fas fa-phone-alt"></i>
                       </a>
                       <a href="tel:+48799079809">+48 799 079 809</a>
                     </li>
                     <li className={styles.contact__tel_listItem}>
-                      <a href="mailto:zapisy.podsufitem@gmail.com">
+                      <a
+                        href="mailto:zapisy.podsufitem@gmail.com"
+                        aria-hidden="true">
                         <i className="fas fa-envelope"></i>
                       </a>
                       <a href="mailto:zapisy.podsufitem@gmail.com">
@@ -73,12 +75,16 @@ const Home = () => {
                 Znajdź nas w sieci
               </span>
               <div className={styles.contact__column_content}>
-                <a href="https://www.facebook.com/podsufitem" target="_blank">
+                <a
+                  href="https://www.facebook.com/podsufitem"
+                  target="_blank"
+                  aria-label="Facebook link">
                   <i className="fab fa-facebook-square"></i>
                 </a>
                 <a
                   href="https://www.instagram.com/pod.sufitem/"
-                  target="_blank">
+                  target="_blank"
+                  aria-label="Instagram link">
                   <i className="fab fa-instagram-square"></i>
                 </a>
               </div>
@@ -89,7 +95,9 @@ const Home = () => {
               <span className={styles.contact__column_title}>Odwiedź nas</span>
               <div className={styles.contact__column_content}>
                 <a href="https://goo.gl/maps/vRQJRCQE7JP4J6CWA" target="_blank">
-                  <i className="fas fa-map-marker-alt"></i>
+                  <i
+                    className="fas fa-map-marker-alt"
+                    alt="Google Maps Address Link"></i>
                 </a>
                 <address>
                   <p>Skoczylasa 10/12 lok. 81</p>
@@ -104,10 +112,10 @@ const Home = () => {
             <div className={styles.equipment__item}>
               <i className="fas fa-check"></i>
               <p className={styles.equipment__desc}>
-                Specjalizujemy się w zajęciach{' '}
+                Specjalizujemy się w zajęciach
                 <strong className={styles.bold}>
-                  pole dance i aerial hoop,
-                </strong>{' '}
+                  pole dance i aerial hoop,{' '}
+                </strong>
                 ale w naszej ofercie znajdziesz również szereg zajęć
                 uzupełniających, takich jak:
                 <ul className={styles.equipment__list}>
@@ -152,7 +160,7 @@ const Home = () => {
           <Prices />
         </InfoBox>
       </div>
-      
+
       <style jsx>{`
         @import './styles/variables';
         @import './styles/mediaQuery';

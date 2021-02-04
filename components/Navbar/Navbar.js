@@ -54,7 +54,7 @@ const Navbar = () => {
       onClick={toggleMenu}
       key={item.id}>
       {item.isLink ? (
-        <Link href={item.url} className={styles.navbar__navlink}>
+        <Link href={item.url} className={styles.navbar__navlink} tabIndex="0">
           {item.name}
         </Link>
       ) : (

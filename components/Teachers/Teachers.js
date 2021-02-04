@@ -14,31 +14,44 @@ const Teachers = () => {
     set_document(document);
   }, []);
 
-  function openModal(teacher) {
+  const openModal = (teacher) => {
     _document.body.style.overflowY = 'hidden';
     setSelectedTeacher(teacher);
     setModalOpen(true);
-  }
+  };
 
-  function closeModal() {
-    setSelectedTeacher('');
+  const closeModal = () => {
+    setSelectedTeacher({});
     setModalOpen(false);
-  }
+  };
+
+  const handleKeyPress = (e, teacher) => {
+    if (e.keyCode === 13) {
+      openModal(teacher);
+    }
+    if (e.keyCode === 27) {
+      closeModal();
+    }
+  };
 
   return (
     <section className={styles.container}>
       {teachers.map((teacher) => (
-        <div
+        <figure
           className={styles.teacher__container}
           key={teacher.name}
-          onClick={() => openModal(teacher)}>
+          onClick={() => openModal(teacher)}
+          onKeyDown={(e) => handleKeyPress(e, teacher)}
+          tabIndex="0">
           <img
             src="/static/images/portrait.jpeg"
             alt="Picture of a doggo"
             className={styles.teacher__thumbnail}
           />
-          <span className={styles.teacher__name}>{teacher.name}</span>
-        </div>
+          <figcaption className={styles.teacher__name}>
+            {teacher.name}
+          </figcaption>
+        </figure>
       ))}
       <Modal show={modalOpen} closeModal={closeModal}>
         <div className={styles.modal__container}>

@@ -25,6 +25,7 @@
 }
 .navbar__logo {
   margin: 10px 0 0 20px;
+  // transform: scale(0.8);
   &:hover {
     cursor: pointer;
   }
@@ -199,5 +200,11 @@
 @include for-tablet-landscape {
   .navbar__navlist {
     width: 65%;
+  }
+}
+
+@include for-desktop {
+  .navbar__logo {
+    transform: scale(0.8);
   }
 }
