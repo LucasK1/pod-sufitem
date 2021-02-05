@@ -1,16 +1,18 @@
 import React from 'react';
+
 import Overlay from '../Overlay/Overlay';
 
 import styles from './Modal.module.scss';
 
-const Modal = (props) => {
+const Modal = ({ show, closeModal, children }) => {
   return (
     <>
-      <Overlay show={props.show} clicked={props.closeModal} />
-        <div
-          className={`${styles.modal} ${props.show ? styles.modal_show : ''}`}>
-          {props.children}
-        </div>
+      <Overlay show={show} clicked={closeModal} />
+      <div
+        className={`${styles.modal} ${show ? styles.modal_show : ''}`}
+        onClick={closeModal}>
+        {children}
+      </div>
     </>
   );
 };
