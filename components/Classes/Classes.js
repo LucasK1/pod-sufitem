@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 
 import styles from './Classes.module.scss';
 
@@ -8,6 +8,11 @@ const Classes = () => {
     name: 'Pole Dance',
     desc: <p>Tańcowanie na polu</p>,
   });
+  const [windowWidth, setWindowWidth] = useState(1800);
+
+  useEffect(() => {
+    setWindowWidth(window.innerWidth);
+  }, []);
 
   const classes = [
     {
@@ -69,7 +74,8 @@ const Classes = () => {
 
   return (
     <div className={styles.classes__content}>
-      <section className={styles.classes}>
+      <section
+        className={styles.classes}>
         <aside className={styles.classes__selection}>
           {classesSelectionBtns}
         </aside>
