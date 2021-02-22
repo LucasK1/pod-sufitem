@@ -3,11 +3,11 @@
 
 .container {
   height: 100%;
-  padding-top: 30px;
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  // align-content: space-evenly;
-  // gap: 250px 0;
+  width: 100%;
+  padding: 50px 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
 }
 
 .teacher {
@@ -16,8 +16,9 @@
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
-    height: 280px;
-    width: 280px;
+    height: 270px;
+    width: 270px;
+    margin: 0;
   }
 
   &__thumbnail {
@@ -58,3 +59,70 @@
     line-height: 1.3rem;
   }
 }
+
+@include for-phone-only {
+  .container {
+    height: 100%;
+    width: 100%;
+    padding-top: 30px;
+    justify-content: space-around;
+  }
+
+  .teacher {
+    &__container {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+      align-items: center;
+      height: 150px;
+      width: 150px;
+      margin-bottom: 10px;
+    }
+
+    &__thumbnail {
+      height: 60%;
+      width: 60%;
+      transition: transform 200ms linear, box-shadow 200ms linear;
+      &:hover {
+        cursor: pointer;
+        transform: scale(1.1);
+        box-shadow: 0 0 20px #000;
+      }
+    }
+
+    &__name {
+      font-size: 1.2rem;
+      line-height: 1rem;
+    }
+  }
+  .modal {
+    &__container {
+      display: block;
+    }
+    &__photo {
+      height: 250px;
+      width: 250px;
+    }
+    &__content {
+      display: block;
+    }
+    &__title {
+      font-size: 1.3rem;
+      line-height: 1.3rem;
+    }
+    &__desc {
+      text-align: left;
+      line-height: 1.3rem;
+    }
+  }
+}
+
+@include for-tablet-portrait {
+  .modal {
+    &__photo {
+      width: 150px;
+      height: 150px;
+    }
+  }
+}
+

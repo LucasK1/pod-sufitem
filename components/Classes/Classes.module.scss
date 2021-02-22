@@ -23,8 +23,8 @@
     text-align: left;
 
     &Btn {
-      line-height: 38px;
-      font-size: 24px;
+      line-height: 2rem;
+      font-size: 1.5rem;
       font-weight: 600;
       text-align: left;
       border-radius: 10px;
@@ -45,5 +45,19 @@
   &__desc {
     border-radius: 20px;
     background-color: $content-background;
+  }
+}
+
+@include for-phone-only {
+  .classes {
+    grid-template-columns: 100%;
+    grid-template-rows: 1fr 1fr;
+
+    &__selection {
+      &Btn {
+        font-size: 1.3rem;
+        line-height: 1rem;
+      }
+    }
   }
 }

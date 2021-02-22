@@ -47,7 +47,7 @@ const Classes = () => {
     },
   ];
 
-  const classClickHandler = (classItem) => {
+  function classClickHandler(classItem) {
     setActiveClass(classItem);
   };
 
@@ -60,6 +60,7 @@ const Classes = () => {
             : ''
         }`}
         onClick={() => classClickHandler(classItem)}
+        tabIndex="0"
         key={classItem.id}>
         {classItem.name}
       </a>

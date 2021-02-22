@@ -8,7 +8,7 @@ const Navbar = () => {
   const [burgerActive, setBurgerActive] = useState(false);
   const [navlistActive, setNavlistActive] = useState(false);
 
-  const toggleMenu = () => {
+  function toggleMenu() {
     setBurgerActive(!burgerActive);
     setNavlistActive(!navlistActive);
   };
@@ -54,7 +54,7 @@ const Navbar = () => {
       onClick={toggleMenu}
       key={item.id}>
       {item.isLink ? (
-        <Link href={item.url} className={styles.navbar__navlink}>
+        <Link href={item.url} className={styles.navbar__navlink} tabIndex="0">
           {item.name}
         </Link>
       ) : (
