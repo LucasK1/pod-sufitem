@@ -11,7 +11,7 @@ const InfoBox = ({ id, title, black, border, prices, children }) => {
       <div aria-hidden="true" className={styles.scrollHelper} id={id}></div>
       <div
         className={`${styles.content} ${border ? styles.content_border : ''}`}>
-        {title ? <h1 className={styles.title}>{title}</h1> : ''}
+        {!!title && <h1 className={styles.title}>{title}</h1>}
         {children}
       </div>
     </div>
