@@ -14,25 +14,25 @@ const Teachers = () => {
     set_document(document);
   }, []);
 
-  const openModal = (teacher) => {
+  function openModal(teacher) {
     _document.body.style.overflowY = 'hidden';
     setSelectedTeacher(teacher);
     setModalOpen(true);
-  };
+  }
 
-  const closeModal = () => {
+  function closeModal() {
     setSelectedTeacher({});
     setModalOpen(false);
-  };
+  }
 
-  const handleKeyPress = (e, teacher) => {
+  function handleKeyPress(e, teacher) {
     if (e.keyCode === 13) {
       openModal(teacher);
     }
     if (e.keyCode === 27) {
       closeModal();
     }
-  };
+  }
 
   return (
     <section className={styles.container}>

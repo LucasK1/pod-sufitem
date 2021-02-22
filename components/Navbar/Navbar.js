@@ -8,7 +8,7 @@ const Navbar = () => {
   const [burgerActive, setBurgerActive] = useState(false);
   const [navlistActive, setNavlistActive] = useState(false);
 
-  const toggleMenu = () => {
+  function toggleMenu() {
     setBurgerActive(!burgerActive);
     setNavlistActive(!navlistActive);
   };

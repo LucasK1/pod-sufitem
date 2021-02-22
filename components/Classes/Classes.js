@@ -47,7 +47,7 @@ const Classes = () => {
     },
   ];
 
-  const classClickHandler = (classItem) => {
+  function classClickHandler(classItem) {
     setActiveClass(classItem);
   };
 

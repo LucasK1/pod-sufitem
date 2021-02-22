@@ -4,11 +4,6 @@ import React, { useEffect, useState } from 'react';
 import styles from './PriceItem.module.scss';
 
 const PriceItem = ({ name, price, desc, tippyPlacement }) => {
-  const [windowWidth, setWindowWidth] = useState(1800);
-
-  useEffect(() => {
-    setWindowWidth(window.innerWidth);
-  }, []);
 
   const splitDesc = desc
     .split('. ')
@@ -29,30 +24,26 @@ const PriceItem = ({ name, price, desc, tippyPlacement }) => {
   return (
     <>
       <li className={styles.priceItem}>
-        {windowWidth >= 600 ? (
-          <Tippy
-            render={(attrs) => (
-              <div
-                className={`${styles.tooltipBox} ${
-                  tippyPlacement === 'right'
-                    ? styles.tooltipArrowLeft
-                    : styles.tooltipArrowRight
-                }`}
-                {...attrs}>
-                <ul className={styles.descList}>
-                  {splitDesc.map((item) => (
-                    <li>{item}</li>
-                  ))}
-                </ul>
-              </div>
-            )}
-            placement={tippyPlacement}
-            delay={[50, 150]}>
-            {priceLink}
-          </Tippy>
-        ) : (
-          priceLink
-        )}
+        <Tippy
+          render={(attrs) => (
+            <div
+              className={`${styles.tooltipBox} ${
+                tippyPlacement === 'right'
+                  ? styles.tooltipArrowLeft
+                  : styles.tooltipArrowRight
+              }`}
+              {...attrs}>
+              <ul className={styles.descList}>
+                {splitDesc.map((item) => (
+                  <li>{item}</li>
+                ))}
+              </ul>
+            </div>
+          )}
+          placement={tippyPlacement}
+          delay={[50, 150]}>
+          {priceLink}
+        </Tippy>
         <span>{price}zł</span>
       </li>
     </>
