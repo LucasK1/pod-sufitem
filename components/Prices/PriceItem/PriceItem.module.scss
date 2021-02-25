@@ -11,37 +11,6 @@
   }
 }
 
-// .tooltipBox {
-//   position: relative;
-//   text-align: center;
-//   width: 300px;
-//   height: 175px;
-//   padding-right: 20px;
-//   background-color: $font-secondary;
-// }
-
-// .tooltipArrowLeft::after {
-//   content: "";
-//   position: absolute;
-//   top: 45%;
-//   right: 100%;
-//   margin-top: -10px;
-//   border-width: 10px;
-//   border-style: solid;
-//   border-color: transparent $font-secondary transparent transparent;
-// }
-
-// .tooltipArrowRight::after {
-//   content: "";
-//   position: absolute;
-//   top: 45%;
-//   left: 100%;
-//   margin-top: -10px;
-//   border-width: 10px;
-//   border-style: solid;
-//   border-color: transparent transparent transparent $font-secondary;
-// }
-
 .descList {
   list-style: square;
   height: 100%;
