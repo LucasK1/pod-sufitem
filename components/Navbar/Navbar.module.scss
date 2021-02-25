@@ -30,20 +30,27 @@
   }
 }
 .navbar__navlist {
-  max-width: 700px;
-  width: 40%;
+  max-width: 800px;
+  width: 50%;
+  height: 100%;
   margin-right: 20px;
   list-style: none;
   display: flex;
   justify-content: space-between;
+  align-items: center;
 }
 .navbar__navitem {
   &_red {
-    color: rgb(211, 112, 112);
+    display: flex;
+    align-items: center;
+    background-color: $font-secondary;
+    color: $font-primary;
+    height: 100%;
+    padding: 0 15px;
   }
   &:hover {
     cursor: pointer;
-    color: $font-secondary-hover;
+    color: $font-primary-hover;
   }
 }
 
