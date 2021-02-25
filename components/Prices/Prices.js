@@ -13,6 +13,7 @@ const Prices = () => {
           <h3 className={styles.content__sectionTitle}>
             Pole Dance/Aerial Hoop
           </h3>
+          <h4>(Obowiązuje na zajęcia pole dance, acro pole, aerial)</h4>
           <ul className={styles.content__priceList}>
             {prices.poleAerial.map(({ id, name, price, desc }) => (
               <PriceItem
@@ -27,6 +28,9 @@ const Prices = () => {
         </div>
         <div className={styles.content__section}>
           <h3 className={styles.content__sectionTitle}>Fitness</h3>
+          <h4>
+            (Obowiązuje na zajęcia z wyłączeniem pole dance i aerial hoop)
+          </h4>
           <ul className={styles.content__priceList}>
             {prices.fitness.map(({ id, name, price, desc }) => (
               <PriceItem
@@ -41,6 +45,7 @@ const Prices = () => {
         </div>
         <div className={styles.content__section}>
           <h3 className={styles.content__sectionTitle}>Mix</h3>
+          <h4>(Obowiązuje na wszystkie zajęcia)</h4>
           <ul className={styles.content__priceList}>
             {prices.mix.map(({ id, name, price, desc }) => (
               <PriceItem
