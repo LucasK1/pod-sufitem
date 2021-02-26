@@ -40,7 +40,7 @@ const Navbar = () => {
     },
     {
       id: 'booking',
-      name: 'Zapisy',
+      name: 'Grafik i zapisy',
       url: 'https://app.fitssey.com/podsufitem/frontoffice',
       isLink: false,
     },
