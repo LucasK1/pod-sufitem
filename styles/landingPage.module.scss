@@ -147,7 +147,6 @@
 .equipment {
   &__container {
     width: 100vw;
-    height: 40vh;
     padding: 80px 0;
   }
   &__content {
@@ -185,7 +184,7 @@
   }
   .lead {
     &__text {
-   height: 50%;
+      height: 50%;
     }
     &__title {
       margin: 0;
