@@ -151,9 +151,7 @@ const Home = () => {
           </div>
         </div>
         <InfoBox id="zajecia">
-        {/* <section className={styles.classes}> */}
           <Classes />
-        {/* </section> */}
         </InfoBox>
         <InfoBox title="Instruktorki" id="instruktorki">
           <Teachers />

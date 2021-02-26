@@ -178,19 +178,13 @@
   }
 }
 
-.classes {
-  width: 100vw;
-  height: 89vh;
-
-}
-
 @include for-phone-only {
   .main {
     height: 160vh;
   }
   .lead {
     &__text {
-   height: 50%;
+      height: 50%;
     }
     &__title {
       margin: 0;
