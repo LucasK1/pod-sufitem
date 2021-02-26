@@ -147,7 +147,6 @@
 .equipment {
   &__container {
     width: 100vw;
-    height: 40vh;
     padding: 80px 0;
   }
   &__content {
@@ -177,6 +176,12 @@
     text-align: left;
     margin-left: 70px;
   }
+}
+
+.classes {
+  width: 100vw;
+  height: 89vh;
+
 }
 
 @include for-phone-only {
