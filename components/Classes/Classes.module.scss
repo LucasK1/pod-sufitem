@@ -9,34 +9,50 @@
   margin-top: 100px;
   width: 100%;
   height: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  gap: 10px;
 
-  &__table {
-    height: 100%;
-    width: 100%;
-    border-collapse: collapse;
+  &__singleClass {
+    width: 23%;
+    padding: 0 15px;
+    height: 400px;
+    background-color: $content-background;
 
-    &Row {
+    & > p {
       text-align: left;
-      width: 100%;
-
-      &:nth-child(odd) {
-        background-color: $content-background;
-      }
-    }
-
-    &Name {
-      font-size: 1.4rem;
-      font-weight: 800;
-      width: 25%;
-      padding: 0 50px 0 30px;
-      border-right: 2px solid $font-secondary;
-    }
-
-    &Desc {
-      width: 75%;
-      padding: 0 30px;
     }
   }
+  
+  // &__table {
+  //   height: 100%;
+  //   width: 100%;
+  //   border-collapse: collapse;
+
+  //   &Row {
+  //     text-align: left;
+  //     width: 100%;
+
+  //     &:nth-child(odd) {
+  //       background-color: $content-background;
+  //     }
+  //   }
+
+  //   &Name {
+  //     font-size: 1.4rem;
+  //     font-weight: 800;
+  //     width: 25%;
+  //     padding: 0 50px 0 30px;
+  //     border-right: 2px solid $font-secondary;
+  //   }
+
+  //   &Desc {
+  //     width: 75%;
+  //     padding: 0 30px;
+  //   }
+  // }
 }
 
 @include for-phone-only {

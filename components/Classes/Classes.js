@@ -100,20 +100,40 @@ const Classes = () => {
         </p>
       ),
     },
+    {
+      id: 'acropole',
+      name: 'Acro Pole',
+      desc: (
+        <p>
+          Pilates stanowi jedną z najbezpieczniejszych form aktywności, dlatego
+          zajęćia przeznaczone są dla wszystkich, Trening oparty jest na
+          aktywizacji mięśni głębokich, stabilizujących, w połączeniu z
+          ćwiczeniami oddechowymi. W szczególności wzmocnieniu ulegają mięśnie
+          pleców i brzucha. Efektem jest szczuplejsza, wyrzeźbiona sylwetka,
+          lepsza postawa ciała, eliminacja bólu kręgosłupa, mniejsza podatność
+          na kontuzje.
+        </p>
+      ),
+    },
   ];
 
-  const tableData = classes.map(({ name, desc }) => (
-    <tr className={styles.classes__tableRow}>
-      <td className={styles.classes__tableName}>{name}</td>
-      <td className={styles.classes__tableDesc}>{desc}</td>
-    </tr>
+  const classesData = classes.map(({ name, desc }) => (
+    // <tr className={styles.classes__tableRow}>
+    //   <td className={styles.classes__tableName}>{name}</td>
+    //   <td className={styles.classes__tableDesc}>{desc}</td>
+    // </tr>
+    <section className={styles.classes__singleClass}>
+      <h3>{name}</h3>
+      <p>{desc}</p>
+    </section>
   ));
 
   return (
     <div className={styles.classes__content}>
-      <section className={styles.classes}>
-        <table className={styles.classes__table}>{tableData}</table>
-      </section>
+      <article className={styles.classes}>
+        {/* <table className={styles.classes__table}>{tableData}</table> */}
+        {classesData}
+      </article>
     </div>
   );
 };
