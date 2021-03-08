@@ -11,7 +11,7 @@ const Navbar = () => {
   function toggleMenu() {
     setBurgerActive(!burgerActive);
     setNavlistActive(!navlistActive);
-  };
+  }
 
   const navItems = [
     {
@@ -49,7 +49,7 @@ const Navbar = () => {
   const navListItems = navItems.map((item) => (
     <li
       className={`${styles.navbar__navitem} ${
-        !item.isLink ? styles.navbar__navitem_red : ''
+        !item.isLink && styles.navbar__navitem_blue
       }`}
       onClick={toggleMenu}
       key={item.id}>
