@@ -40,17 +40,17 @@
   align-items: center;
 }
 .navbar__navitem {
-  &_red {
+  &:hover {
+    cursor: pointer;
+    color: $font-primary-hover;
+  }
+  &_blue {
     display: flex;
     align-items: center;
     background-color: $font-secondary;
     color: $font-primary;
     height: 100%;
     padding: 0 15px;
-  }
-  &:hover {
-    cursor: pointer;
-    color: $font-primary-hover;
   }
 }
 
@@ -145,58 +145,67 @@
   transition: bottom 0.075s ease, transform 0.075s 0.12s cubic-bezier(0.215, 0.61, 0.355, 1);
 }
 
+// Mobile
+
+@mixin mobile-navbar {
+  height: 90vh;
+  width: 60%;
+  margin: 0;
+  padding: 10px 15px 70px 20px;
+  background-color: rgba(33, 33, 33, 0.9);
+  position: fixed;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  right: 0px;
+  top: 100px;
+  z-index: 1;
+  transform: translateX(100%);
+  transition: transform 100ms ease-in;
+}
+
 @include for-phone-only {
   .navbar {
     height: 100px;
     &__navlist {
-      height: 89vh;
-      width: 60%;
-      margin: 0;
-      padding: 10px 15px 70px 20px;
-      background-color: rgba(33, 33, 33, 0.9);
-      position: fixed;
-      display: flex;
-      flex-direction: column;
-      justify-content: space-around;
-      align-items: center;
-      right: 0px;
-      top: 100px;
-      z-index: 1;
-      transform: translateX(100%);
-      transition: transform 100ms ease-in;
+      @include mobile-navbar;
     }
-    .navbar__navlist_active {
-      transform: translateX(0%);
-    }
-    .hamburger {
-      display: inline-block;
-    }
-    .navbar__logo {
-      margin: 0 0 0 10px;
-      height: 90px;
-      width: 154px;
-    }
+  }
+  .navbar__navlist_active {
+    transform: translateX(0%);
+  }
+
+  .hamburger {
+    display: inline-block;
+  }
+  .navbar__logo {
+    margin: 0 0 0 10px;
+    height: 90px;
+    width: 154px;
+  }
+  .navbar__navitem_blue {
+    justify-content: center;
+    width: 100%;
+    height: 10%;
   }
 }
 @include for-tablet-portrait {
   .navbar__navlist {
-    height: 87vh;
-    width: 60%;
-    margin-right: 0px;
-    background-color: rgba(33, 33, 33, 0.9);
-    position: fixed;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    align-items: center;
-    right: 0px;
-    top: 125px;
-    z-index: 1;
-    transform: translateX(100%);
-    transition: transform 100ms ease-in;
+    @include mobile-navbar;
   }
   .navbar__navlist_active {
     transform: translateX(0%);
+  }
+  .navbar__logo {
+    margin: 0 0 0 10px;
+    height: 96px;
+    width: 165px;
+  }
+  .navbar__navitem_blue {
+    justify-content: center;
+    width: 100%;
+    height: 10%;
   }
   .hamburger {
     display: inline-block;
@@ -206,6 +215,11 @@
 @include for-tablet-landscape {
   .navbar__navlist {
     width: 65%;
+  }
+  .navbar__logo {
+    margin: 0 0 0 10px;
+    height: 78px;
+    width: 135px;
   }
 }
 
