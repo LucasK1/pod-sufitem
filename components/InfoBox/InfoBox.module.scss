@@ -73,3 +73,10 @@
     height: auto;
   }
 }
+
+@include for-desktop {
+  .container {
+    padding: 0 10px;
+    height: auto;
+  }
+}

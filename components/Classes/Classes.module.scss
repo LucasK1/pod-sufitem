@@ -70,3 +70,12 @@
     }
   }
 }
+
+@include for-desktop {
+  .classes {
+    height: auto;
+    &__singleClass {
+      height: auto;
+    }
+  }
+}

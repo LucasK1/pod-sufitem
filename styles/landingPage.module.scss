@@ -261,8 +261,9 @@
     height: auto;
   }
 }
+
 @include for-desktop {
-  .classes__container {
-    height: 87vh;
+  .main {
+    height: auto;
   }
 }
