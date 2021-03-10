@@ -6,54 +6,37 @@
 }
 
 .classes {
-  margin-top: 100px;
   width: 100%;
   height: 100%;
   display: grid;
-  grid-template-columns: 1.5fr 3fr;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: 1fr 1fr;
   gap: 20px;
 
-  &__selection {
-    border-radius: 20px;
-    padding: 30px;
+  &__singleClass {
+    padding: 0 15px;
+    height: 400px;
     background-color: $content-background;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    align-items: left;
-    text-align: left;
+    transition: background-color 200ms ease-in-out;
 
-    &Btn {
-      line-height: 2rem;
-      font-size: 1.5rem;
-      font-weight: 600;
-      text-align: left;
-      border-radius: 10px;
-      padding: 10px;
-      transition: background-color 100ms linear;
-
-      &:hover {
-        cursor: pointer;
-        background-color: #fff;
-      }
-
-      &_isActive {
-        background-color: #fff;
-      }
+    &:hover {
+      background-color: $font-secondary;
     }
-  }
 
-  &__desc {
-    border-radius: 20px;
-    background-color: $content-background;
+    & > p {
+      text-align: left;
+    }
   }
 }
 
 @include for-phone-only {
   .classes {
-    grid-template-columns: 100%;
-    grid-template-rows: 1fr 1fr;
+    display: block;
 
+    &__singleClass {
+      width: 80%;
+      margin: 0 auto;
+    }
     &__selection {
       &Btn {
         font-size: 1.3rem;
