@@ -38,7 +38,7 @@
     display: block;
 
     &__singleClass {
-      width: 80%;
+      width: 90%;
       margin: 0 auto;
     }
     &__selection {
@@ -56,6 +56,15 @@
     grid-template-rows: repeat(4, 1fr);
     grid-template-columns: 1fr 1fr;
 
+    &__singleClass {
+      height: auto;
+    }
+  }
+}
+
+@include for-tablet-landscape {
+  .classes {
+    height: auto;
     &__singleClass {
       height: auto;
     }
