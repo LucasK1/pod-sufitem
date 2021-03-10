@@ -23,6 +23,10 @@
       background-color: $font-secondary;
     }
 
+    & > h3 {
+      padding-top: 20px;
+    }
+
     & > p {
       text-align: left;
     }
@@ -42,6 +46,18 @@
         font-size: 1.3rem;
         line-height: 1rem;
       }
+    }
+  }
+}
+
+@include for-tablet-portrait {
+  .classes {
+    height: auto;
+    grid-template-rows: repeat(4, 1fr);
+    grid-template-columns: 1fr 1fr;
+
+    &__singleClass {
+      height: auto;
     }
   }
 }
