@@ -6,60 +6,45 @@
 }
 
 .classes {
-  margin-top: 100px;
+  // padding: 50px 0;
   width: 100%;
   height: 100%;
-  display: flex;
-  justify-content: space-around;
-  align-items: flex-start;
-  flex-wrap: wrap;
-  gap: 10px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: 1fr 1fr;
+  // display: flex;
+  // justify-content: space-around;
+  // align-content: center;
+  // align-items: flex-start;
+  // flex-wrap: wrap;
+  gap: 20px;
 
   &__singleClass {
-    width: 23%;
+    // width: 23%;
     padding: 0 15px;
     height: 400px;
     background-color: $content-background;
+    transition: background-color 200ms ease-in-out;
+
+    &:hover {
+      background-color: $font-secondary;
+    }
 
     & > p {
       text-align: left;
     }
+    
   }
-  
-  // &__table {
-  //   height: 100%;
-  //   width: 100%;
-  //   border-collapse: collapse;
-
-  //   &Row {
-  //     text-align: left;
-  //     width: 100%;
-
-  //     &:nth-child(odd) {
-  //       background-color: $content-background;
-  //     }
-  //   }
-
-  //   &Name {
-  //     font-size: 1.4rem;
-  //     font-weight: 800;
-  //     width: 25%;
-  //     padding: 0 50px 0 30px;
-  //     border-right: 2px solid $font-secondary;
-  //   }
-
-  //   &Desc {
-  //     width: 75%;
-  //     padding: 0 30px;
-  //   }
-  // }
 }
 
 @include for-phone-only {
   .classes {
-    grid-template-columns: 100%;
-    grid-template-rows: 1fr 1fr;
+    display: block;
 
+    &__singleClass {
+      width: 80%;
+      margin: 0 auto;
+    }
     &__selection {
       &Btn {
         font-size: 1.3rem;

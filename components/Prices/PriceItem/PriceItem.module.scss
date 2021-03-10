@@ -3,7 +3,7 @@
 
 .priceItem {
   font-weight: 700;
-  line-height: 0.9rem;
+  padding: 5px 0;
 
   &:hover {
     cursor: pointer;
@@ -13,15 +13,8 @@
 
 .descList {
   list-style: square;
-  height: 100%;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
   text-align: left;
-}
-
-@include for-phone-only {
-  .tooltipBox {
-    visibility: hidden;
-  }
 }

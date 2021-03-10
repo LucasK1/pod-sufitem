@@ -118,10 +118,6 @@ const Classes = () => {
   ];
 
   const classesData = classes.map(({ name, desc }) => (
-    // <tr className={styles.classes__tableRow}>
-    //   <td className={styles.classes__tableName}>{name}</td>
-    //   <td className={styles.classes__tableDesc}>{desc}</td>
-    // </tr>
     <section className={styles.classes__singleClass}>
       <h3>{name}</h3>
       <p>{desc}</p>
@@ -131,7 +127,6 @@ const Classes = () => {
   return (
     <div className={styles.classes__content}>
       <article className={styles.classes}>
-        {/* <table className={styles.classes__table}>{tableData}</table> */}
         {classesData}
       </article>
     </div>
