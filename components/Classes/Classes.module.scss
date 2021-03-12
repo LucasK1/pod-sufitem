@@ -20,7 +20,11 @@
     transition: background-color 200ms ease-in-out;
 
     &:hover {
-      background-color: $font-secondary;
+      background-color: #a5efff;
+    }
+
+    & > h3 {
+      border-bottom: 1px solid $font-secondary;
     }
 
     & > h3 {
