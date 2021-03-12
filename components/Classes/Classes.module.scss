@@ -16,15 +16,24 @@
   &__singleClass {
     padding: 0 15px;
     height: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
     background-color: $content-background;
     transition: background-color 200ms ease-in-out;
 
     &:hover {
-      background-color: #a5efff;
+      background-color: #fbfbfb;
     }
 
     & > h3 {
+      // text-decoration: underline;
+      // text-decoration-color: $font-secondary;
+      // text-underline-offset: 8px;
+      width: 90%;
       border-bottom: 1px solid $font-secondary;
+      padding-bottom: 10px;
     }
 
     & > h3 {
@@ -32,6 +41,7 @@
     }
 
     & > p {
+      margin: 0;
       text-align: left;
     }
   }
