@@ -18,6 +18,8 @@
     background-color: $content-background;
   }
   &__sectionTitle {
+    border-bottom: 1px solid $font-secondary;
+    padding: 0 20px 10px 20px;
     font-size: 1.5rem;
     line-height: 1rem;
     & ~ h4 {
