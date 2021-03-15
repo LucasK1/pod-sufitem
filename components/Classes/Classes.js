@@ -118,7 +118,7 @@ const Classes = () => {
   ];
 
   const classesData = classes.map(({ name, desc }) => (
-    <section className={styles.classes__singleClass}>
+    <section className={styles.classes__singleClass} key={name}>
       <h3>{name}</h3>
       <p>{desc}</p>
     </section>
@@ -126,9 +126,7 @@ const Classes = () => {
 
   return (
     <div className={styles.classes__content}>
-      <article className={styles.classes}>
-        {classesData}
-      </article>
+      <article className={styles.classes}>{classesData}</article>
     </div>
   );
 };
