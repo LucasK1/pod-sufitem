@@ -59,3 +59,24 @@
     }
   }
 }
+
+@include for-tablet-portrait {
+  .container {
+    padding: 0 10px;
+    height: auto;
+  }
+}
+
+@include for-tablet-landscape {
+  .container {
+    padding: 0 10px;
+    height: auto;
+  }
+}
+
+@include for-desktop {
+  .container {
+    padding: 0 10px;
+    height: auto;
+  }
+}
