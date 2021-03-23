@@ -25,7 +25,7 @@
   justify-content: space-between;
   &::after {
     content: "";
-    background: url("/static/images/background1.jpeg") center no-repeat;
+    // background: url("/static/images/background1.jpeg") center no-repeat;
     background-size: cover;
     position: absolute;
     top: 11vh;
@@ -259,6 +259,9 @@
 @include for-tablet-landscape {
   .main {
     height: auto;
+  }
+  .contact {
+    margin-top: 150px;
   }
 }
 
