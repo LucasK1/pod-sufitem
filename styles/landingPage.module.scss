@@ -15,18 +15,19 @@
 .main {
   height: 89vh;
   margin-top: 150px;
+  // position: relative;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: space-between;
   &::after {
     content: "";
-    // background: url("/static/images/background1.jpeg") center no-repeat;
-    background-size: cover;
+    background: url("/static/images/backgroundLogo.png") center no-repeat;
     position: absolute;
-    top: 11vh;
-    width: 100vw;
-    height: 89vh;
+    width: 128px;
+    height: 289px;
+    top: 25%;
+    transform: scale(1.8);
     z-index: -1;
   }
 }
@@ -161,34 +162,21 @@
 
 @include for-phone-only {
   .main {
-    height: 160vh;
+    height: auto;
+    &::after {
+      top: 30%;
+      transform: scale(1.5);
+    }
   }
   .lead {
     &__text {
-      height: 50%;
-    }
-    &__title {
-      margin: 0;
-      font-size: 2.2rem;
-      position: relative;
-    }
-    &__content {
-      padding: 0;
-      top: 50vh;
-      position: absolute;
-      text-align: left;
-      font-size: 1rem;
-      line-height: 1.5rem;
-      &_container {
-        height: 50%;
-        grid-template-columns: repeat(2, 1fr);
-        align-items: end;
-      }
+      padding: 0 15px;
     }
   }
 
   .contact {
     display: flex;
+    height: auto;
     flex-direction: column;
     justify-items: center;
     gap: 20px;
@@ -258,6 +246,10 @@
 @include for-tablet-landscape {
   .main {
     height: auto;
+    &::after {
+      top: 30%;
+      transform: scale(1.5);
+    }
   }
   .contact {
     margin-top: 150px;
@@ -267,6 +259,10 @@
 @include for-desktop {
   .main {
     height: auto;
+    &::after {
+      top: 20%;
+      transform: scale(1);
+    }
   }
   .lead {
     &__text {
