@@ -12,10 +12,6 @@
   align-items: center;
 }
 
-.bold {
-  font-weight: 700;
-}
-
 .main {
   height: 89vh;
   margin-top: 150px;
@@ -25,12 +21,12 @@
   justify-content: space-between;
   &::after {
     content: "";
-    // background: url("/static/images/background1.jpeg") center no-repeat;
-    background-size: cover;
+    background: url("/static/images/backgroundLogo.png") center no-repeat;
     position: absolute;
-    top: 11vh;
-    width: 100vw;
-    height: 89vh;
+    width: 128px;
+    height: 289px;
+    top: 25%;
+    transform: scale(1.8);
     z-index: -1;
   }
 }
@@ -38,23 +34,28 @@
 .lead {
   &__text {
     text-align: center;
-    height: 100%;
-  }
-  &__title {
-    font-size: 3rem;
-    font-weight: 800;
-  }
-  &__content_container {
-    display: grid;
-    height: 90%;
-    grid-template-columns: repeat(2, 1fr);
-    align-items: end;
-  }
-  &__content {
-    text-align: left;
     font-size: 1.3rem;
     line-height: 1.7rem;
-    padding-bottom: 120px;
+    & > p {
+      padding-top: 100px;
+      &:first-child {
+        padding-top: 20px;
+      }
+    }
+  }
+}
+
+.bookBtn {
+  font-size: 1.2rem;
+  color: #fff;
+  padding: 50px 60px;
+  margin: 40px 0;
+  border-radius: 10px;
+  background-color: #000;
+  box-shadow: 0px 2px 4px -1px rgba(0, 0, 0, 0.2), 0px 4px 5px 0px rgba(0, 0, 0, 0.14),
+    0px 1px 10px 0px rgba(0, 0, 0, 0.12);
+  &:hover {
+    background-color: $font-secondary;
   }
 }
 
@@ -162,34 +163,21 @@
 
 @include for-phone-only {
   .main {
-    height: 160vh;
+    height: auto;
+    &::after {
+      top: 30%;
+      transform: scale(1.5);
+    }
   }
   .lead {
     &__text {
-      height: 50%;
-    }
-    &__title {
-      margin: 0;
-      font-size: 2.2rem;
-      position: relative;
-    }
-    &__content {
-      padding: 0;
-      top: 50vh;
-      position: absolute;
-      text-align: left;
-      font-size: 1rem;
-      line-height: 1.5rem;
-      &_container {
-        height: 50%;
-        grid-template-columns: repeat(2, 1fr);
-        align-items: end;
-      }
+      padding: 0 15px;
     }
   }
 
   .contact {
     display: flex;
+    height: auto;
     flex-direction: column;
     justify-items: center;
     gap: 20px;
@@ -259,6 +247,10 @@
 @include for-tablet-landscape {
   .main {
     height: auto;
+    &::after {
+      top: 30%;
+      transform: scale(1.5);
+    }
   }
   .contact {
     margin-top: 150px;
@@ -266,10 +258,28 @@
 }
 
 @include for-desktop {
-  .main {
-    height: auto;
+  .main::after {
+    top: 20%;
+    transform: scale(1.3);
   }
-  .lead__content_container {
-    height: 60vh;
+
+  .lead {
+    &__text {
+      font-size: 1.2rem;
+      line-height: 1.5rem;
+      & > p {
+        padding-top: 50px;
+        &:first-child {
+          padding-top: 0;
+        }
+      }
+    }
+  }
+
+  .bookBtn {
+    font-size: 1.2rem;
+    padding: 30px 35px;
+    margin: 20px 0;
+    background-color: black;
   }
 }

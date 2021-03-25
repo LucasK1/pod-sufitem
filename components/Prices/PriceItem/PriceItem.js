@@ -4,7 +4,7 @@ import styles from './PriceItem.module.scss';
 
 const PriceItem = ({ name, price }) => {
   return (
-    <div className={styles.priceItem}>
+    <li className={styles.priceItem}>
       <a
         href="https://app.fitssey.com/podsufitem/frontoffice/pricing/cards"
         target="_blank"
@@ -13,7 +13,7 @@ const PriceItem = ({ name, price }) => {
         {name}
       </a>
       <span> - {price}zł</span>
-    </div>
+    </li>
   );
 };
 export default PriceItem;

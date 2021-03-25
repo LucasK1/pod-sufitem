@@ -2,8 +2,8 @@
 @import "./styles/mediaQuery";
 
 .priceItem {
-  font-weight: 700;
   padding: 5px 0;
+  list-style: none;
 
   &:hover {
     cursor: pointer;

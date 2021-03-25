@@ -17,29 +17,29 @@ const Home = () => {
       <div className={styles.container}>
         <main className={styles.main}>
           <article className={styles.lead__text}>
-            <h1 className={styles.lead__title}>
-              Szkoła akrobatyki powietrznej
-            </h1>
-            <div className={styles.lead__content_container}>
-              <p className={styles.lead__content}>
-                Pod Sufitem to studio akrobatyki powietrznej, zlokalizowane w
-                Warszawie, w samym centrum Pragi Północ.
-                <br />
-                Założycielką studia jest Anna Łukasiak - mistrzyni Polski Pole
-                Sport Professional POSA 2019, mistrzyni Polski i Świata Aerial
-                Hoop Amateur POSA 2019.
-                <br />
-                Na pierwszym miejscu stawiamy jakość zajęć oraz komfort
-                uczestników, dlatego pracujemy w kameralnych grupach i
-                gwarantujemy indywidualne podejście do kursanta.
-                <br />
-                <strong className={styles.bold}>
-                  Wiek, rozmiar i płeć nie ma znaczenia - u nas poczujesz się
-                  jak w domu!
-                </strong>
-              </p>
-            </div>
+            <p>
+              Pod Sufitem to studio akrobatyki powietrznej, zlokalizowane w
+              Warszawie, w samym centrum Pragi Północ.
+              <br />
+              Założycielką studia jest Anna Łukasiak - mistrzyni Polski Pole
+              Sport Professional POSA 2019, mistrzyni Polski i Świata Aerial
+              Hoop Amateur POSA 2019.
+            </p>
+            <p>
+              Na pierwszym miejscu stawiamy jakość zajęć oraz komfort
+              uczestników, dlatego pracujemy w kameralnych grupach i
+              gwarantujemy indywidualne podejście do kursanta.
+            </p>
+            <p>
+              Wiek, rozmiar i płeć nie ma znaczenia - u nas poczujesz się jak w
+              domu!
+            </p>
           </article>
+          <a
+            href="https://app.fitssey.com/podsufitem/frontoffice"
+            className={styles.bookBtn}>
+            Zapisy na zajęcia
+          </a>
           <section className={styles.contact}>
             <div className={`${styles.contact__column} ${styles.contact__tel}`}>
               <span className={styles.contact__column_title}>
@@ -114,9 +114,10 @@ const Home = () => {
               <p className={styles.equipment__desc}>
                 Specjalizujemy się w zajęciach
                 <strong className={styles.bold}>
-                  pole dance i aerial hoop,{' '}
+                  {' '}
+                  pole dance i aerial hoop
                 </strong>
-                ale w naszej ofercie znajdziesz również szereg zajęć
+                , ale w naszej ofercie znajdziesz również szereg zajęć
                 uzupełniających, takich jak:
                 <ul className={styles.equipment__list}>
                   <li>Pole Choreo</li>
@@ -131,14 +132,12 @@ const Home = () => {
             <div className={styles.equipment__item}>
               <i className="fas fa-check"></i>
               <p className={styles.equipment__desc}>
-                Posiadamy sprzęt najwyższej jakości:
-                <ul>
-                  <li>
-                    Rurki SunPole o wysokości 4 m: chromowo-niklowe, malowane
-                    proszkowo i mosiężne,
-                  </li>
-                  <li>Koła oraz osprzęt aerial hoop firmy Flying Rose.</li>
-                </ul>
+                Posiadamy sprzęt najwyższej&nbsp;jakości:
+                <p>
+                  Rurki SunPole o wysokości 4 m: chromowo-niklowe, malowane
+                  proszkowo i mosiężne,
+                </p>
+                <p>Koła oraz osprzęt aerial hoop firmy Flying Rose.</p>
               </p>
             </div>
             <div className={styles.equipment__item}>
