@@ -48,13 +48,15 @@
 
 .bookBtn {
   font-size: 1.2rem;
-  color: lightgray;
+  color: #fff;
   padding: 50px 60px;
   margin: 40px 0;
   border-radius: 10px;
-  background-color: black;
+  background-color: #000;
+  box-shadow: 0px 2px 4px -1px rgba(0, 0, 0, 0.2), 0px 4px 5px 0px rgba(0, 0, 0, 0.14),
+    0px 1px 10px 0px rgba(0, 0, 0, 0.12);
   &:hover {
-    background-color: gray;
+    background-color: $font-secondary;
   }
 }
 
@@ -257,13 +259,11 @@
 }
 
 @include for-desktop {
-  .main {
-    height: auto;
-    &::after {
-      top: 20%;
-      transform: scale(1);
-    }
+  .main::after {
+    top: 20%;
+    transform: scale(1.3);
   }
+
   .lead {
     &__text {
       font-size: 1.2rem;

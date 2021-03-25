@@ -8,11 +8,12 @@
   position: fixed;
   top: 0;
   background-color: $dark-background;
-
   color: $font-secondary;
   font-size: 1.5rem;
   line-height: 38px;
-  z-index: 10000;
+  z-index: 10;
+  box-shadow: 0px 2px 4px -1px rgba(0, 0, 0, 0.2), 0px 4px 5px 0px rgba(0, 0, 0, 0.14),
+    0px 1px 10px 0px rgba(0, 0, 0, 0.12);
 }
 .navbar__nav {
   height: 100%;
