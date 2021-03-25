@@ -114,9 +114,10 @@ const Home = () => {
               <p className={styles.equipment__desc}>
                 Specjalizujemy się w zajęciach
                 <strong className={styles.bold}>
-                  pole dance i aerial hoop,{' '}
+                  {' '}
+                  pole dance i aerial hoop
                 </strong>
-                ale w naszej ofercie znajdziesz również szereg zajęć
+                , ale w naszej ofercie znajdziesz również szereg zajęć
                 uzupełniających, takich jak:
                 <ul className={styles.equipment__list}>
                   <li>Pole Choreo</li>
@@ -131,14 +132,12 @@ const Home = () => {
             <div className={styles.equipment__item}>
               <i className="fas fa-check"></i>
               <p className={styles.equipment__desc}>
-                Posiadamy sprzęt najwyższej jakości:
-                <ul>
-                  <li>
-                    Rurki SunPole o wysokości 4 m: chromowo-niklowe, malowane
-                    proszkowo i mosiężne,
-                  </li>
-                  <li>Koła oraz osprzęt aerial hoop firmy Flying Rose.</li>
-                </ul>
+                Posiadamy sprzęt najwyższej&nbsp;jakości:
+                <p>
+                  Rurki SunPole o wysokości 4 m: chromowo-niklowe, malowane
+                  proszkowo i mosiężne,
+                </p>
+                <p>Koła oraz osprzęt aerial hoop firmy Flying Rose.</p>
               </p>
             </div>
             <div className={styles.equipment__item}>
