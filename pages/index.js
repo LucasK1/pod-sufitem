@@ -17,29 +17,29 @@ const Home = () => {
       <div className={styles.container}>
         <main className={styles.main}>
           <article className={styles.lead__text}>
-            <h1 className={styles.lead__title}>
-              Szkoła akrobatyki powietrznej
-            </h1>
-            <div className={styles.lead__content_container}>
-              <p className={styles.lead__content}>
-                Pod Sufitem to studio akrobatyki powietrznej, zlokalizowane w
-                Warszawie, w samym centrum Pragi Północ.
-                <br />
-                Założycielką studia jest Anna Łukasiak - mistrzyni Polski Pole
-                Sport Professional POSA 2019, mistrzyni Polski i Świata Aerial
-                Hoop Amateur POSA 2019.
-                <br />
-                Na pierwszym miejscu stawiamy jakość zajęć oraz komfort
-                uczestników, dlatego pracujemy w kameralnych grupach i
-                gwarantujemy indywidualne podejście do kursanta.
-                <br />
-                <strong className={styles.bold}>
-                  Wiek, rozmiar i płeć nie ma znaczenia - u nas poczujesz się
-                  jak w domu!
-                </strong>
-              </p>
-            </div>
+            <p>
+              Pod Sufitem to studio akrobatyki powietrznej, zlokalizowane w
+              Warszawie, w samym centrum Pragi Północ.
+              <br />
+              Założycielką studia jest Anna Łukasiak - mistrzyni Polski Pole
+              Sport Professional POSA 2019, mistrzyni Polski i Świata Aerial
+              Hoop Amateur POSA 2019.
+            </p>
+            <p>
+              Na pierwszym miejscu stawiamy jakość zajęć oraz komfort
+              uczestników, dlatego pracujemy w kameralnych grupach i
+              gwarantujemy indywidualne podejście do kursanta.
+            </p>
+            <p>
+              Wiek, rozmiar i płeć nie ma znaczenia - u nas poczujesz się jak w
+              domu!
+            </p>
           </article>
+          <a
+            href="https://app.fitssey.com/podsufitem/frontoffice"
+            className={styles.bookBtn}>
+            Zapisy na zajęcia
+          </a>
           <section className={styles.contact}>
             <div className={`${styles.contact__column} ${styles.contact__tel}`}>
               <span className={styles.contact__column_title}>

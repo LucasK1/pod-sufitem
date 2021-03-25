@@ -12,10 +12,6 @@
   align-items: center;
 }
 
-.bold {
-  font-weight: 700;
-}
-
 .main {
   height: 89vh;
   margin-top: 150px;
@@ -38,23 +34,26 @@
 .lead {
   &__text {
     text-align: center;
-    height: 100%;
-  }
-  &__title {
-    font-size: 3rem;
-    font-weight: 800;
-  }
-  &__content_container {
-    display: grid;
-    height: 90%;
-    grid-template-columns: repeat(2, 1fr);
-    align-items: end;
-  }
-  &__content {
-    text-align: left;
     font-size: 1.3rem;
     line-height: 1.7rem;
-    padding-bottom: 120px;
+    & > p {
+      padding-top: 100px;
+      &:first-child {
+        padding-top: 20px;
+      }
+    }
+  }
+}
+
+.bookBtn {
+  font-size: 1.2rem;
+  color: lightgray;
+  padding: 50px 60px;
+  margin: 40px 0;
+  border-radius: 10px;
+  background-color: black;
+  &:hover {
+    background-color: gray;
   }
 }
 
@@ -269,7 +268,23 @@
   .main {
     height: auto;
   }
-  .lead__content_container {
-    height: 60vh;
+  .lead {
+    &__text {
+      font-size: 1.2rem;
+      line-height: 1.5rem;
+      & > p {
+        padding-top: 50px;
+        &:first-child {
+          padding-top: 0;
+        }
+      }
+    }
+  }
+
+  .bookBtn {
+    font-size: 1.2rem;
+    padding: 30px 35px;
+    margin: 20px 0;
+    background-color: black;
   }
 }
