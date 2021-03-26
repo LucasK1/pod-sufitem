@@ -5,7 +5,6 @@
   position: relative;
   text-align: center;
   width: 100vw;
-  height: 89vh;
   overflow-y: hidden;
   display: flex;
   flex-direction: column;
@@ -19,7 +18,7 @@
 
 .scrollHelper {
   position: absolute;
-  top: -11vh;
+  top: -130px;
 }
 
 .title {
@@ -44,7 +43,6 @@
 
 @include for-phone-only {
   .container {
-    height: auto;
     margin: 20px auto;
     margin-bottom: 0;
     &__prices {

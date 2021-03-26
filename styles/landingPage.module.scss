@@ -3,7 +3,7 @@
 
 .scrollHelper {
   position: absolute;
-  top: -11vh;
+  top: -130px;
 }
 
 .container {
@@ -13,8 +13,7 @@
 }
 
 .main {
-  height: 89vh;
-  margin-top: 150px;
+  margin-top: 130px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -56,6 +55,38 @@
     0px 1px 10px 0px rgba(0, 0, 0, 0.12);
   &:hover {
     background-color: $font-secondary;
+  }
+}
+
+.equipment {
+  &__container {
+    width: 100vw;
+    padding: 50px 0;
+  }
+  &__content {
+    max-width: $max-width;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-around;
+  }
+  &__item {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+  }
+  &__desc {
+    text-align: center;
+    margin: 0;
+    width: 300px;
+    font-size: 1.2rem;
+    line-height: 1.3rem;
+    padding-top: 60px;
+  }
+  &__list {
+    text-align: left;
+    margin-left: 70px;
   }
 }
 
@@ -129,45 +160,10 @@
   }
 }
 
-.equipment {
-  &__container {
-    width: 100vw;
-    padding: 50px 0;
-  }
-  &__content {
-    max-width: $max-width;
-    margin: 0 auto;
-    display: flex;
-    justify-content: space-around;
-  }
-  &__item {
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
-  }
-  &__desc {
-    text-align: center;
-    margin: 0;
-    width: 300px;
-    font-size: 1.2rem;
-    line-height: 1.3rem;
-    padding-top: 60px;
-  }
-  &__list {
-    text-align: left;
-    margin-left: 70px;
-  }
-}
-
 @include for-phone-only {
-  .main {
-    height: auto;
-    &::after {
-      top: 30%;
-      transform: scale(1.5);
-    }
+  .main::after {
+    top: 30%;
+    transform: scale(1.5);
   }
   .lead {
     &__text {
@@ -177,7 +173,6 @@
 
   .contact {
     display: flex;
-    height: auto;
     flex-direction: column;
     justify-items: center;
     gap: 20px;
@@ -228,9 +223,6 @@
     padding-bottom: 50px;
   }
   .equipment {
-    &__container {
-      height: auto;
-    }
     &__content {
       flex-direction: column;
     }
@@ -245,13 +237,11 @@
 }
 
 @include for-tablet-landscape {
-  .main {
-    height: auto;
-    &::after {
-      top: 30%;
-      transform: scale(1.5);
-    }
+  .main::after {
+    top: 30%;
+    transform: scale(1.5);
   }
+
   .contact {
     margin-top: 150px;
   }
