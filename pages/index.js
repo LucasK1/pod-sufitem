@@ -14,8 +14,8 @@ const Home = () => {
       <Head>
         <title>pod sufitem // Szkoła akrobatyki powietrznej</title>
       </Head>
-      <div className={styles.container}>
-        <main className={styles.main}>
+      <main className={styles.container}>
+        <div className={styles.main}>
           <article className={styles.lead__text}>
             <p>
               Pod Sufitem to studio akrobatyki powietrznej, zlokalizowane w
@@ -40,77 +40,13 @@ const Home = () => {
             className={styles.bookBtn}>
             Zapisy na zajęcia
           </a>
-          <section className={styles.contact}>
-            <div className={`${styles.contact__column} ${styles.contact__tel}`}>
-              <span className={styles.contact__column_title}>
-                Skontaktuj się z nami
-              </span>
-              <div className={styles.contact__column_content}>
-                <address>
-                  <ul className={styles.contact__tel_list}>
-                    <li className={styles.contact__tel_listItem}>
-                      <a href="tel:+48799079809" aria-hidden="true">
-                        <i className="fas fa-phone-alt"></i>
-                      </a>
-                      <a href="tel:+48799079809">+48 799 079 809</a>
-                    </li>
-                    <li className={styles.contact__tel_listItem}>
-                      <a
-                        href="mailto:zapisy.podsufitem@gmail.com"
-                        aria-hidden="true">
-                        <i className="fas fa-envelope"></i>
-                      </a>
-                      <a href="mailto:zapisy.podsufitem@gmail.com">
-                        zapisy.podsufitem@gmail.com
-                      </a>
-                    </li>
-                  </ul>
-                </address>
-              </div>
-            </div>
-
-            <div
-              className={`${styles.contact__column} ${styles.contact__social}`}>
-              <span className={styles.contact__column_title}>
-                Znajdź nas w sieci
-              </span>
-              <div className={styles.contact__column_content}>
-                <a
-                  href="https://www.facebook.com/podsufitem"
-                  target="_blank"
-                  aria-label="Facebook link">
-                  <i className="fab fa-facebook-square"></i>
-                </a>
-                <a
-                  href="https://www.instagram.com/pod.sufitem/"
-                  target="_blank"
-                  aria-label="Instagram link">
-                  <i className="fab fa-instagram-square"></i>
-                </a>
-              </div>
-            </div>
-
-            <div
-              className={`${styles.contact__column} ${styles.contact__address}`}>
-              <span className={styles.contact__column_title}>Odwiedź nas</span>
-              <div className={styles.contact__column_content}>
-                <a href="https://goo.gl/maps/vRQJRCQE7JP4J6CWA" target="_blank">
-                  <i
-                    className="fas fa-map-marker-alt"
-                    alt="Google Maps Address Link"></i>
-                </a>
-                <address>
-                  <p>Skoczylasa 10/12 lok. 81</p>
-                  <p>03-465 Warszawa</p>
-                </address>
-              </div>
-            </div>
-          </section>
-        </main>
-        <div className={styles.equipment__container}>
+        </div>
+        <section className={styles.equipment__container}>
           <div className={styles.equipment__content}>
             <div className={styles.equipment__item}>
-              <i className="fas fa-check"></i>
+              <span className={styles.fontAwesome}>
+                <i className="fas fa-check fa-7x"></i>
+              </span>
               <p className={styles.equipment__desc}>
                 Specjalizujemy się w zajęciach
                 <strong className={styles.bold}>
@@ -130,7 +66,9 @@ const Home = () => {
               </p>
             </div>
             <div className={styles.equipment__item}>
-              <i className="fas fa-check"></i>
+              <span className={styles.fontAwesome}>
+                <i className="fas fa-check fa-7x"></i>
+              </span>
               <p className={styles.equipment__desc}>
                 Posiadamy sprzęt najwyższej&nbsp;jakości:
                 <p>
@@ -141,14 +79,93 @@ const Home = () => {
               </p>
             </div>
             <div className={styles.equipment__item}>
-              <i className="fas fa-check"></i>
+              <span className={styles.fontAwesome}>
+                <i className="fas fa-check fa-7x"></i>
+              </span>
               <p className={styles.equipment__desc}>
                 Bezpieczeństwo zapewniają certyfikowane materace asekuracyjne o
                 wielkości 160cmx160cm i grubości 15 cm.
               </p>
             </div>
           </div>
-        </div>
+        </section>
+        <section className={styles.contact}>
+          <div className={`${styles.contact__column} ${styles.contact__tel}`}>
+            <span className={styles.contact__column_title}>
+              Skontaktuj się z nami
+            </span>
+            <div className={styles.contact__column_content}>
+              <address>
+                <ul className={styles.contact__tel_list}>
+                  <li className={styles.contact__tel_listItem}>
+                    <a href="tel:+48799079809" aria-hidden="true">
+                      <span className={styles.fontAwesome}>
+                        <i className="fas fa-phone-alt fa-3x"></i>
+                      </span>
+                    </a>
+                    <a href="tel:+48799079809">+48 799 079 809</a>
+                  </li>
+                  <li className={styles.contact__tel_listItem}>
+                    <a
+                      href="mailto:zapisy.podsufitem@gmail.com"
+                      aria-hidden="true">
+                      <span className={styles.fontAwesome}>
+                        <i className="fas fa-envelope fa-3x"></i>
+                      </span>
+                    </a>
+                    <a href="mailto:zapisy.podsufitem@gmail.com">
+                      zapisy.podsufitem@gmail.com
+                    </a>
+                  </li>
+                </ul>
+              </address>
+            </div>
+          </div>
+
+          <div
+            className={`${styles.contact__column} ${styles.contact__social}`}>
+            <span className={styles.contact__column_title}>
+              Znajdź nas w sieci
+            </span>
+            <div className={styles.contact__column_content}>
+              <a
+                href="https://www.facebook.com/podsufitem"
+                target="_blank"
+                aria-label="Facebook link">
+                <span className={styles.fontAwesome}>
+                  <i className="fab fa-facebook-square fa-3x"></i>
+                </span>
+              </a>
+              <a
+                href="https://www.instagram.com/pod.sufitem/"
+                target="_blank"
+                aria-label="Instagram link">
+                <span className={styles.fontAwesome}>
+                  <i className="fab fa-instagram-square fa-3x"></i>
+                </span>
+              </a>
+            </div>
+          </div>
+
+          <div
+            className={`${styles.contact__column} ${styles.contact__address}`}>
+            <span className={styles.contact__column_title}>Odwiedź nas</span>
+            <div className={styles.contact__column_content}>
+              <a
+                href="https://goo.gl/maps/vRQJRCQE7JP4J6CWA"
+                target="_blank"
+                className={styles.fontAwesome}>
+                <i
+                  className="fas fa-map-marker-alt fa-3x"
+                  alt="Google Maps Address Link"></i>
+              </a>
+              <address>
+                <p>Skoczylasa 10/12 lok. 81</p>
+                <p>03-465 Warszawa</p>
+              </address>
+            </div>
+          </div>
+        </section>
         <InfoBox title="Zajęcia" id="zajecia">
           <Classes />
         </InfoBox>
@@ -158,32 +175,7 @@ const Home = () => {
         <InfoBox title="Cennik" id="cennik" prices>
           <Prices />
         </InfoBox>
-      </div>
-
-      <style jsx>{`
-        @import './styles/variables';
-        @import './styles/mediaQuery';
-        /* Styling the fontawesome icons */
-        .fas,
-        .fab {
-          color: $font-secondary;
-          transform: scale(2.8);
-          &:hover {
-            color: $font-secondary-hover;
-          }
-          &:active {
-            color: $font-secondary-active;
-          }
-        }
-        .fa-check {
-          transform: scale(5);
-        }
-        @include for-phone-only {
-          .fa-check {
-            padding: 0;
-          }
-        }
-      `}</style>
+      </main>
     </>
   );
 };

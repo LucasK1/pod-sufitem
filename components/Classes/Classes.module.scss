@@ -1,13 +1,8 @@
 @import "./styles/variables";
 @import "./styles/mediaQuery";
 
-.classes__content {
-  height: 100%;
-}
-
 .classes {
-  width: 100%;
-  height: 100%;
+  padding: 20px 0;
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   grid-template-rows: 1fr 1fr;
@@ -15,7 +10,6 @@
 
   &__singleClass {
     padding: 0 20px;
-    height: 470px;
     line-height: 1.3rem;
     display: flex;
     flex-direction: column;
@@ -49,10 +43,13 @@
 @include for-phone-only {
   .classes {
     display: block;
-
     &__singleClass {
-      width: 90%;
-      margin: 10px auto;
+      padding: 20px;
+      margin: 0 10px 30px 10px;
+
+      & > h3 {
+        padding: 0;
+      }
     }
     &__selection {
       &Btn {
@@ -65,30 +62,7 @@
 
 @include for-tablet-portrait {
   .classes {
-    height: auto;
     grid-template-rows: repeat(4, 1fr);
     grid-template-columns: 1fr 1fr;
-
-    &__singleClass {
-      height: auto;
-    }
-  }
-}
-
-@include for-tablet-landscape {
-  .classes {
-    height: auto;
-    &__singleClass {
-      height: auto;
-    }
-  }
-}
-
-@include for-desktop {
-  .classes {
-    height: auto;
-    &__singleClass {
-      height: auto;
-    }
   }
 }

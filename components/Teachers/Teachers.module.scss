@@ -2,8 +2,7 @@
 @import "./styles/mediaQuery";
 
 .container {
-  height: 125%;
-  width: 100%;
+  padding: 40px 0;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
@@ -62,7 +61,6 @@
 
 @include for-phone-only {
   .container {
-    height: auto;
     justify-content: space-around;
   }
 
@@ -105,14 +103,12 @@
     }
   }
   .container {
-    height: auto;
     justify-content: space-around;
   }
 }
 
 @include for-tablet-landscape {
   .container {
-    height: auto;
     justify-content: space-around;
   }
 }
