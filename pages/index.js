@@ -1,10 +1,11 @@
 import React from 'react';
 import Head from 'next/head';
 
-import Prices from '@/components/Prices/Prices';
 import InfoBox from '@/components/InfoBox/InfoBox';
-import Teachers from '@/components/Teachers/Teachers';
 import Classes from '@/components/Classes/Classes';
+import Teachers from '@/components/Teachers/Teachers';
+import Prices from '@/components/Prices/Prices';
+import Footer from '@/components/Footer/Footer';
 
 import styles from '@/styles/landingPage.module.scss';
 
@@ -175,7 +176,37 @@ const Home = () => {
         <InfoBox title="Cennik" id="cennik" prices>
           <Prices />
         </InfoBox>
+<<<<<<< HEAD
       </main>
+=======
+        <Footer />
+      </div>
+
+      <style jsx>{`
+        @import './styles/variables';
+        @import './styles/mediaQuery';
+        /* Styling the fontawesome icons */
+        .fas,
+        .fab {
+          color: $font-secondary;
+          transform: scale(2.8);
+          &:hover {
+            color: $font-secondary-hover;
+          }
+          &:active {
+            color: $font-secondary-active;
+          }
+        }
+        .fa-check {
+          transform: scale(5);
+        }
+        @include for-phone-only {
+          .fa-check {
+            padding: 0;
+          }
+        }
+      `}</style>
+>>>>>>> Add footer layout
     </>
   );
 };
