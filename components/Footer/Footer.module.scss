@@ -11,6 +11,8 @@
 
 .footer {
   width: 100vw;
+  position: sticky;
+  bottom: 0;
   color: #fff;
   background-color: $dark-background;
   height: 150px;

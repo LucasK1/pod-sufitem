@@ -2,7 +2,8 @@
 @import "./styles/mediaQuery";
 
 .container {
-  margin-top: 200px;
+  min-height: calc(100vh - 320px);
+  margin-top: 150px;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;

@@ -175,7 +175,6 @@ const Home = () => {
           <Prices />
         </InfoBox>
       </main>
-      <Footer />
     </>
   );
 };

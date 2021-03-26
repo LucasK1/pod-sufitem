@@ -215,7 +215,7 @@
 
 @include for-tablet-landscape {
   .navbar__navlist {
-    width: 65%;
+    width: 70%;
   }
   .navbar__logo {
     margin: 0 0 0 10px;
@@ -225,6 +225,9 @@
 }
 
 @include for-desktop {
+  .navbar__navlist {
+    width: 65%;
+  }
   .navbar__logo {
     margin: 0 0 0 10px;
     height: 96px;
