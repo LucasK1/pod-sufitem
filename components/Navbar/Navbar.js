@@ -1,4 +1,5 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
+import { useRouter } from 'next/router';
 import Link from 'next/link';
 import Image from 'next/image';
 
@@ -7,6 +8,8 @@ import styles from './Navbar.module.scss';
 const Navbar = () => {
   const [burgerActive, setBurgerActive] = useState(false);
   const [navlistActive, setNavlistActive] = useState(false);
+
+  const { pathname } = useRouter();
 
   function toggleMenu() {
     setBurgerActive(!burgerActive);
@@ -36,6 +39,12 @@ const Navbar = () => {
       id: 'gallery',
       name: 'Galeria',
       url: '/galeria',
+      isLink: true,
+    },
+    {
+      id: 'contact',
+      name: 'Kontakt',
+      url: pathname === '/galeria' ? '/galeria#kontakt' : '/#kontakt',
       isLink: true,
     },
     {

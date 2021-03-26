@@ -1,10 +1,11 @@
 import React from 'react';
 import Head from 'next/head';
 
-import Prices from '@/components/Prices/Prices';
 import InfoBox from '@/components/InfoBox/InfoBox';
-import Teachers from '@/components/Teachers/Teachers';
 import Classes from '@/components/Classes/Classes';
+import Teachers from '@/components/Teachers/Teachers';
+import Prices from '@/components/Prices/Prices';
+import Footer from '@/components/Footer/Footer';
 
 import styles from '@/styles/landingPage.module.scss';
 
@@ -15,7 +16,7 @@ const Home = () => {
         <title>pod sufitem // Szkoła akrobatyki powietrznej</title>
       </Head>
       <main className={styles.container}>
-        <div className={styles.main}>
+        <div className={styles.landing}>
           <article className={styles.lead__text}>
             <p>
               Pod Sufitem to studio akrobatyki powietrznej, zlokalizowane w
@@ -131,18 +132,16 @@ const Home = () => {
               <a
                 href="https://www.facebook.com/podsufitem"
                 target="_blank"
-                aria-label="Facebook link">
-                <span className={styles.fontAwesome}>
-                  <i className="fab fa-facebook-square fa-3x"></i>
-                </span>
+                aria-label="Facebook link"
+                className={styles.fontAwesome}>
+                <i className="fab fa-facebook-square fa-3x"></i>
               </a>
               <a
                 href="https://www.instagram.com/pod.sufitem/"
                 target="_blank"
-                aria-label="Instagram link">
-                <span className={styles.fontAwesome}>
-                  <i className="fab fa-instagram-square fa-3x"></i>
-                </span>
+                aria-label="Instagram link"
+                className={styles.fontAwesome}>
+                <i className="fab fa-instagram-square fa-3x"></i>
               </a>
             </div>
           </div>
