@@ -1,4 +1,54 @@
+@import "./styles/variables";
+@import "./styles/mediaQuery";
+
+.fontAwesome {
+  margin: 0 10px;
+
+  &:hover {
+    color: $font-primary-hover;
+  }
+}
+
 .footer {
-  background-color: #000;
-  height: 200px;
+  width: 100vw;
+  color: #fff;
+  background-color: $dark-background;
+  height: 150px;
+  margin-top: 20px;
+  box-shadow: 0px -2px 4px 1px rgba(0, 0, 0, 0.2), 0px -4px 5px 0px rgba(0, 0, 0, 0.14),
+    0px -1px 10px 0px rgba(0, 0, 0, 0.12);
+
+  &__container {
+    height: 100%;
+    max-width: $max-width;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+
+.telMail:hover {
+  color: $font-primary-hover;
+}
+
+.media {
+  height: 100%;
+  padding-top: 20px;
+}
+
+@include for-tablet-portrait {
+  .footer__container {
+    padding-left: 10px;
+  }
+}
+@include for-phone-only {
+  .footer__container {
+    padding-left: 10px;
+  }
+  .media {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
 }

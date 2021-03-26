@@ -11,8 +11,6 @@ body {
   margin: 0;
   scroll-behavior: smooth;
   overflow-x: hidden;
-  display: flex;
-  flex-direction: column;
 }
 
 a {
@@ -28,8 +26,4 @@ button {
   margin: 0;
   border: none;
   background-color: inherit;
-}
-.container {
-  margin: 0 auto;
-  max-width: $max-width;
 }

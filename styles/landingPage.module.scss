@@ -22,7 +22,7 @@
   align-items: center;
 }
 
-.main {
+.landing {
   margin-top: 130px;
   display: flex;
   flex-direction: column;
@@ -99,7 +99,7 @@
 }
 
 .contact {
-  width: 100%;
+  width: $max-width;
   padding: 50px 0;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -168,7 +168,7 @@
 }
 
 @include for-phone-only {
-  .main::after {
+  .landing::after {
     top: 30%;
     transform: scale(1.5);
   }
@@ -257,7 +257,7 @@
 }
 
 @include for-tablet-landscape {
-  .main::after {
+  .landing::after {
     top: 30%;
     transform: scale(1.5);
   }
@@ -268,7 +268,7 @@
 }
 
 @include for-desktop {
-  .main::after {
+  .landing::after {
     top: 20%;
     transform: scale(1.3);
   }

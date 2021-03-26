@@ -16,7 +16,7 @@ const Home = () => {
         <title>pod sufitem // Szkoła akrobatyki powietrznej</title>
       </Head>
       <main className={styles.container}>
-        <div className={styles.main}>
+        <div className={styles.landing}>
           <article className={styles.lead__text}>
             <p>
               Pod Sufitem to studio akrobatyki powietrznej, zlokalizowane w
@@ -132,18 +132,16 @@ const Home = () => {
               <a
                 href="https://www.facebook.com/podsufitem"
                 target="_blank"
-                aria-label="Facebook link">
-                <span className={styles.fontAwesome}>
-                  <i className="fab fa-facebook-square fa-3x"></i>
-                </span>
+                aria-label="Facebook link"
+                className={styles.fontAwesome}>
+                <i className="fab fa-facebook-square fa-3x"></i>
               </a>
               <a
                 href="https://www.instagram.com/pod.sufitem/"
                 target="_blank"
-                aria-label="Instagram link">
-                <span className={styles.fontAwesome}>
-                  <i className="fab fa-instagram-square fa-3x"></i>
-                </span>
+                aria-label="Instagram link"
+                className={styles.fontAwesome}>
+                <i className="fab fa-instagram-square fa-3x"></i>
               </a>
             </div>
           </div>
@@ -176,37 +174,8 @@ const Home = () => {
         <InfoBox title="Cennik" id="cennik" prices>
           <Prices />
         </InfoBox>
-<<<<<<< HEAD
       </main>
-=======
-        <Footer />
-      </div>
-
-      <style jsx>{`
-        @import './styles/variables';
-        @import './styles/mediaQuery';
-        /* Styling the fontawesome icons */
-        .fas,
-        .fab {
-          color: $font-secondary;
-          transform: scale(2.8);
-          &:hover {
-            color: $font-secondary-hover;
-          }
-          &:active {
-            color: $font-secondary-active;
-          }
-        }
-        .fa-check {
-          transform: scale(5);
-        }
-        @include for-phone-only {
-          .fa-check {
-            padding: 0;
-          }
-        }
-      `}</style>
->>>>>>> Add footer layout
+      <Footer />
     </>
   );
 };
