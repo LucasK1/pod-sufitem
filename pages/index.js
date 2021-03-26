@@ -40,49 +40,55 @@ const Home = () => {
             className={styles.bookBtn}>
             Zapisy na zajęcia
           </a>
-          <section className={styles.equipment__container}>
-            <div className={styles.equipment__content}>
-              <div className={styles.equipment__item}>
-                <i className="fas fa-check"></i>
-                <p className={styles.equipment__desc}>
-                  Specjalizujemy się w zajęciach
-                  <strong className={styles.bold}>
-                    {' '}
-                    pole dance i aerial hoop
-                  </strong>
-                  , ale w naszej ofercie znajdziesz również szereg zajęć
-                  uzupełniających, takich jak:
-                  <ul className={styles.equipment__list}>
-                    <li>Pole Choreo</li>
-                    <li>Acro Pole</li>
-                    <li>Spinning Pole</li>
-                    <li>Stretching</li>
-                    <li> Kalistenika</li>
-                    <li>Joga Kręgosłupa</li>
-                  </ul>
-                </p>
-              </div>
-              <div className={styles.equipment__item}>
-                <i className="fas fa-check"></i>
-                <p className={styles.equipment__desc}>
-                  Posiadamy sprzęt najwyższej&nbsp;jakości:
-                  <p>
-                    Rurki SunPole o wysokości 4 m: chromowo-niklowe, malowane
-                    proszkowo i mosiężne,
-                  </p>
-                  <p>Koła oraz osprzęt aerial hoop firmy Flying Rose.</p>
-                </p>
-              </div>
-              <div className={styles.equipment__item}>
-                <i className="fas fa-check"></i>
-                <p className={styles.equipment__desc}>
-                  Bezpieczeństwo zapewniają certyfikowane materace asekuracyjne
-                  o wielkości 160cmx160cm i grubości 15 cm.
-                </p>
-              </div>
-            </div>
-          </section>
         </div>
+        <section className={styles.equipment__container}>
+          <div className={styles.equipment__content}>
+            <div className={styles.equipment__item}>
+              <span className={styles.fontAwesome}>
+                <i className="fas fa-check fa-7x"></i>
+              </span>
+              <p className={styles.equipment__desc}>
+                Specjalizujemy się w zajęciach
+                <strong className={styles.bold}>
+                  {' '}
+                  pole dance i aerial hoop
+                </strong>
+                , ale w naszej ofercie znajdziesz również szereg zajęć
+                uzupełniających, takich jak:
+                <ul className={styles.equipment__list}>
+                  <li>Pole Choreo</li>
+                  <li>Acro Pole</li>
+                  <li>Spinning Pole</li>
+                  <li>Stretching</li>
+                  <li> Kalistenika</li>
+                  <li>Joga Kręgosłupa</li>
+                </ul>
+              </p>
+            </div>
+            <div className={styles.equipment__item}>
+              <span className={styles.fontAwesome}>
+                <i className="fas fa-check fa-7x"></i>
+              </span>
+              <p className={styles.equipment__desc}>
+                Posiadamy sprzęt najwyższej&nbsp;jakości:
+                <p>
+                  Rurki SunPole o wysokości 4 m: chromowo-niklowe, malowane
+                  proszkowo i mosiężne,
+                </p>
+                <p>Koła oraz osprzęt aerial hoop firmy Flying Rose.</p>
+              </p>
+            </div>
+            <div className={styles.equipment__item}>
+              <span className={styles.fontAwesome}>
+                <i className="fas fa-check fa-7x"></i>
+              </span>
+              <p className={styles.equipment__desc}>
+                Bezpieczeństwo zapewniają certyfikowane materace asekuracyjne o
+                wielkości 160cmx160cm i grubości 15 cm.
+              </p>
+            </div>
+          </div>
+        </section>
         <section className={styles.contact}>
           <div className={`${styles.contact__column} ${styles.contact__tel}`}>
             <span className={styles.contact__column_title}>
@@ -93,7 +99,9 @@ const Home = () => {
                 <ul className={styles.contact__tel_list}>
                   <li className={styles.contact__tel_listItem}>
                     <a href="tel:+48799079809" aria-hidden="true">
-                      <i className="fas fa-phone-alt"></i>
+                      <span className={styles.fontAwesome}>
+                        <i className="fas fa-phone-alt fa-3x"></i>
+                      </span>
                     </a>
                     <a href="tel:+48799079809">+48 799 079 809</a>
                   </li>
@@ -101,7 +109,9 @@ const Home = () => {
                     <a
                       href="mailto:zapisy.podsufitem@gmail.com"
                       aria-hidden="true">
-                      <i className="fas fa-envelope"></i>
+                      <span className={styles.fontAwesome}>
+                        <i className="fas fa-envelope fa-3x"></i>
+                      </span>
                     </a>
                     <a href="mailto:zapisy.podsufitem@gmail.com">
                       zapisy.podsufitem@gmail.com
@@ -122,13 +132,17 @@ const Home = () => {
                 href="https://www.facebook.com/podsufitem"
                 target="_blank"
                 aria-label="Facebook link">
-                <i className="fab fa-facebook-square"></i>
+                <span className={styles.fontAwesome}>
+                  <i className="fab fa-facebook-square fa-3x"></i>
+                </span>
               </a>
               <a
                 href="https://www.instagram.com/pod.sufitem/"
                 target="_blank"
                 aria-label="Instagram link">
-                <i className="fab fa-instagram-square"></i>
+                <span className={styles.fontAwesome}>
+                  <i className="fab fa-instagram-square fa-3x"></i>
+                </span>
               </a>
             </div>
           </div>
@@ -137,9 +151,12 @@ const Home = () => {
             className={`${styles.contact__column} ${styles.contact__address}`}>
             <span className={styles.contact__column_title}>Odwiedź nas</span>
             <div className={styles.contact__column_content}>
-              <a href="https://goo.gl/maps/vRQJRCQE7JP4J6CWA" target="_blank">
+              <a
+                href="https://goo.gl/maps/vRQJRCQE7JP4J6CWA"
+                target="_blank"
+                className={styles.fontAwesome}>
                 <i
-                  className="fas fa-map-marker-alt"
+                  className="fas fa-map-marker-alt fa-3x"
                   alt="Google Maps Address Link"></i>
               </a>
               <address>
@@ -159,31 +176,6 @@ const Home = () => {
           <Prices />
         </InfoBox>
       </main>
-
-      <style jsx>{`
-        @import './styles/variables';
-        @import './styles/mediaQuery';
-        /* Styling the fontawesome icons */
-        .fas,
-        .fab {
-          color: $font-secondary;
-          transform: scale(2.8);
-          &:hover {
-            color: $font-secondary-hover;
-          }
-          &:active {
-            color: $font-secondary-active;
-          }
-        }
-        .fa-check {
-          transform: scale(5);
-        }
-        @include for-phone-only {
-          .fa-check {
-            padding: 0;
-          }
-        }
-      `}</style>
     </>
   );
 };

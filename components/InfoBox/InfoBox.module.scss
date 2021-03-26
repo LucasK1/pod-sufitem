@@ -45,37 +45,26 @@
   .container {
     margin: 20px auto;
     margin-bottom: 0;
-    &__prices {
-      height: auto;
-    }
   }
   .content {
-    height: auto;
-    width: 100%;
     padding: 0 20px;
-    &_border {
-      border: 5px solid $font-secondary;
-    }
   }
 }
 
 @include for-tablet-portrait {
   .container {
     padding: 0 10px;
-    height: auto;
   }
 }
 
 @include for-tablet-landscape {
   .container {
     padding: 0 10px;
-    height: auto;
   }
 }
 
 @include for-desktop {
   .container {
     padding: 0 10px;
-    height: auto;
   }
 }

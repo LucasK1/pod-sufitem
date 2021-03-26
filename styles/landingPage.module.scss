@@ -1,6 +1,16 @@
 @import "./styles/variables";
 @import "./styles/mediaQuery";
 
+.fontAwesome {
+  color: $font-secondary;
+  &:hover {
+    color: $font-secondary-hover;
+  }
+  &:active {
+    color: $font-secondary-active;
+  }
+}
+
 .scrollHelper {
   position: absolute;
   top: -130px;
@@ -60,8 +70,8 @@
 
 .equipment {
   &__container {
-    width: 100vw;
     padding: 50px 0;
+    width: 100vw;
   }
   &__content {
     max-width: $max-width;
@@ -70,10 +80,8 @@
     justify-content: space-around;
   }
   &__item {
-    height: 100%;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
     align-items: center;
   }
   &__desc {
@@ -92,12 +100,23 @@
 
 .contact {
   width: 100%;
+  padding: 50px 0;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  margin-top: 50px;
   font-size: 1.2rem;
   padding-bottom: 80px;
   text-align: center;
+
+  &__column_title {
+    font-size: 1.3rem;
+    line-height: 28px;
+    font-weight: 600;
+  }
+
+  &__column_content {
+    font-size: 1rem;
+    text-align: left;
+  }
 
   &__tel {
     &_list {
@@ -126,13 +145,14 @@
   }
 
   &__social {
+    border-right: 1px solid #000;
+    border-left: 1px solid #000;
+
     & > .contact__column_content {
       display: flex;
       align-items: center;
       justify-content: space-evenly;
-      padding-top: 30px;
-      border-right: 1px solid #000;
-      border-left: 1px solid #000;
+      padding-top: 50px;
     }
   }
 
@@ -144,19 +164,6 @@
       gap: 30px;
       margin-left: 75px;
     }
-  }
-
-  &__column_title {
-    font-size: 1.3rem;
-    line-height: 28px;
-    font-weight: 600;
-  }
-
-  &__column_content {
-    font-size: 1rem;
-    height: 100px;
-    text-align: left;
-    padding: 15px;
   }
 }
 
@@ -171,34 +178,6 @@
     }
   }
 
-  .contact {
-    display: flex;
-    flex-direction: column;
-    justify-items: center;
-    gap: 20px;
-    &__tel {
-      & > .contact__column_content {
-        margin-bottom: 35px;
-      }
-    }
-
-    &__social {
-      & > .contact__column_content {
-        border-right: none;
-        border-left: none;
-      }
-    }
-
-    &__column_title {
-      font-size: 1.2rem;
-      line-height: 20px;
-      font-weight: 600;
-    }
-
-    &__column_content {
-      font-size: 1rem;
-    }
-  }
   .equipment {
     &__container {
       height: auto;
@@ -213,6 +192,32 @@
     &__desc {
       height: auto;
       padding-top: 40px;
+    }
+  }
+
+  .contact {
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    gap: 20px;
+
+    &__tel > .contact__column_content {
+      margin-bottom: 35px;
+    }
+
+    &__social {
+      border-right: none;
+      border-left: none;
+    }
+
+    &__column_title {
+      font-size: 1.2rem;
+      line-height: 20px;
+      font-weight: 600;
+    }
+
+    &__column_content {
+      font-size: 1rem;
     }
   }
 }

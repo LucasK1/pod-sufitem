@@ -124,11 +124,7 @@ const Classes = () => {
     </section>
   ));
 
-  return (
-    <div className={styles.classes__content}>
-      <article className={styles.classes}>{classesData}</article>
-    </div>
-  );
+  return <article className={styles.classes}>{classesData}</article>;
 };
 
 export default Classes;

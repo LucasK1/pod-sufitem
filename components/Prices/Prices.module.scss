@@ -3,7 +3,6 @@
 
 .content {
   max-width: $max-width;
-  margin: 0 auto;
   padding: 30px 0;
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -45,19 +44,17 @@
 
 @include for-phone-only {
   .content {
-    height: auto;
     grid-template-columns: 100%;
     grid-template-rows: repeat(4, 25%);
 
     &__section {
-      padding: 0 10px;
+      padding: 0 10px 20px 10px;
     }
   }
 }
 
 @include for-tablet-portrait {
   .content {
-    height: auto;
     grid-template-columns: 100%;
     grid-template-rows: repeat(4, 1fr);
 
@@ -69,7 +66,6 @@
 
 @include for-tablet-landscape {
   .content {
-    height: auto;
     padding: 0 20px;
     gap: 20px;
     justify-content: center;
@@ -80,10 +76,7 @@
 }
 
 @include for-desktop {
-  .content {
-    height: auto;
-    &__section {
-      padding: 0 20px;
-    }
+  .content__section {
+    padding: 0 20px;
   }
 }
