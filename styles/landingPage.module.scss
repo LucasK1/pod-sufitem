@@ -248,6 +248,12 @@
       padding-top: 40px;
     }
   }
+  .contact__tel_list {
+    padding: 0 10px;
+  }
+  .contact__address > .contact__column_content {
+    margin-left: 10px;
+  }
 }
 
 @include for-tablet-landscape {
