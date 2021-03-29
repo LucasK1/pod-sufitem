@@ -27,21 +27,28 @@ const Home = () => {
               Hoop Amateur POSA 2019.
             </p>
             <p>
-              Na pierwszym miejscu stawiamy jakość zajęć oraz komfort
-              uczestników, dlatego pracujemy w kameralnych grupach i
-              gwarantujemy indywidualne podejście do kursanta.
+              Pod Sufitem to studio akrobatyki powietrznej, zlokalizowane w
+              Warszawie, w samym centrum Pragi Północ.
+              <br />
+              Założycielką studia jest Anna Łukasiak - mistrzyni Polski Pole
+              Sport Professional POSA 2019, mistrzyni Polski i Świata Aerial
+              Hoop Amateur POSA 2019.
             </p>
             <p>
-              Wiek, rozmiar i płeć nie ma znaczenia - u nas poczujesz się jak w
-              domu!
+              Pod Sufitem to studio akrobatyki powietrznej, zlokalizowane w
+              Warszawie, w samym centrum Pragi Północ.
+              <br />
+              Założycielką studia jest Anna Łukasiak - mistrzyni Polski Pole
+              Sport Professional POSA 2019, mistrzyni Polski i Świata Aerial
+              Hoop Amateur POSA 2019.
             </p>
           </article>
-          <a
-            href="https://app.fitssey.com/podsufitem/frontoffice"
-            className={styles.bookBtn}>
-            Zapisy na zajęcia
-          </a>
         </div>
+        <a
+          href="https://app.fitssey.com/podsufitem/frontoffice"
+          className={styles.bookBtn}>
+          Zapisy na zajęcia
+        </a>
         <section className={styles.equipment__container}>
           <div className={styles.equipment__content}>
             <div className={styles.equipment__item}>
@@ -71,12 +78,16 @@ const Home = () => {
                 <i className="fas fa-check fa-7x"></i>
               </span>
               <p className={styles.equipment__desc}>
-                Posiadamy sprzęt najwyższej&nbsp;jakości:
+                Posiadamy sprzęt najwyższej&nbsp;jakości.
                 <p>
                   Rurki SunPole o wysokości 4 m: chromowo-niklowe, malowane
                   proszkowo i mosiężne,
                 </p>
                 <p>Koła oraz osprzęt aerial hoop firmy Flying Rose.</p>
+                <p>
+                  Bezpieczeństwo zapewniają certyfikowane materace asekuracyjne
+                  o wielkości 160cmx160cm i grubości 15 cm.
+                </p>
               </p>
             </div>
             <div className={styles.equipment__item}>
@@ -84,8 +95,13 @@ const Home = () => {
                 <i className="fas fa-check fa-7x"></i>
               </span>
               <p className={styles.equipment__desc}>
-                Bezpieczeństwo zapewniają certyfikowane materace asekuracyjne o
-                wielkości 160cmx160cm i grubości 15 cm.
+                Na pierwszym miejscu stawiamy jakość zajęć oraz komfort
+                uczestników, dlatego pracujemy w kameralnych grupach i
+                gwarantujemy indywidualne podejście do kursanta.
+                <p>
+                  Wiek, rozmiar i płeć nie ma znaczenia - u nas poczujesz się
+                  jak w domu!
+                </p>
               </p>
             </div>
           </div>

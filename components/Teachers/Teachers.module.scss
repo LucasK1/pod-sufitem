@@ -1,5 +1,5 @@
-@import "./styles/variables";
-@import "./styles/mediaQuery";
+@import './styles/variables';
+@import './styles/mediaQuery';
 
 .container {
   padding: 40px 0;
@@ -23,7 +23,7 @@
   &__thumbnail {
     height: 70%;
     width: 70%;
-    transition: transform 200ms linear, box-shadow 200ms linear;
+    transition: transform 100ms linear, box-shadow 100ms linear;
     &:hover {
       cursor: pointer;
       transform: scale(1.1);
