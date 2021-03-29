@@ -99,20 +99,20 @@ const Home = () => {
               <address>
                 <ul className={styles.contact__tel_list}>
                   <li className={styles.contact__tel_listItem}>
-                    <a href="tel:+48799079809" aria-hidden="true">
-                      <span className={styles.fontAwesome}>
-                        <i className="fas fa-phone-alt fa-3x"></i>
-                      </span>
+                    <a
+                      href="tel:+48799079809"
+                      aria-hidden="true"
+                      className={styles.fontAwesome}>
+                      <i className="fas fa-phone-alt fa-3x"></i>
                     </a>
                     <a href="tel:+48799079809">+48 799 079 809</a>
                   </li>
                   <li className={styles.contact__tel_listItem}>
                     <a
                       href="mailto:zapisy.podsufitem@gmail.com"
-                      aria-hidden="true">
-                      <span className={styles.fontAwesome}>
-                        <i className="fas fa-envelope fa-3x"></i>
-                      </span>
+                      aria-hidden="true"
+                      className={styles.fontAwesome}>
+                      <i className="fas fa-envelope fa-3x"></i>
                     </a>
                     <a href="mailto:zapisy.podsufitem@gmail.com">
                       zapisy.podsufitem@gmail.com
