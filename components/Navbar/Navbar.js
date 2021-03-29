@@ -67,7 +67,10 @@ const Navbar = () => {
           {item.name}
         </Link>
       ) : (
-        <a href={item.url} target="_blank">
+        <a
+          href={item.url}
+          target="_blank"
+          className={styles.navbar__bookingLink}>
           {item.name}
         </a>
       )}

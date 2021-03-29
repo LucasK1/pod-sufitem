@@ -31,6 +31,7 @@ const index = () => {
           alt=""
           width="200"
           height="300"
+          key={image}
           onClick={() => imageClickHandler(index)}
         />
       ))}
