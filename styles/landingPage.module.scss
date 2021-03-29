@@ -1,5 +1,5 @@
-@import './styles/variables';
-@import './styles/mediaQuery';
+@import "./styles/variables";
+@import "./styles/mediaQuery";
 
 .fontAwesome {
   color: $font-secondary;
@@ -29,8 +29,8 @@
   align-items: center;
   justify-content: space-between;
   &::after {
-    content: '';
-    background: url('/static/images/backgroundLogo.png') center no-repeat;
+    content: "";
+    background: url("/static/images/backgroundLogo.png") center no-repeat;
     position: absolute;
     width: 128px;
     height: 289px;
@@ -195,6 +195,7 @@
   }
 
   .contact {
+    width: 100vw;
     display: flex;
     flex-direction: column;
     justify-items: center;
