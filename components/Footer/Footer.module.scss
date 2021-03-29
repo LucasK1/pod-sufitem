@@ -21,6 +21,7 @@
 
   &__container {
     height: 100%;
+    padding-left: 10px;
     max-width: $max-width;
     margin: 0 auto;
     display: flex;
@@ -38,15 +39,7 @@
   padding-top: 20px;
 }
 
-@include for-tablet-portrait {
-  .footer__container {
-    padding-left: 10px;
-  }
-}
 @include for-phone-only {
-  .footer__container {
-    padding-left: 10px;
-  }
   .media {
     display: flex;
     flex-wrap: wrap;

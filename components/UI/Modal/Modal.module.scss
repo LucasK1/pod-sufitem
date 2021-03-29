@@ -1,20 +1,17 @@
-@import "./styles/variables";
-@import "./styles/mediaQuery";
+@import './styles/variables';
+@import './styles/mediaQuery';
 
 .modal {
   position: fixed;
-  width: 70%;
   max-width: $max-width;
-  top: 25%;
-  left: 15%;
-  margin: 0 auto;
-  padding: 20px;
+  max-height: 70vh;
+  top: 20%;
   border: 1px solid #ccc;
   background-color: white;
   opacity: 0;
   transition: all 0.3s ease-out;
   visibility: hidden;
-  z-index: 50000;
+  z-index: 20;
   overflow-x: auto;
 
   &_show {
@@ -34,7 +31,21 @@
 
 @include for-tablet-portrait {
   .modal {
-    top: 20%;
-    max-height: 70vh;
+    width: 80%;
+    left: calc((100vw - 80%) / 2);
+  }
+}
+
+@include for-tablet-landscape {
+  .modal {
+    width: 80%;
+    left: calc((100vw - 80%) / 2);
+  }
+}
+
+@include for-desktop {
+  .modal {
+    width: 70%;
+    left: calc((100vw - 70%) / 2);
   }
 }
