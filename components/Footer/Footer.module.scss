@@ -40,9 +40,13 @@
 }
 
 @include for-phone-only {
+  .fontAwesome {
+    font-size: 0.8rem;
+  }
   .media {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    padding: 10px 0;
   }
 }
