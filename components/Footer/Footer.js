@@ -27,22 +27,23 @@ const Footer = () => {
         <section className={styles.media}>
           <a
             href="mailto:zapisy.podsufitem@gmail.com"
-            className={styles.fontAwesome}>
-            <i className="fas fa-envelope fa-3x"></i>
+            className={styles.fontAwesome}
+            aria-label="Mail link">
+            <i aria-hidden="true" className="fas fa-envelope fa-3x"></i>
           </a>
           <a
             href="https://www.facebook.com/podsufitem"
             target="_blank"
             aria-label="Facebook link"
             className={styles.fontAwesome}>
-            <i className="fab fa-facebook-square fa-3x"></i>
+            <i aria-hidden="true" className="fab fa-facebook-square fa-3x"></i>
           </a>
           <a
             href="https://www.instagram.com/pod.sufitem/"
             target="_blank"
             aria-label="Instagram link"
             className={styles.fontAwesome}>
-            <i className="fab fa-instagram-square fa-3x"></i>
+            <i aria-hidden="true" className="fab fa-instagram-square fa-3x"></i>
           </a>
         </section>
       </div>
