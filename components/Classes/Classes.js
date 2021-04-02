@@ -100,21 +100,6 @@ const Classes = () => {
         </p>
       ),
     },
-    {
-      id: 'acropole',
-      name: 'Acro Pole',
-      desc: (
-        <p>
-          Pilates stanowi jedną z najbezpieczniejszych form aktywności, dlatego
-          zajęćia przeznaczone są dla wszystkich, Trening oparty jest na
-          aktywizacji mięśni głębokich, stabilizujących, w połączeniu z
-          ćwiczeniami oddechowymi. W szczególności wzmocnieniu ulegają mięśnie
-          pleców i brzucha. Efektem jest szczuplejsza, wyrzeźbiona sylwetka,
-          lepsza postawa ciała, eliminacja bólu kręgosłupa, mniejsza podatność
-          na kontuzje.
-        </p>
-      ),
-    },
   ];
 
   const classesData = classes.map(({ name, desc }) => (

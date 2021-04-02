@@ -65,7 +65,6 @@ const Home = () => {
                 uzupełniających, takich jak:
                 <ul className={styles.equipment__list}>
                   <li>Pole Choreo</li>
-                  <li>Acro Pole</li>
                   <li>Spinning Pole</li>
                   <li>Stretching</li>
                   <li> Kalistenika</li>

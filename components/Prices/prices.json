@@ -3,152 +3,73 @@
     {
       "id": 1,
       "name": "Wejście jednorazowe",
-      "price": 40,
-      "desc": "Obowiązuje na pojedyncze zajęcia z kategorii fitness. Nie obowiązuje na pole dance, aerial hoop, exotic. Ważny przez 30 dni, licząc od daty zakupu."
+      "price": 40
     },
     {
       "id": 2,
       "name": "Karnet 4 wejścia",
-      "price": 120,
-      "desc": "Obowiązuje na zajęcia z kategorii fitness. Nie obowiązuje na pole dance, aerial hoop, exotic. Ważny przez 30 dni, licząc od daty pierwszych zajęć."
+      "price": 120
     },
     {
       "id": 3,
       "name": "Karnet 8 wejść",
-      "price": 220,
-      "desc": "Obowiązuje na zajęcia z kategorii fitness. Nie obowiązuje na pole dance, aerial hoop, exotic. Ważny przez 30 dni, licząc od daty pierwszych zajęć."
+      "price": 220
     },
     {
       "id": 4,
       "name": "Karnet 12 wejść",
-      "price": 300,
-      "desc": "Obowiązuje na zajęcia z kategorii fitness. Nie obowiązuje na pole dance, aerial hoop, exotic. Ważny przez 30 dni, licząc od daty pierwszych zajęć."
-    }
-  ],
-  "themedFriday": [
-    {
-      "id": 1,
-      "name": "Wejście jednorazowe",
-      "price": 25,
-      "desc": "Ważny przez 30 dni, licząc od daty zakupu."
-    }
-  ],
-  "workshops": [
-    {
-      "id": 1,
-      "name": "Pole Dance 90 minut",
-      "price": 90,
-      "desc": "Ważny przez 30 dni, licząc od daty zakupu."
-    },
-    {
-      "id": 2,
-      "name": "Aerial Hoop 90 minut",
-      "price": 75,
-      "desc": "Ważny przez 30 dni, licząc od daty zakupu."
+      "price": 300
     }
   ],
   "poleAerial": [
     {
       "id": 1,
       "name": "Wejście jednorazowe",
-      "price": 50,
-      "desc": "Obowiązuje na wejście jednorazowe na zajęcia pole dance, acro pole, aerial hoop. Ważny przez 30 dni, licząc od daty zakupu."
-    },
-    {
-      "id": 2,
-      "name": "Karnet 4 wejścia",
-      "price": 150,
-      "desc": "Obowiązuje na zajęcia pole dance, aerial hoop - wszystkie poziomy i rodzaje. Ważny przez 30 dni, licząc od daty pierwszych zajęć."
-    },
-    {
-      "id": 3,
-      "name": "Karnet 8 wejść",
-      "price": 250,
-      "desc": "Obowiązuje na zajęcia pole dance, aerial hoop - wszystkie poziomy i rodzaje. Ważny przez 30 dni, licząc od daty pierwszych zajęć."
-    },
-    {
-      "id": 4,
-      "name": "Karnet 12 wejść",
-      "price": 350,
-      "desc": "Obowiązuje na zajęcia pole dance, aerial hoop - wszystkie poziomy i rodzaje. Ważny przez 30 dni, licząc od daty pierwszych zajęć."
+      "price": 50
     }
   ],
   "mix": [
     {
       "id": 1,
       "name": "Karnet 8 wejść",
-      "price": 260,
-      "desc": "Obowiązuje na DOWOLNE zajęcia. Karnet ważny 30 dni, licząc od daty pierwszych zajęć."
+      "price": 260
     },
     {
       "id": 2,
       "name": "Karnet 12 wejść",
-      "price": 360,
-      "desc": "Obowiązuje na DOWOLNE zajęcia. Karnet ważny 30 dni, licząc od daty pierwszych zajęć."
+      "price": 360
     },
     {
       "id": 3,
       "name": "Karnet 16 wejść",
-      "price": 460,
-      "desc": "Obowiązuje na DOWOLNE zajęcia. Karnet ważny 30 dni, licząc od daty pierwszych zajęć."
+      "price": 460
     },
     {
       "id": 4,
       "name": "Karnet 20 wejść",
-      "price": 500,
-      "desc": "Obowiązuje na DOWOLNE zajęcia. Karnet ważny 30 dni, licząc od daty pierwszych zajęć."
+      "price": 500
     }
   ],
   "rent": [
     {
       "id": 1,
       "name": "Wynajem Pole Room SOLO (osoby z aktywnym karnetem)",
-      "price": 30,
-      "desc": "Wybierz ten karnet, jeśli chcesz mieć salę na wyłączność i jesteś naszym kursantem z aktywnym karnetem. Ważny przez 30 dni, licząc od daty zakupu."
+      "price": 30
     },
     {
       "id": 2,
       "name": "Wynajem Pole Room DUET",
-      "price": 50,
-      "desc": "Wybierz ten karnet, jeśli chcesz poćwiczyć z koleżanką/kolegą lub jesteś instruktorem i chcesz przeprowadzić lekcję prywatną. Cena obejmuje wynajem sali dla 2 osób. Ważny przez 30 dni, licząc od daty zakupu."
+      "price": 50
     },
     {
       "id": 3,
-      "name": "Wynajem sali świątecznej (kursanci studia)",
-      "price": 75,
-      "desc": "Wynajem sali świątecznej pole dance/aerial hoop na 1 godzinę. Wstęp dla maksymalnie 3 osób. Wybierz ten karnet, jeśli jesteś naszym stałym kursantem. Ważny przez 30 dni, licząc od daty zakupu."
+      "name": "Wynajem Pole Room SOLO (osoby spoza studia/bez karnetu)",
+      "price": 40
     },
     {
       "id": 4,
-      "name": "Wynajem sali świątecznej (osoby spoza studia/bez karnetu)",
-      "price": 100,
-      "desc": "Wynajem sali świątecznej pole dance/aerial hoop na wyłączność. Wstęp dla maksymalnie 3 osób. Wybierz ten karnet, jeśli nie jesteś naszym stałym kursantem. Ważny przez 30 dni, licząc od daty zakupu."
-    },
-    {
-      "id": 5,
-      "name": "Wynajem Pole Room SOLO (osoby spoza studia/bez karnetu)",
-      "price": 40,
-      "desc": "Wybierz ten karnet jeśli chcesz mieć salę na wyłączność, a nie jesteś naszym stałym kursantem lub nie posiadasz aktywnego karnetu. Ważny przez 30 dni, licząc od daty zakupu."
-    },
-    {
-      "id": 6,
       "name": "Wolna sala",
-      "price": 20,
-      "desc": "Jednorazowe wejście na wolną salę - trening bez instruktora, Ważny przez 1 tydzień od pierwszej wizyty."
-    }
-  ],
-  "online": [
-    {
-      "id": 1,
-      "name": "Wejście jednorazowe",
-      "price": 20,
-      "desc": "Karnet pozwalający na uczestnictwo w 1 wybranych zajęciach ONLINE. Relacja z danych zajęć zachowywana jest przez 24 h. Ważny przez 1 dzień od pierwszej wizyty."
-    },
-    {
-      "id": 2,
-      "name": "Karnet 4 wejścia",
-      "price": 60,
-      "desc": "Karnet pozwalający na uczestnictwo w 4 lekcjach ONLINE. Relacja z danych zajęć zachowywana jest przez 24 h. Ważny przez 7 dni, licząc od daty pierwszych zajęć."
+      "price": 20
     }
   ]
 }
