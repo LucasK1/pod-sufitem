@@ -218,8 +218,18 @@
     gap: 20px;
     padding-bottom: 30px;
 
-    &__tel > .contact__column_content {
-      margin-bottom: 35px;
+    &__tel {
+      &_list {
+        padding: 0;
+        &Item {
+          align-items: center;
+          flex-direction: column;
+        }
+      }
+
+      & > .contact__column_content {
+        margin-bottom: 35px;
+      }
     }
 
     &__social {
@@ -228,6 +238,13 @@
 
       & > .contact__column_content {
         padding-top: 30px;
+      }
+    }
+
+    &__address {
+      & > .contact__column_content {
+        justify-content: center;
+        margin: 0;
       }
     }
 
