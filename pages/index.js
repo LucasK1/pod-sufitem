@@ -63,14 +63,14 @@ const Home = () => {
                 </strong>
                 , ale w naszej ofercie znajdziesz również szereg zajęć
                 uzupełniających, takich jak:
-                <ul className={styles.equipment__list}>
-                  <li>Pole Choreo</li>
-                  <li>Spinning Pole</li>
-                  <li>Stretching</li>
-                  <li> Kalistenika</li>
-                  <li>Joga Kręgosłupa</li>
-                </ul>
               </p>
+              <ul className={styles.equipment__list}>
+                <li>Pole Choreo</li>
+                <li>Spinning Pole</li>
+                <li>Stretching</li>
+                <li> Kalistenika</li>
+                <li>Joga Kręgosłupa</li>
+              </ul>
             </div>
             <div className={styles.equipment__item}>
               <span className={styles.fontAwesome}>
