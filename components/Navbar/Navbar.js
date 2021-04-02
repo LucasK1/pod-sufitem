@@ -81,13 +81,8 @@ const Navbar = () => {
     <header className={styles.navbar}>
       <nav className={styles.navbar__nav}>
         <div className={styles.navbar__logo}>
-          <Link href="/">
-            <Image
-              src="/static/images/transparentLogo.png"
-              alt="Homepage"
-              height="120"
-              width="206"
-            />
+          <Link href="/" passHref>
+            <Logo />
           </Link>
         </div>
         <ul
@@ -107,15 +102,23 @@ const Navbar = () => {
           </span>
         </button>
       </nav>
-      <style jsx>
-        {`
-          body {
-            overflow-x: hidden;
-          }
-        `}
-      </style>
     </header>
   );
 };
 
 export default Navbar;
+
+const Logo = React.forwardRef(({ onClick, href }, ref) => (
+  <a
+    href={href}
+    ref={ref}
+    onClick={onClick}
+    className={styles.navbar__logoAnchor}>
+    <Image
+      src="/static/images/transparentLogo.png"
+      alt="Homepage"
+      height="120"
+      width="206"
+    />
+  </a>
+));

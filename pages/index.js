@@ -53,7 +53,7 @@ const Home = () => {
           <div className={styles.equipment__content}>
             <div className={styles.equipment__item}>
               <span className={styles.fontAwesome}>
-                <i className="fas fa-check fa-7x"></i>
+                <i aria-hidden="true" className="fas fa-check fa-7x"></i>
               </span>
               <p className={styles.equipment__desc}>
                 Specjalizujemy się w zajęciach
@@ -63,20 +63,20 @@ const Home = () => {
                 </strong>
                 , ale w naszej ofercie znajdziesz również szereg zajęć
                 uzupełniających, takich jak:
-                <ul className={styles.equipment__list}>
-                  <li>Pole Choreo</li>
-                  <li>Spinning Pole</li>
-                  <li>Stretching</li>
-                  <li> Kalistenika</li>
-                  <li>Joga Kręgosłupa</li>
-                </ul>
               </p>
+              <ul className={styles.equipment__list}>
+                <li>Pole Choreo</li>
+                <li>Spinning Pole</li>
+                <li>Stretching</li>
+                <li> Kalistenika</li>
+                <li>Joga Kręgosłupa</li>
+              </ul>
             </div>
             <div className={styles.equipment__item}>
               <span className={styles.fontAwesome}>
-                <i className="fas fa-check fa-7x"></i>
+                <i aria-hidden="true" className="fas fa-check fa-7x"></i>
               </span>
-              <p className={styles.equipment__desc}>
+              <section className={styles.equipment__desc}>
                 Posiadamy sprzęt najwyższej&nbsp;jakości.
                 <p>
                   Rurki SunPole o wysokości 4 m: chromowo-niklowe, malowane
@@ -87,13 +87,13 @@ const Home = () => {
                   Bezpieczeństwo zapewniają certyfikowane materace asekuracyjne
                   o wielkości 160cmx160cm i grubości 15 cm.
                 </p>
-              </p>
+              </section>
             </div>
             <div className={styles.equipment__item}>
               <span className={styles.fontAwesome}>
-                <i className="fas fa-check fa-7x"></i>
+                <i aria-hidden="true" className="fas fa-check fa-7x"></i>
               </span>
-              <p className={styles.equipment__desc}>
+              <section className={styles.equipment__desc}>
                 Na pierwszym miejscu stawiamy jakość zajęć oraz komfort
                 uczestników, dlatego pracujemy w kameralnych grupach i
                 gwarantujemy indywidualne podejście do kursanta.
@@ -101,7 +101,7 @@ const Home = () => {
                   Wiek, rozmiar i płeć nie ma znaczenia - u nas poczujesz się
                   jak w domu!
                 </p>
-              </p>
+              </section>
             </div>
           </div>
         </section>
@@ -114,20 +114,20 @@ const Home = () => {
               <address>
                 <ul className={styles.contact__tel_list}>
                   <li className={styles.contact__tel_listItem}>
-                    <a
-                      href="tel:+48799079809"
-                      aria-hidden="true"
-                      className={styles.fontAwesome}>
-                      <i className="fas fa-phone-alt fa-3x"></i>
+                    <a href="tel:+48799079809" className={styles.fontAwesome}>
+                      <i
+                        aria-hidden="true"
+                        className="fas fa-phone-alt fa-3x"></i>
                     </a>
                     <a href="tel:+48799079809">+48 799 079 809</a>
                   </li>
                   <li className={styles.contact__tel_listItem}>
                     <a
                       href="mailto:zapisy.podsufitem@gmail.com"
-                      aria-hidden="true"
                       className={styles.fontAwesome}>
-                      <i className="fas fa-envelope fa-3x"></i>
+                      <i
+                        aria-hidden="true"
+                        className="fas fa-envelope fa-3x"></i>
                     </a>
                     <a href="mailto:zapisy.podsufitem@gmail.com">
                       zapisy.podsufitem@gmail.com
@@ -147,16 +147,20 @@ const Home = () => {
               <a
                 href="https://www.facebook.com/podsufitem"
                 target="_blank"
-                aria-label="Facebook link"
-                className={styles.fontAwesome}>
-                <i className="fab fa-facebook-square fa-3x"></i>
+                className={styles.fontAwesome}
+                aria-label="Facebook link">
+                <i
+                  aria-hidden="true"
+                  className="fab fa-facebook-square fa-3x"></i>
               </a>
               <a
                 href="https://www.instagram.com/pod.sufitem/"
                 target="_blank"
-                aria-label="Instagram link"
-                className={styles.fontAwesome}>
-                <i className="fab fa-instagram-square fa-3x"></i>
+                className={styles.fontAwesome}
+                aria-label="Instagram link">
+                <i
+                  aria-hidden="true"
+                  className="fab fa-instagram-square fa-3x"></i>
               </a>
             </div>
           </div>
@@ -168,10 +172,11 @@ const Home = () => {
               <a
                 href="https://goo.gl/maps/vRQJRCQE7JP4J6CWA"
                 target="_blank"
-                className={styles.fontAwesome}>
+                className={styles.fontAwesome}
+                aria-label="Google Maps Address Link">
                 <i
-                  className="fas fa-map-marker-alt fa-3x"
-                  alt="Google Maps Address Link"></i>
+                  aria-hidden="true"
+                  className="fas fa-map-marker-alt fa-3x"></i>
               </a>
               <address>
                 <p>Skoczylasa 10/12 lok. 81</p>

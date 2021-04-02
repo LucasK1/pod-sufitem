@@ -105,7 +105,7 @@ const Classes = () => {
   const classesData = classes.map(({ name, desc }) => (
     <section className={styles.classes__singleClass} key={name}>
       <h3>{name}</h3>
-      <p>{desc}</p>
+      {desc}
     </section>
   ));
 
