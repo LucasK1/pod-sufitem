@@ -12,9 +12,7 @@
     "next": "^10.1.2",
     "react": "17.0.1",
     "react-dom": "17.0.1",
-    "react-image-lightbox": "^5.1.1"
-  },
-  "devDependencies": {
-    "node-sass": "^5.0.0"
+    "react-image-lightbox": "^5.1.1",
+    "sass": "^1.32.8"
   }
 }
