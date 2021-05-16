@@ -1,7 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import { useRouter } from 'next/router';
 import Link from 'next/link';
-import Image from 'next/image';
 
 import styles from './Navbar.module.scss';
 
@@ -114,7 +113,7 @@ const Logo = React.forwardRef(({ onClick, href }, ref) => (
     ref={ref}
     onClick={onClick}
     className={styles.navbar__logoAnchor}>
-    <Image
+    <image
       src="/static/images/transparentLogo.png"
       alt="Homepage"
       height="120"
