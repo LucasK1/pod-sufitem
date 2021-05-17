@@ -4,8 +4,8 @@
     "target": "es6",
     "baseUrl": ".",
     "paths": {
-      "@/components/*": ["components/*"],
-      "@/styles/*": ["styles/*"]
+      "@/components/*": ["/components/*"],
+      "@/styles/*": ["/styles/*"]
     }
   },
   "exclude": ["node_modules"]
