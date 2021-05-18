@@ -79,11 +79,9 @@ const Navbar = () => {
   return (
     <header className={styles.navbar}>
       <nav className={styles.navbar__nav}>
-        <div className={styles.navbar__logo}>
-          <Link href="/" passHref>
-            <Logo />
-          </Link>
-        </div>
+        <Link href="/#home">
+          <div alt="Homepage" className={styles.navbar__logo} />
+        </Link>
         <ul
           className={`${styles.navbar__navlist} ${
             navlistActive ? styles.navbar__navlist_active : ''
@@ -113,11 +111,12 @@ const Logo = React.forwardRef(({ onClick, href }, ref) => (
     ref={ref}
     onClick={onClick}
     className={styles.navbar__logoAnchor}>
-    <image
-      src="/static/images/transparentLogo.png"
+    <div
+      // src="/static/images/transparentLogo.png"
       alt="Homepage"
-      height="120"
-      width="206"
+      className={styles.navbar__logoImage}
+      // height="120"
+      // width="206"
     />
   </a>
 ));

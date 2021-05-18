@@ -15,6 +15,7 @@ const Home = () => {
       <Head>
         <title>pod sufitem // Szkoła akrobatyki powietrznej</title>
       </Head>
+      <div id="home" />
       <main className={styles.container}>
         <div className={styles.landing}>
           <article className={styles.lead__text}>
