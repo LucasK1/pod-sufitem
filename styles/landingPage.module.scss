@@ -1,6 +1,15 @@
 @import './styles/variables';
 @import './styles/mediaQuery';
 
+.icons {
+  width: 48px;
+  height: 48px;
+}
+.checkIcons {
+  width: 112px;
+  height: 112px;
+}
+
 .fontAwesome {
   color: $font-secondary;
   &:hover {

@@ -8,6 +8,14 @@ import Prices from '@/components/Prices/Prices';
 import Footer from '@/components/Footer/Footer';
 
 import styles from '@/styles/landingPage.module.scss';
+import {
+  FaCheck,
+  FaEnvelope,
+  FaFacebookSquare,
+  FaInstagramSquare,
+  FaMapMarkerAlt,
+  FaPhoneAlt,
+} from 'react-icons/fa';
 
 const Home = () => {
   return (
@@ -54,7 +62,7 @@ const Home = () => {
           <div className={styles.equipment__content}>
             <div className={styles.equipment__item}>
               <span className={styles.fontAwesome}>
-                <i aria-hidden="true" className="fas fa-check fa-7x"></i>
+                <FaCheck className={styles.checkIcons} />
               </span>
               <p className={styles.equipment__desc}>
                 Specjalizujemy się w zajęciach
@@ -75,7 +83,7 @@ const Home = () => {
             </div>
             <div className={styles.equipment__item}>
               <span className={styles.fontAwesome}>
-                <i aria-hidden="true" className="fas fa-check fa-7x"></i>
+                <FaCheck className={styles.checkIcons} />
               </span>
               <section className={styles.equipment__desc}>
                 Posiadamy sprzęt najwyższej&nbsp;jakości.
@@ -92,7 +100,7 @@ const Home = () => {
             </div>
             <div className={styles.equipment__item}>
               <span className={styles.fontAwesome}>
-                <i aria-hidden="true" className="fas fa-check fa-7x"></i>
+                <FaCheck className={styles.checkIcons} />
               </span>
               <section className={styles.equipment__desc}>
                 Na pierwszym miejscu stawiamy jakość zajęć oraz komfort
@@ -116,9 +124,7 @@ const Home = () => {
                 <ul className={styles.contact__tel_list}>
                   <li className={styles.contact__tel_listItem}>
                     <a href="tel:+48799079809" className={styles.fontAwesome}>
-                      <i
-                        aria-hidden="true"
-                        className="fas fa-phone-alt fa-3x"></i>
+                      <FaPhoneAlt className={styles.icons} />
                     </a>
                     <a href="tel:+48799079809">+48 799 079 809</a>
                   </li>
@@ -126,9 +132,7 @@ const Home = () => {
                     <a
                       href="mailto:zapisy.podsufitem@gmail.com"
                       className={styles.fontAwesome}>
-                      <i
-                        aria-hidden="true"
-                        className="fas fa-envelope fa-3x"></i>
+                      <FaEnvelope className={styles.icons} />
                     </a>
                     <a href="mailto:zapisy.podsufitem@gmail.com">
                       zapisy.podsufitem@gmail.com
@@ -150,18 +154,14 @@ const Home = () => {
                 target="_blank"
                 className={styles.fontAwesome}
                 aria-label="Facebook link">
-                <i
-                  aria-hidden="true"
-                  className="fab fa-facebook-square fa-3x"></i>
+                <FaFacebookSquare className={styles.icons} />
               </a>
               <a
                 href="https://www.instagram.com/pod.sufitem/"
                 target="_blank"
                 className={styles.fontAwesome}
                 aria-label="Instagram link">
-                <i
-                  aria-hidden="true"
-                  className="fab fa-instagram-square fa-3x"></i>
+                <FaInstagramSquare className={styles.icons} />
               </a>
             </div>
           </div>
@@ -175,9 +175,7 @@ const Home = () => {
                 target="_blank"
                 className={styles.fontAwesome}
                 aria-label="Google Maps Address Link">
-                <i
-                  aria-hidden="true"
-                  className="fas fa-map-marker-alt fa-3x"></i>
+                <FaMapMarkerAlt className={styles.icons} />
               </a>
               <address>
                 <p>Skoczylasa 10/12 lok. 81</p>

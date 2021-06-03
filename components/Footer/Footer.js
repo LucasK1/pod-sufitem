@@ -1,4 +1,9 @@
 import React from 'react';
+import {
+  FaEnvelope,
+  FaFacebookSquare,
+  FaInstagramSquare,
+} from 'react-icons/fa';
 
 import styles from './Footer.module.scss';
 
@@ -29,21 +34,21 @@ const Footer = () => {
             href="mailto:zapisy.podsufitem@gmail.com"
             className={styles.fontAwesome}
             aria-label="Mail link">
-            <i aria-hidden="true" className="fas fa-envelope fa-3x"></i>
+            <FaEnvelope className={styles.icons} />
           </a>
           <a
             href="https://www.facebook.com/podsufitem"
             target="_blank"
             aria-label="Facebook link"
             className={styles.fontAwesome}>
-            <i aria-hidden="true" className="fab fa-facebook-square fa-3x"></i>
+            <FaFacebookSquare className={styles.icons} />
           </a>
           <a
             href="https://www.instagram.com/pod.sufitem/"
             target="_blank"
             aria-label="Instagram link"
             className={styles.fontAwesome}>
-            <i aria-hidden="true" className="fab fa-instagram-square fa-3x"></i>
+            <FaInstagramSquare className={styles.icons} />
           </a>
         </section>
       </div>
