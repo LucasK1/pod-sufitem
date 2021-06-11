@@ -44,8 +44,8 @@ const Teachers = () => {
           onKeyDown={(e) => handleKeyPress(e, teacher)}
           tabIndex="0">
           <img
-            src="/static/images/portrait.jpeg"
-            alt="Picture of a doggo"
+            src={`/static/teachers/${teacher.photoId || 'portrait'}.jpg`}
+            alt=""
             className={styles.teacher__thumbnail}
           />
           <figcaption className={styles.teacher__name}>
@@ -56,15 +56,19 @@ const Teachers = () => {
       <Modal show={modalOpen} closeModal={closeModal}>
         <div className={styles.modal__container}>
           <img
-            src="/static/images/portrait.jpeg"
-            alt="doggo"
+            src={`/static/teachers/${
+              selectedTeacher.photoId || 'portrait'
+            }.jpg`}
+            alt=""
             className={styles.modal__photo}
           />
           <aside className={styles.modal__content}>
             <h4 className={styles.modal__title}>{selectedTeacher.name}</h4>
             <p
               className={styles.modal__desc}
-              dangerouslySetInnerHTML={{ __html: selectedTeacher.desc }}></p>
+              dangerouslySetInnerHTML={{
+                __html: selectedTeacher.desc,
+              }}></p>
           </aside>
         </div>
       </Modal>

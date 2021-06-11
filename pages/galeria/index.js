@@ -8,13 +8,24 @@ const index = () => {
   const [isOpen, setIsOpen] = useState(false);
   const [photoIndex, setPhotoIndex] = useState(0);
 
+  // const images = [
+  //   'https://picsum.photos/340/540',
+  //   'https://picsum.photos/600/540',
+  //   'https://picsum.photos/600/560',
+  //   'https://picsum.photos/900/1200',
+  //   'https://picsum.photos/1920/1080',
+  //   'https://picsum.photos/200/350',
+  // ];
+
   const images = [
-    'https://picsum.photos/340/540',
-    'https://picsum.photos/600/540',
-    'https://picsum.photos/600/560',
-    'https://picsum.photos/900/1200',
-    'https://picsum.photos/1920/1080',
-    'https://picsum.photos/200/350',
+    '/static/gallery/1.jpg',
+    '/static/gallery/2.jpg',
+    '/static/gallery/3.jpg',
+    '/static/gallery/4.jpg',
+    '/static/gallery/5.jpg',
+    '/static/gallery/6.jpg',
+    '/static/gallery/7.jpg',
+    '/static/gallery/8.jpg',
   ];
 
   const imageClickHandler = (index) => {
@@ -29,7 +40,7 @@ const index = () => {
           className={styles.imageThumbnail}
           src={image}
           alt=""
-          width="200"
+          // width="200"
           height="300"
           key={image}
           onClick={() => imageClickHandler(index)}
