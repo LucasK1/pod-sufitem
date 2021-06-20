@@ -66,9 +66,11 @@ const Teachers = () => {
       <Modal show={modalOpen} closeModal={closeModal}>
         <div className={styles.modal__container}>
           <img
-            src={`/static/teachers/${
-              selectedTeacher.photoId || 'portrait'
-            }.jpg`}
+            src={
+              teacher.photoId
+                ? `/static/teachers/${teacher.photoId}.jpg`
+                : `/static/images/backgroundLogo.png`
+            }
             alt=""
             className={styles.modal__photo}
           />
