@@ -37,6 +37,7 @@ const Prices = () => {
       </div>
       <div className={styles.content__section}>
         <h3 className={styles.content__sectionTitle}>Wynajem sali</h3>
+        <h4>(dostępne 3 sale)</h4>
         <ul className={styles.content__priceList}>
           {prices.rent.map(({ id, name, price }) => (
             <PriceItem key={id} name={name} price={price} />

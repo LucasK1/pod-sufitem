@@ -81,8 +81,8 @@ const Home = () => {
                 <section className={styles.equipment__desc}>
                   Posiadamy sprzęt najwyższej&nbsp;jakości.
                   <p>
-                    Rurki SunPole o wysokości 4 m: chromowo-niklowe, malowane
-                    proszkowo i mosiężne,
+                    Rurki SunPole o wysokości 4 m chromowo-niklowe, malowane
+                    proszkowo i mosiężne.
                   </p>
                   <p>Koła oraz osprzęt aerial hoop firmy Flying Rose.</p>
                   <p>
@@ -97,11 +97,11 @@ const Home = () => {
                 </span>
                 <section className={styles.equipment__desc}>
                   Na pierwszym miejscu stawiamy jakość zajęć oraz komfort
-                  uczestników, dlatego pracujemy w kameralnych grupach i
-                  gwarantujemy indywidualne podejście do kursanta.
+                  uczestników, dlatego pracujemy w kameralnych grupach
+                  i&nbsp;gwarantujemy indywidualne podejście do kursanta.
                   <p>
-                    Wiek, rozmiar i płeć nie ma znaczenia - u nas poczujesz się
-                    jak w domu!
+                    Wiek, rozmiar i płeć nie ma znaczenia — u&nbsp;nas poczujesz
+                    się jak w domu!
                   </p>
                 </section>
               </div>

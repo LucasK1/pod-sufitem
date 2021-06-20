@@ -26,9 +26,34 @@
       "id": 1,
       "name": "Wejście jednorazowe",
       "price": 50
+    },
+    {
+      "id": 2,
+      "name": "Warsztaty pole dance - 1 blok",
+      "price": 90
+    },
+    {
+      "id": 3,
+      "name": "Warsztaty pole dance - 2 bloki",
+      "price": 160
+    },
+    {
+      "id": 4,
+      "name": "Warsztaty pole dance - 3 bloki",
+      "price": 225
+    },
+    {
+      "id": 5,
+      "name": "Warsztaty pole dance - 4 bloki",
+      "price": 280
     }
   ],
   "mix": [
+    {
+      "id": 0,
+      "name": "Karnet 4 wejścia",
+      "price": 160
+    },
     {
       "id": 1,
       "name": "Karnet 8 wejść",
@@ -70,6 +95,11 @@
       "id": 4,
       "name": "Wolna sala",
       "price": 20
+    },
+    {
+      "id": 5,
+      "name": "Flying pole - rezerwacja na 1h",
+      "price": 60
     }
   ]
 }
