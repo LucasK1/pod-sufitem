@@ -19,6 +19,11 @@
   margin-top: 40px;
   box-shadow: $secondary-shadow;
 
+  @include for-phone-only {
+    height: auto;
+    padding-bottom: 20px;
+  }
+
   &__container {
     height: 100%;
     padding-left: 10px;
@@ -27,6 +32,11 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+
+    @include for-phone-only {
+      flex-direction: column-reverse;
+      text-align: center;
+    }
   }
 }
 
@@ -36,7 +46,7 @@
 
 .media {
   height: 100%;
-  padding-top: 20px;
+  padding-top: 36px;
 }
 
 .icons {
@@ -51,7 +61,6 @@
   .media {
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
-    padding: 10px 0;
+    padding: 26px 0;
   }
 }

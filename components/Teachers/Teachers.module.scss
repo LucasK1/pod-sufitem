@@ -5,7 +5,7 @@
   padding: 40px 0;
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
 }
 
@@ -26,8 +26,8 @@
     transition: transform 100ms linear, box-shadow 100ms linear;
     &:hover {
       cursor: pointer;
-      transform: scale(1.1);
-      box-shadow: 0 0 20px #000;
+      transform: scale(1.05);
+      box-shadow: 0 0 10px rgba(#000, 0.5);
     }
   }
 

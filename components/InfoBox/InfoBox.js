@@ -7,10 +7,12 @@ const InfoBox = ({ id, title, black, border, prices, children }) => {
     <div
       className={`${styles.container} ${black ? styles.container_black : ''} ${
         prices ? styles.container__prices : ''
-      }`}>
+      }`}
+    >
       <div aria-hidden="true" className={styles.scrollHelper} id={id}></div>
       <div
-        className={`${styles.content} ${border ? styles.content_border : ''}`}>
+        className={`${styles.content} ${border ? styles.content_border : ''}`}
+      >
         {title && <h1 className={styles.title}>{title}</h1>}
         {children}
         {prices && (

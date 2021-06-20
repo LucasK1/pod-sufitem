@@ -34,6 +34,12 @@ const Teachers = () => {
     }
   }
 
+  const teacherPhotoStyles = {
+    objectFit: 'contain',
+    border: '1px solid #aaa',
+    padding: '6px',
+  };
+
   return (
     <section className={styles.container}>
       {teachers.map((teacher) => (
@@ -42,11 +48,17 @@ const Teachers = () => {
           key={teacher.name}
           onClick={() => openModal(teacher)}
           onKeyDown={(e) => handleKeyPress(e, teacher)}
-          tabIndex="0">
+          tabIndex="0"
+        >
           <img
-            src={`/static/teachers/${teacher.photoId || 'portrait'}.jpg`}
+            src={
+              teacher.photoId
+                ? `/static/teachers/${teacher.photoId}.jpg`
+                : `/static/images/backgroundLogo.png`
+            }
             alt=""
             className={styles.teacher__thumbnail}
+            style={teacher.photoId ? {} : teacherPhotoStyles}
           />
           <figcaption className={styles.teacher__name}>
             {teacher.name}
@@ -68,7 +80,8 @@ const Teachers = () => {
               className={styles.modal__desc}
               dangerouslySetInnerHTML={{
                 __html: selectedTeacher.desc,
-              }}></p>
+              }}
+            ></p>
           </aside>
         </div>
       </Modal>
