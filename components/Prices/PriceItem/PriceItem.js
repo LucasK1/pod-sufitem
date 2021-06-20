@@ -1,4 +1,3 @@
-import React from 'react';
 import styles from './PriceItem.module.scss';
 
 const PriceItem = ({ name, price }) => {
@@ -7,6 +6,7 @@ const PriceItem = ({ name, price }) => {
       <a
         href="https://app.fitssey.com/podsufitem/frontoffice/pricing/cards"
         target="_blank"
+        rel="noreferrer"
         tabIndex="0"
         className={styles.priceItem__name}
       >

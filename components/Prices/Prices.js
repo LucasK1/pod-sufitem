@@ -1,9 +1,6 @@
-import React from 'react';
-
-import prices from './prices.json';
-
-import styles from './Prices.module.scss';
 import PriceItem from './PriceItem/PriceItem';
+import prices from './prices.json';
+import styles from './Prices.module.scss';
 
 const Prices = () => {
   return (

@@ -1,7 +1,6 @@
-import React, { useEffect, useState } from 'react';
-import { useRouter } from 'next/router';
 import Link from 'next/link';
-
+import { useRouter } from 'next/router';
+import { useState } from 'react';
 import styles from './Navbar.module.scss';
 
 const Navbar = () => {
@@ -70,6 +69,7 @@ const Navbar = () => {
         <a
           href={item.url}
           target="_blank"
+          rel="noreferrer"
           className={styles.navbar__bookingLink}
         >
           {item.name}
@@ -108,20 +108,3 @@ const Navbar = () => {
 };
 
 export default Navbar;
-
-const Logo = React.forwardRef(({ onClick, href }, ref) => (
-  <a
-    href={href}
-    ref={ref}
-    onClick={onClick}
-    className={styles.navbar__logoAnchor}
-  >
-    <div
-      // src="/static/images/transparentLogo.png"
-      alt="Homepage"
-      className={styles.navbar__logoImage}
-      // height="120"
-      // width="206"
-    />
-  </a>
-));

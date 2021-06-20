@@ -1,9 +1,7 @@
-import React, { useEffect, useState } from 'react';
-
+import { useEffect, useState } from 'react';
 import Modal from '../UI/Modal/Modal';
-
-import styles from './Teachers.module.scss';
 import teachers from './teachers.json';
+import styles from './Teachers.module.scss';
 
 const Teachers = () => {
   const [modalOpen, setModalOpen] = useState(false);

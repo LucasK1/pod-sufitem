@@ -1,21 +1,11 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
 import Lightbox from 'react-image-lightbox';
-
 import 'react-image-lightbox/style.css';
 import styles from '../../styles/galeria.module.scss';
 
-const index = () => {
+const Galllery = () => {
   const [isOpen, setIsOpen] = useState(false);
   const [photoIndex, setPhotoIndex] = useState(0);
-
-  // const images = [
-  //   'https://picsum.photos/340/540',
-  //   'https://picsum.photos/600/540',
-  //   'https://picsum.photos/600/560',
-  //   'https://picsum.photos/900/1200',
-  //   'https://picsum.photos/1920/1080',
-  //   'https://picsum.photos/200/350',
-  // ];
 
   const images = [
     '/static/gallery/1.jpg',
@@ -64,4 +54,4 @@ const index = () => {
   );
 };
 
-export default index;
+export default Gallery;

@@ -1,10 +1,8 @@
-import React from 'react';
 import {
   FaEnvelope,
   FaFacebookSquare,
   FaInstagramSquare,
 } from 'react-icons/fa';
-
 import styles from './Footer.module.scss';
 
 const Footer = () => {
@@ -41,6 +39,7 @@ const Footer = () => {
           <a
             href="https://www.facebook.com/podsufitem"
             target="_blank"
+            rel="noreferrer"
             aria-label="Facebook link"
             className={styles.fontAwesome}
           >
@@ -49,6 +48,7 @@ const Footer = () => {
           <a
             href="https://www.instagram.com/pod.sufitem/"
             target="_blank"
+            rel="noreferrer"
             aria-label="Instagram link"
             className={styles.fontAwesome}
           >

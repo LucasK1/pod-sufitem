@@ -1,13 +1,9 @@
-import React from 'react';
-import Head from 'next/head';
-
-import InfoBox from '@/components/InfoBox/InfoBox';
 import Classes from '@/components/Classes/Classes';
-import Teachers from '@/components/Teachers/Teachers';
+import InfoBox from '@/components/InfoBox/InfoBox';
 import Prices from '@/components/Prices/Prices';
-import Footer from '@/components/Footer/Footer';
-
+import Teachers from '@/components/Teachers/Teachers';
 import styles from '@/styles/landingPage.module.scss';
+import Head from 'next/head';
 import {
   FaCheck,
   FaEnvelope,
@@ -147,6 +143,7 @@ const Home = () => {
                 <a
                   href="https://www.facebook.com/podsufitem"
                   target="_blank"
+                  rel="noreferrer"
                   className={styles.fontAwesome}
                   aria-label="Facebook link"
                 >
@@ -155,6 +152,7 @@ const Home = () => {
                 <a
                   href="https://www.instagram.com/pod.sufitem/"
                   target="_blank"
+                  rel="noreferrer"
                   className={styles.fontAwesome}
                   aria-label="Instagram link"
                 >
@@ -171,6 +169,7 @@ const Home = () => {
                 <a
                   href="https://goo.gl/maps/vRQJRCQE7JP4J6CWA"
                   target="_blank"
+                  rel="noreferrer"
                   className={styles.fontAwesome}
                   aria-label="Google Maps Address Link"
                 >

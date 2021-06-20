@@ -1,5 +1,3 @@
-import React from 'react';
-
 import styles from './InfoBox.module.scss';
 
 const InfoBox = ({ id, title, black, border, prices, children }) => {

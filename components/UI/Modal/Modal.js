@@ -1,7 +1,4 @@
-import React from 'react';
-
 import Overlay from '../Overlay/Overlay';
-
 import styles from './Modal.module.scss';
 
 const Modal = ({ show, closeModal, children }) => {
