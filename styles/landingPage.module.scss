@@ -1,13 +1,13 @@
-@import './styles/variables';
-@import './styles/mediaQuery';
+@import "./styles/variables";
+@import "./styles/mediaQuery";
 
 .icons {
   width: 48px;
   height: 48px;
 }
 .checkIcons {
-  width: 112px;
-  height: 112px;
+  width: 60px;
+  height: 60px;
 }
 
 .fontAwesome {
@@ -31,24 +31,33 @@
   align-items: center;
 }
 
-.landing {
-  margin-top: 190px;
-  padding: 15px 0;
+.outerWrapper {
   position: relative;
+}
+
+.heroImage {
+  width: 100%;
+  object-fit: contain;
+  margin-top: 130px;
+}
+
+.innerWrapper {
+  width: 100%;
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: space-between;
-  &::after {
-    content: '';
-    background: url('/static/images/backgroundLogo.png') center no-repeat;
-    position: absolute;
-    width: 128px;
-    height: 289px;
-    top: 17%;
-    transform: scale(1.8);
-    opacity: 0.3;
-    z-index: -1;
+
+  @include for-phone-only {
+    position: static;
+    transform: none;
+
+    br {
+      display: none;
+    }
   }
 }
 
@@ -56,21 +65,21 @@
   &__text {
     text-align: center;
     font-size: 1.3rem;
-    line-height: 1.7rem;
     & > p {
-      padding-top: 100px;
-      &:first-child {
-        padding-top: 20px;
-      }
+      line-height: 2.2;
+      padding-top: 20px;
+      padding-bottom: 20px;
+      text-shadow: 1px 1px 3px rgba(#000, 0.1);
     }
   }
 }
 
 .bookBtn {
+  display: inline-block;
   font-size: 1.2rem;
   color: #fff;
   padding: 50px 60px;
-  margin: 70px 0;
+  margin: 20px auto;
   border-radius: 10px;
   background-color: #000;
   box-shadow: 0px 2px 1px -1px rgba(0, 0, 0, 0.2),
@@ -86,8 +95,8 @@
 .equipment {
   &__container {
     background-color: $content-background;
-    padding: 50px 0;
-    margin: 20px 0;
+    padding: 40px 0;
+    margin: 0 0 20px;
     width: 100vw;
     box-shadow: 0px 2px 4px -1px rgba(0, 0, 0, 0.1),
       0px 4px 5px 0px rgba(0, 0, 0, 0.04), 0px 1px 10px 0px rgba(0, 0, 0, 0.02),
@@ -109,15 +118,15 @@
     text-align: center;
     margin: 0;
     width: 310px;
-    font-size: 1.2rem;
-    line-height: 1.3rem;
-    padding-top: 60px;
+    font-size: 1.1rem;
+    line-height: 1.2rem;
+    padding-top: 20px;
   }
   &__list {
     text-align: left;
-    font-size: 1.2rem;
-    line-height: 1.3rem;
-    padding-left: 70px;
+    font-size: 1.1rem;
+    line-height: 1.2rem;
+    padding-left: 30px;
   }
 }
 
@@ -191,33 +200,44 @@
 }
 
 @include for-phone-only {
+  .outerWrapper {
+    background-size: contain;
+  }
   .landing {
-    margin-top: 100px;
-    ::after {
-      top: 5%;
-      transform: scale(1.5);
-    }
+    height: 200px;
   }
   .lead {
-    &__text {
-      padding: 0 10px;
+    &__text p {
+      font-size: 1rem;
+      padding: 10px;
+      line-height: 1.2;
+      margin: 0;
     }
+  }
+  .bookBtn {
+    margin: 10px 0 20px;
+    padding: 20px 30px;
   }
 
   .equipment {
     &__container {
       height: auto;
-      padding: 0;
+      padding: 20px 0;
     }
     &__content {
       flex-direction: column;
     }
     &__item {
-      padding: 30px 0;
+      padding: 20px 0 0;
     }
     &__desc {
       height: auto;
-      padding-top: 40px;
+      padding-top: 20px;
+      font-size: 1rem;
+    }
+
+    &__list {
+      font-size: 1rem;
     }
   }
 
@@ -276,19 +296,29 @@
 }
 
 @include for-tablet-portrait {
-  .lead__text {
-    padding: 0 10px;
+  .lead {
+    &__text p {
+      font-size: 1rem;
+      padding: 10px;
+      line-height: 1.2;
+      margin: 0;
+    }
   }
   .equipment {
     &__content {
       flex-direction: column;
     }
     &__item {
-      padding: 30px 0;
+      padding: 20px 0 0;
     }
     &__desc {
       height: auto;
-      padding-top: 40px;
+      padding-top: 20px;
+      font-size: 1rem;
+    }
+
+    &__list {
+      font-size: 1rem;
     }
   }
   .contact {
@@ -303,6 +333,14 @@
 }
 
 @include for-tablet-landscape {
+  .lead {
+    &__text p {
+      font-size: 1rem;
+      padding: 10px;
+      line-height: 1.2;
+      margin: 0;
+    }
+  }
   .landing::after {
     top: 10%;
     transform: scale(1.5);

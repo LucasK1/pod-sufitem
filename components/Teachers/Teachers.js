@@ -1,9 +1,9 @@
-import React, { useEffect, useState } from 'react';
+import React, { useEffect, useState } from "react";
 
-import Modal from '../UI/Modal/Modal';
+import Modal from "../UI/Modal/Modal";
 
-import styles from './Teachers.module.scss';
-import teachers from './teachers.json';
+import styles from "./Teachers.module.scss";
+import teachers from "./teachers.json";
 
 const Teachers = () => {
   const [modalOpen, setModalOpen] = useState(false);
@@ -15,7 +15,7 @@ const Teachers = () => {
   }, []);
 
   function openModal(teacher) {
-    _document.body.style.overflowY = 'hidden';
+    _document.body.style.overflowY = "hidden";
     setSelectedTeacher(teacher);
     setModalOpen(true);
   }
@@ -34,19 +34,31 @@ const Teachers = () => {
     }
   }
 
+  const teacherPhotoStyles = {
+    objectFit: "contain",
+    border: "1px solid #aaa",
+    padding: "6px",
+  };
+
   return (
     <section className={styles.container}>
-      {teachers.map((teacher) => (
+      {teachers.map(teacher => (
         <figure
           className={styles.teacher__container}
           key={teacher.name}
           onClick={() => openModal(teacher)}
-          onKeyDown={(e) => handleKeyPress(e, teacher)}
-          tabIndex="0">
+          onKeyDown={e => handleKeyPress(e, teacher)}
+          tabIndex='0'
+        >
           <img
-            src={`/static/teachers/${teacher.photoId || 'portrait'}.jpg`}
-            alt=""
+            src={
+              teacher.photoId
+                ? `/static/teachers/${teacher.photoId}.jpg`
+                : `/static/images/backgroundLogo.png`
+            }
+            alt=''
             className={styles.teacher__thumbnail}
+            style={teacher.photoId ? {} : teacherPhotoStyles}
           />
           <figcaption className={styles.teacher__name}>
             {teacher.name}
@@ -57,9 +69,9 @@ const Teachers = () => {
         <div className={styles.modal__container}>
           <img
             src={`/static/teachers/${
-              selectedTeacher.photoId || 'portrait'
+              selectedTeacher.photoId || "portrait"
             }.jpg`}
-            alt=""
+            alt=''
             className={styles.modal__photo}
           />
           <aside className={styles.modal__content}>
@@ -68,7 +80,8 @@ const Teachers = () => {
               className={styles.modal__desc}
               dangerouslySetInnerHTML={{
                 __html: selectedTeacher.desc,
-              }}></p>
+              }}
+            ></p>
           </aside>
         </div>
       </Modal>
