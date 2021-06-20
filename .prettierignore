@@ -1,0 +1,8 @@
+/out
+/.yarn
+/.next
+
+package.json
+package.lock.json
+yarn.lock
+.pnp.js

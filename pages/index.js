@@ -1,13 +1,13 @@
-import React from "react";
-import Head from "next/head";
+import React from 'react';
+import Head from 'next/head';
 
-import InfoBox from "@/components/InfoBox/InfoBox";
-import Classes from "@/components/Classes/Classes";
-import Teachers from "@/components/Teachers/Teachers";
-import Prices from "@/components/Prices/Prices";
-import Footer from "@/components/Footer/Footer";
+import InfoBox from '@/components/InfoBox/InfoBox';
+import Classes from '@/components/Classes/Classes';
+import Teachers from '@/components/Teachers/Teachers';
+import Prices from '@/components/Prices/Prices';
+import Footer from '@/components/Footer/Footer';
 
-import styles from "@/styles/landingPage.module.scss";
+import styles from '@/styles/landingPage.module.scss';
 import {
   FaCheck,
   FaEnvelope,
@@ -15,7 +15,7 @@ import {
   FaInstagramSquare,
   FaMapMarkerAlt,
   FaPhoneAlt,
-} from "react-icons/fa";
+} from 'react-icons/fa';
 
 const Home = () => {
   return (
@@ -23,12 +23,12 @@ const Home = () => {
       <Head>
         <title>pod sufitem // Szkoła akrobatyki powietrznej</title>
       </Head>
-      <div id='home' />
+      <div id="home" />
       <main>
         <div className={styles.outerWrapper}>
           <img
-            src='/static/images/bg.png'
-            alt=''
+            src="/static/images/bg.png"
+            alt=""
             className={styles.heroImage}
           />
           <div className={styles.innerWrapper}>
@@ -42,7 +42,7 @@ const Home = () => {
               </p>
             </article>
             <a
-              href='https://app.fitssey.com/podsufitem/frontoffice'
+              href="https://app.fitssey.com/podsufitem/frontoffice"
               className={styles.bookBtn}
             >
               Zapisy na zajęcia
@@ -60,7 +60,7 @@ const Home = () => {
                 <p className={styles.equipment__desc}>
                   Specjalizujemy się w zajęciach
                   <strong className={styles.bold}>
-                    {" "}
+                    {' '}
                     pole dance i aerial hoop
                   </strong>
                   , ale w naszej ofercie znajdziesz również szereg zajęć
@@ -116,19 +116,19 @@ const Home = () => {
                 <address>
                   <ul className={styles.contact__tel_list}>
                     <li className={styles.contact__tel_listItem}>
-                      <a href='tel:+48799079809' className={styles.fontAwesome}>
+                      <a href="tel:+48799079809" className={styles.fontAwesome}>
                         <FaPhoneAlt className={styles.icons} />
                       </a>
-                      <a href='tel:+48799079809'>+48 799 079 809</a>
+                      <a href="tel:+48799079809">+48 799 079 809</a>
                     </li>
                     <li className={styles.contact__tel_listItem}>
                       <a
-                        href='mailto:zapisy.podsufitem@gmail.com'
+                        href="mailto:zapisy.podsufitem@gmail.com"
                         className={styles.fontAwesome}
                       >
                         <FaEnvelope className={styles.icons} />
                       </a>
-                      <a href='mailto:zapisy.podsufitem@gmail.com'>
+                      <a href="mailto:zapisy.podsufitem@gmail.com">
                         zapisy.podsufitem@gmail.com
                       </a>
                     </li>
@@ -145,18 +145,18 @@ const Home = () => {
               </span>
               <div className={styles.contact__column_content}>
                 <a
-                  href='https://www.facebook.com/podsufitem'
-                  target='_blank'
+                  href="https://www.facebook.com/podsufitem"
+                  target="_blank"
                   className={styles.fontAwesome}
-                  aria-label='Facebook link'
+                  aria-label="Facebook link"
                 >
                   <FaFacebookSquare className={styles.icons} />
                 </a>
                 <a
-                  href='https://www.instagram.com/pod.sufitem/'
-                  target='_blank'
+                  href="https://www.instagram.com/pod.sufitem/"
+                  target="_blank"
                   className={styles.fontAwesome}
-                  aria-label='Instagram link'
+                  aria-label="Instagram link"
                 >
                   <FaInstagramSquare className={styles.icons} />
                 </a>
@@ -169,10 +169,10 @@ const Home = () => {
               <span className={styles.contact__column_title}>Odwiedź nas</span>
               <div className={styles.contact__column_content}>
                 <a
-                  href='https://goo.gl/maps/vRQJRCQE7JP4J6CWA'
-                  target='_blank'
+                  href="https://goo.gl/maps/vRQJRCQE7JP4J6CWA"
+                  target="_blank"
                   className={styles.fontAwesome}
-                  aria-label='Google Maps Address Link'
+                  aria-label="Google Maps Address Link"
                 >
                   <FaMapMarkerAlt className={styles.icons} />
                 </a>
@@ -183,13 +183,13 @@ const Home = () => {
               </div>
             </div>
           </section>
-          <InfoBox title='Zajęcia' id='zajecia'>
+          <InfoBox title="Zajęcia" id="zajecia">
             <Classes />
           </InfoBox>
-          <InfoBox title='Instruktorki' id='instruktorki'>
+          <InfoBox title="Instruktorki" id="instruktorki">
             <Teachers />
           </InfoBox>
-          <InfoBox title='Cennik' id='cennik' prices>
+          <InfoBox title="Cennik" id="cennik" prices>
             <Prices />
           </InfoBox>
         </div>

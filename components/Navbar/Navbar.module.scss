@@ -1,5 +1,5 @@
-@import "./styles/variables";
-@import "./styles/mediaQuery";
+@import './styles/variables';
+@import './styles/mediaQuery';
 
 .navbar {
   text-align: center;
@@ -33,7 +33,7 @@
   &__logo {
     height: 120px;
     width: 250px;
-    background: url("/static/images/transparentLogo.png") no-repeat;
+    background: url('/static/images/transparentLogo.png') no-repeat;
     background-size: contain;
     transform: scale(0.9);
     margin: 10px 0;
@@ -125,7 +125,7 @@
 }
 .hamburger-inner::before,
 .hamburger-inner::after {
-  content: "";
+  content: '';
   display: block;
 }
 .hamburger-inner::before {

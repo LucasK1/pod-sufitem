@@ -10,7 +10,8 @@ const Modal = ({ show, closeModal, children }) => {
       <Overlay show={show} clicked={closeModal} />
       <div
         className={`${styles.modal} ${show ? styles.modal_show : ''}`}
-        onClick={closeModal}>
+        onClick={closeModal}
+      >
         {children}
       </div>
     </>

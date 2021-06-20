@@ -25,7 +25,8 @@ const Footer = () => {
           <br />
           <a
             href="mailto:zapisy.podsufitem@gmail.com"
-            className={styles.telMail}>
+            className={styles.telMail}
+          >
             zapisy.podsufitem@gmail.com
           </a>
         </address>
@@ -33,21 +34,24 @@ const Footer = () => {
           <a
             href="mailto:zapisy.podsufitem@gmail.com"
             className={styles.fontAwesome}
-            aria-label="Mail link">
+            aria-label="Mail link"
+          >
             <FaEnvelope className={styles.icons} />
           </a>
           <a
             href="https://www.facebook.com/podsufitem"
             target="_blank"
             aria-label="Facebook link"
-            className={styles.fontAwesome}>
+            className={styles.fontAwesome}
+          >
             <FaFacebookSquare className={styles.icons} />
           </a>
           <a
             href="https://www.instagram.com/pod.sufitem/"
             target="_blank"
             aria-label="Instagram link"
-            className={styles.fontAwesome}>
+            className={styles.fontAwesome}
+          >
             <FaInstagramSquare className={styles.icons} />
           </a>
         </section>

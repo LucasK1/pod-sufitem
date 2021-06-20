@@ -1,5 +1,4 @@
 import React from 'react';
-
 import styles from './PriceItem.module.scss';
 
 const PriceItem = ({ name, price }) => {
@@ -9,10 +8,11 @@ const PriceItem = ({ name, price }) => {
         href="https://app.fitssey.com/podsufitem/frontoffice/pricing/cards"
         target="_blank"
         tabIndex="0"
-        className={styles.priceItem__name}>
+        className={styles.priceItem__name}
+      >
         {name}
+        <span> - {price}zł</span>
       </a>
-      <span> - {price}zł</span>
     </li>
   );
 };

@@ -60,7 +60,8 @@ const Navbar = () => {
         !item.isLink && styles.navbar__navitem_blue
       }`}
       onClick={toggleMenu}
-      key={item.id}>
+      key={item.id}
+    >
       {item.isLink ? (
         <Link href={item.url} className={styles.navbar__navlink} tabIndex="0">
           {item.name}
@@ -69,7 +70,8 @@ const Navbar = () => {
         <a
           href={item.url}
           target="_blank"
-          className={styles.navbar__bookingLink}>
+          className={styles.navbar__bookingLink}
+        >
           {item.name}
         </a>
       )}
@@ -85,7 +87,8 @@ const Navbar = () => {
         <ul
           className={`${styles.navbar__navlist} ${
             navlistActive ? styles.navbar__navlist_active : ''
-          }`}>
+          }`}
+        >
           {navListItems}
         </ul>
         <button
@@ -93,7 +96,8 @@ const Navbar = () => {
             burgerActive ? styles['is-active'] : ''
           }`}
           onClick={toggleMenu}
-          type="button">
+          type="button"
+        >
           <span className={styles['hamburger-box']}>
             <span className={styles['hamburger-inner']}></span>
           </span>
@@ -110,7 +114,8 @@ const Logo = React.forwardRef(({ onClick, href }, ref) => (
     href={href}
     ref={ref}
     onClick={onClick}
-    className={styles.navbar__logoAnchor}>
+    className={styles.navbar__logoAnchor}
+  >
     <div
       // src="/static/images/transparentLogo.png"
       alt="Homepage"
