@@ -51,7 +51,7 @@ const Teachers = () => {
           <img
             src={
               teacher.photoId
-                ? `/static/teachers/${teacher.photoId}.jpg`
+                ? `/static/teachers/${teacher.photoId}.webp`
                 : `/static/images/backgroundLogo.png`
             }
             alt=""
@@ -68,9 +68,10 @@ const Teachers = () => {
           <img
             src={
               selectedTeacher.photoId
-                ? `/static/teachers/${selectedTeacher.photoId}.jpg`
+                ? `/static/teachers/${selectedTeacher.photoId}.webp`
                 : `/static/images/backgroundLogo.png`
             }
+            type="image/webp"
             alt=""
             className={styles.modal__photo}
           />
