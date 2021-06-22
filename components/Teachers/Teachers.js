@@ -56,6 +56,8 @@ const Teachers = () => {
             }
             loading="lazy"
             alt=""
+            height="300"
+            width="225"
             className={styles.teacher__thumbnail}
             style={teacher.photoId ? {} : teacherPhotoStyles}
           />
@@ -75,6 +77,8 @@ const Teachers = () => {
             loading="lazy"
             type="image/webp"
             alt=""
+            height="300"
+            width="225"
             className={styles.modal__photo}
           />
           <aside className={styles.modal__content}>

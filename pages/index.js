@@ -10,14 +10,14 @@ import {
   FaFacebookSquare,
   FaInstagramSquare,
   FaMapMarkerAlt,
-  FaPhoneAlt,
+  FaPhoneAlt
 } from 'react-icons/fa';
 
 const Home = () => {
   return (
     <>
       <Head>
-        <title>pod sufitem // Szkoła akrobatyki powietrznej</title>
+        <title>pod sufitem // Szkoła akrobatyki powietrznej</title>        
       </Head>
       <div id="home" />
       <main>
@@ -25,6 +25,8 @@ const Home = () => {
           <img
             src="/static/images/bg.png"
             alt=""
+            width="1536"
+            height="1663"
             className={styles.heroImage}
           />
           <div className={styles.innerWrapper}>

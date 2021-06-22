@@ -6,8 +6,8 @@ const Prices = () => {
   return (
     <section className={styles.content}>
       <div className={styles.content__section}>
-        <h3 className={styles.content__sectionTitle}>Pole Dance/Aerial Hoop</h3>
-        <h4>(Obowiązuje na zajęcia pole dance, aerial)</h4>
+        <h4 className={styles.content__sectionTitle}>Pole Dance/Aerial Hoop</h4>
+        <h5>(Obowiązuje na zajęcia pole dance, aerial)</h5>
         <ul className={styles.content__priceList}>
           {prices.poleAerial.map(({ id, name, price }) => (
             <PriceItem key={id} name={name} price={price} />
@@ -15,8 +15,8 @@ const Prices = () => {
         </ul>
       </div>
       <div className={styles.content__section}>
-        <h3 className={styles.content__sectionTitle}>Fitness</h3>
-        <h4>(Obowiązuje na zajęcia z wyłączeniem pole dance i aerial hoop)</h4>
+        <h4 className={styles.content__sectionTitle}>Fitness</h4>
+        <h5>(Obowiązuje na zajęcia z wyłączeniem pole dance i aerial hoop)</h5>
         <ul className={styles.content__priceList}>
           {prices.fitness.map(({ id, name, price }) => (
             <PriceItem key={id} name={name} price={price} />
@@ -24,8 +24,8 @@ const Prices = () => {
         </ul>
       </div>
       <div className={styles.content__section}>
-        <h3 className={styles.content__sectionTitle}>Mix</h3>
-        <h4>(Obowiązuje na wszystkie zajęcia)</h4>
+        <h4 className={styles.content__sectionTitle}>Mix</h4>
+        <h5>(Obowiązuje na wszystkie zajęcia)</h5>
         <ul className={styles.content__priceList}>
           {prices.mix.map(({ id, name, price }) => (
             <PriceItem key={id} name={name} price={price} />
@@ -33,8 +33,8 @@ const Prices = () => {
         </ul>
       </div>
       <div className={styles.content__section}>
-        <h3 className={styles.content__sectionTitle}>Wynajem sali</h3>
-        <h4>(dostępne 3 sale)</h4>
+        <h4 className={styles.content__sectionTitle}>Wynajem sali</h4>
+        <h5>(dostępne 3 sale)</h5>
         <ul className={styles.content__priceList}>
           {prices.rent.map(({ id, name, price }) => (
             <PriceItem key={id} name={name} price={price} />
