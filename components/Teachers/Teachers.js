@@ -54,6 +54,7 @@ const Teachers = () => {
                 ? `/static/teachers/${teacher.photoId}.webp`
                 : `/static/images/backgroundLogo.png`
             }
+            loading="lazy"
             alt=""
             className={styles.teacher__thumbnail}
             style={teacher.photoId ? {} : teacherPhotoStyles}
@@ -71,6 +72,7 @@ const Teachers = () => {
                 ? `/static/teachers/${selectedTeacher.photoId}.webp`
                 : `/static/images/backgroundLogo.png`
             }
+            loading="lazy"
             type="image/webp"
             alt=""
             className={styles.modal__photo}
