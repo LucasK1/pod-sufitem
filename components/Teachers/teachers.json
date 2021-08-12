@@ -12,7 +12,12 @@
   {
     "name": "Aleksandra Szczepańska",
     "desc": "Jestem certyfikowaną instruktorką Pole Sport. Na co dzień studiuję filologię hiszpańską. Od ponad 6 lat trenuję pole dance, a od 4 prowadzę zajęcia. Podczas treningu priorytetem są dla mnie bezpieczeństwo i dobry nastrój uczestników. Od 2015 regularnie uczęszczam na warsztaty. Na swoim koncie mam ich ponad 20, a lista nadal rośnie. Szkoliłam się między innymi u czterokrotnej mistrzyni świata - Pink Pumy oraz u innych gwiazd pole dance, takich jak: Bendy Kate , Lea Roth, Sarah Scott, Phoenix Kazree, Alex Shchukin.",
-    "_photoId": "aleksandraSzczepanska"
+    "photoId": "aleksandraSzczepanska"
+  },
+  {
+    "name": "Karolina Świetlaga",
+    "desc": "Instruktorka pole dance, choreopole i stretchingu z 8-letnim doświadczeniem. Doświadczenie zawodowe i technikę szlifowałam pod okiem: Jenyne  Butterfly, Alesii Vazmitsel, Hanki Venselaar, Lolo Hilsum oraz Oony Kiveli, a jako instruktor wprowadzałam zajawkę na pole dance w jednej z pierwszych szkół, które powstały w Polsce. Poza pole dance jestem aktywną tancerka z wieloletnim doświadczeniem scenicznym, instruktorem tańca jazzowego, asystentem chorografa oraz project manager w agencji eventowej. Pole dance to dla mnie niekończące się wyzwania i odkrywanie siebie wciąż na nowo. To nieustająca praca nad ciałem i duchem.",
+    "photoId": "karolinaSwietlaga"
   },
   {
     "name": "Agata Woźnicka",
@@ -28,5 +33,10 @@
     "name": "Paulina Zelman",
     "desc": "Pierwsze taneczne kroki stawiałam jako cheerleaderka zespołu Focus, będąc jeszcze nastolatką. Swoje umiejętności w Pole Dance zdobywałam u mistrzyni stylu Pole Dance i Exotic Martyny Dominikowskiej. Nieustannie się szkolę i uczestniczę w międzynarodowych warsztatach. Dodatkowo rozwijam swoje umiejętności z tańca klasycznego, akrobatyki i gimnastyki. Zawsze interesowałam się sportem i tańcem. Pole dance jest dla mnie połączeniem piękna i siły. Przez ten styl odkrywam w sobie wszystkie zmysły, które pozwalają mi osiągnąć wewnętrzne spełnienie. Treningi nauczyły mnie pracy nad świadomością ciała, wciąż uczą wytrwałości i pokory.",
     "_photoId": "paulinaZelman"
+  },
+  {
+    "name": "Paulina Stolarczyk",
+    "desc": "Jestem instruktorką pole dance od 2019 roku. Sport ten poznałam już 7 lat temu i od tego czasu intensywnie rozwijałam swoją pasje w wielu warszawskich szkołach. Podglądając różne techniki i podejścia do nauki u najlepszych instruktorów szukałam swojego stylu. Gdy traficie do mnie na zajęcia zorientujecie się, że moją drugą miłością jest joga, ponieważ często czerpię z niej w swoich rozgrzewkach. Podczas treningu poświęcam dużo uwagi prawidłowej technice oraz bezpiecznie i stopniowo rozwijam u kursantów siłę i rozciągnięcie. Na salę wracam po przerwie spowodowanej ciążą, dlatego mam nadzieje, że kondycję i kratkę na brzuchu będziemy powoli budować razem :)",
+    "_photoId": "Paulina Stolarczyk"
   }
 ]
