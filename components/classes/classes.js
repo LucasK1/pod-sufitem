@@ -1,4 +1,4 @@
-import styles from './Classes.module.scss';
+import styles from './classes.module.scss';
 
 const Classes = () => {
   const classes = [

@@ -1,8 +1,8 @@
-import Classes from '@/components/Classes/Classes';
-import InfoBox from '@/components/InfoBox/InfoBox';
-import Prices from '@/components/Prices/Prices';
-import Teachers from '@/components/Teachers/Teachers';
-import styles from '@/styles/landingPage.module.scss';
+import Classes from '@/components/classes/classes';
+import InfoBox from '@/components/info-box/info-box';
+import Prices from '@/components/prices/prices';
+import Teachers from '@/components/teachers/teachers';
+import styles from '@/styles/landing-page.module.scss';
 import Head from 'next/head';
 import {
   FaCheck,
@@ -10,14 +10,14 @@ import {
   FaFacebookSquare,
   FaInstagramSquare,
   FaMapMarkerAlt,
-  FaPhoneAlt
+  FaPhoneAlt,
 } from 'react-icons/fa';
 
 const Home = () => {
   return (
     <>
       <Head>
-        <title>pod sufitem // Szkoła akrobatyki powietrznej</title>        
+        <title>pod sufitem // Szkoła akrobatyki powietrznej</title>
       </Head>
       <div id="home" />
       <main>

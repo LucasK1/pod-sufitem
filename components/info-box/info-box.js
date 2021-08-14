@@ -1,4 +1,4 @@
-import styles from './InfoBox.module.scss';
+import styles from './info-box.module.scss';
 
 const InfoBox = ({ id, title, black, border, prices, children }) => {
   return (

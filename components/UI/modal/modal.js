@@ -1,5 +1,5 @@
-import Overlay from '../Overlay/Overlay';
-import styles from './Modal.module.scss';
+import Overlay from '../overlay/overlay';
+import styles from './modal.module.scss';
 
 const Modal = ({ show, closeModal, children }) => {
   return (

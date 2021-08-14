@@ -1,7 +1,7 @@
 import Link from 'next/link';
 import { useRouter } from 'next/router';
 import { useState } from 'react';
-import styles from './Navbar.module.scss';
+import styles from './navbar.module.scss';
 
 const Navbar = () => {
   const [burgerActive, setBurgerActive] = useState(false);

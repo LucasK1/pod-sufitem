@@ -1,4 +1,4 @@
-import styles from './PriceItem.module.scss';
+import styles from './price-item.module.scss';
 
 const PriceItem = ({ name, price }) => {
   return (

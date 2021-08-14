@@ -1,6 +1,6 @@
-import PriceItem from './PriceItem/PriceItem';
+import PriceItem from './price-item/price-item';
 import prices from './prices.json';
-import styles from './Prices.module.scss';
+import styles from './prices.module.scss';
 
 const Prices = () => {
   return (

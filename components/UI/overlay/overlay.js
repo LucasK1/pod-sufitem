@@ -1,4 +1,4 @@
-import styles from './Overlay.module.scss';
+import styles from './overlay.module.scss';
 
 const Overlay = (props) =>
   props.show ? (

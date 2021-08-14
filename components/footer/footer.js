@@ -3,7 +3,7 @@ import {
   FaFacebookSquare,
   FaInstagramSquare,
 } from 'react-icons/fa';
-import styles from './Footer.module.scss';
+import styles from './footer.module.scss';
 
 const Footer = () => {
   return (

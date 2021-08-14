@@ -10,12 +10,11 @@ class MyDocument extends Document {
     return (
       <Html lang="pl-PL">
         <Head>
-          <link rel="preconnect" href="https://fonts.gstatic.com" />
-          <link
-            href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@400;500&display=swap"
-            rel="stylesheet"
+          <link href="fonts/fonts.css" rel="stylesheet" />
+          <meta
+            name="description"
+            content="Pod Sufitem to szkoła akrobatyki powietrznej zlokalizowana w samym centrum warszawskiej Pragi Północ"
           />
-        <meta name="description" content="Pod Sufitem to szkoła akrobatyki powietrznej zlokalizowana w samym centrum warszawskiej Pragi Północ" />
         </Head>
         <body>
           <Main />
