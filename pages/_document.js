@@ -10,7 +10,6 @@ class MyDocument extends Document {
     return (
       <Html lang="pl-PL">
         <Head>
-          <link href="fonts/fonts.css" rel="stylesheet" />
           <meta
             name="description"
             content="Pod Sufitem to szkoła akrobatyki powietrznej zlokalizowana w samym centrum warszawskiej Pragi Północ"
