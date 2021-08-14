@@ -2,10 +2,16 @@
   font-family: 'Baloo 2';
   src: url(./Baloo2-Regular.ttf);
   font-weight: 400;
+  font-display: swap;
+  text-rendering: optimizeLegibility;
+  font-feature-settings: 'kern';
 }
 
 @font-face {
   font-family: 'Baloo 2';
   src: url(./Baloo2-Bold.ttf);
   font-weight: 600;
+  font-display: swap;
+  text-rendering: optimizeLegibility;
+  font-feature-settings: 'kern';
 }
