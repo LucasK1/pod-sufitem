@@ -46,6 +46,7 @@
   &__photo {
     width: 300px;
     height: 300px;
+    object-fit: contain;
   }
   &__content {
     display: inline-block;

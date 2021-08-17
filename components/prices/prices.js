@@ -7,7 +7,7 @@ const Prices = () => {
     <section className={styles.content}>
       <div className={styles.content__section}>
         <h4 className={styles.content__sectionTitle}>Wejścia jednorazowe</h4>
-        <ul className={styles.content__priceList}>
+        <ul className={styles.content__priceList} style={{ paddingTop: 0 }}>
           {prices.single.map(({ id, name, price }) => (
             <PriceItem key={id} name={name} price={price} />
           ))}
@@ -33,7 +33,7 @@ const Prices = () => {
       </div>
       <div className={styles.content__section}>
         <h4 className={styles.content__sectionTitle}>Wynajem sali</h4>
-        <ul className={styles.content__priceList}>
+        <ul className={styles.content__priceList} style={{ paddingTop: 0 }}>
           {prices.rent.map(({ id, name, price }) => (
             <PriceItem key={id} name={name} price={price} />
           ))}
