@@ -121,13 +121,13 @@ const Home = () => {
                     </li>
                     <li className={styles.contact__tel_listItem}>
                       <a
-                        href="mailto:zapisy.podsufitem@gmail.com"
+                        href="mailto:info@studiopodsufitem.pl"
                         className={styles.fontAwesome}
                       >
                         <FaEnvelope className={styles.icons} />
                       </a>
-                      <a href="mailto:zapisy.podsufitem@gmail.com">
-                        zapisy.podsufitem@gmail.com
+                      <a href="mailto:info@studiopodsufitem.pl">
+                        info@studiopodsufitem.pl
                       </a>
                     </li>
                   </ul>

@@ -21,16 +21,13 @@ const Footer = () => {
             +48 799 079 809
           </a>
           <br />
-          <a
-            href="mailto:zapisy.podsufitem@gmail.com"
-            className={styles.telMail}
-          >
-            zapisy.podsufitem@gmail.com
+          <a href="mailto:info@studiopodsufitem.pl" className={styles.telMail}>
+            info@studiopodsufitem.pl
           </a>
         </address>
         <section className={styles.media}>
           <a
-            href="mailto:zapisy.podsufitem@gmail.com"
+            href="mailto:info@studiopodsufitem.pl"
             className={styles.fontAwesome}
             aria-label="Mail link"
           >

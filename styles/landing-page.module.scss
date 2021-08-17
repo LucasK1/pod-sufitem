@@ -37,8 +37,9 @@
 
 .heroImage {
   width: 100%;
-  object-fit: cover;
+  object-fit: contain;
   margin-top: 130px;
+  height: auto;
 }
 
 .innerWrapper {
@@ -207,9 +208,7 @@
     height: 200px;
   }
   .heroImage {
-    height: 100%;
-    width: 200%;
-    object-fit: cover;
+    margin-top: 95px;
   }
   .lead {
     &__text p {
