@@ -232,6 +232,8 @@
 
 @include for-tablet-landscape {
   .navbar {
+    font-size: 1.4rem;
+
     &__navlist {
       width: 70%;
     }

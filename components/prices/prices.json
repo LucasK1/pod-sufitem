@@ -1,76 +1,56 @@
 {
-  "fitness": [
+  "single": [
     {
       "id": 1,
-      "name": "Wejście jednorazowe",
-      "price": 40
-    },
-    {
-      "id": 2,
-      "name": "Karnet 4 wejścia",
-      "price": 120
-    },
-    {
-      "id": 3,
-      "name": "Karnet 8 wejść",
-      "price": 220
-    },
-    {
-      "id": 4,
-      "name": "Karnet 12 wejść",
-      "price": 300
-    }
-  ],
-  "poleAerial": [
-    {
-      "id": 1,
-      "name": "Wejście jednorazowe",
+      "name": "Wejście jednorazowe pole dance",
       "price": 50
     },
     {
       "id": 2,
-      "name": "Warsztaty pole dance - 1 blok",
-      "price": 90
+      "name": "Wejście jednorazowe fitness",
+      "price": 40
+    }
+  ],
+  "fitness": [
+    {
+      "id": 1,
+      "name": "Karnet 4 wejścia",
+      "price": 120
+    },
+    {
+      "id": 2,
+      "name": "Karnet 8 wejść",
+      "price": 220
     },
     {
       "id": 3,
-      "name": "Warsztaty pole dance - 2 bloki",
-      "price": 160
-    },
-    {
-      "id": 4,
-      "name": "Warsztaty pole dance - 3 bloki",
-      "price": 225
-    },
-    {
-      "id": 5,
-      "name": "Warsztaty pole dance - 4 bloki",
-      "price": 280
+      "name": "Karnet 12 wejść",
+      "price": 300
     }
   ],
   "mix": [
     {
-      "id": 0,
+      "id": 1,
       "name": "Karnet 4 wejścia",
       "price": 160
     },
     {
-      "id": 1,
+      "id": 2,
       "name": "Karnet 8 wejść",
       "price": 260
     },
     {
-      "id": 2,
+      "id": 3,
       "name": "Karnet 12 wejść",
       "price": 360
     },
     {
-      "id": 3,
+      "id": 4,
       "name": "Karnet 16 wejść",
       "price": 460
     },
     {
-      "id": 4,
+      "id": 5,
       "name": "Karnet 20 wejść",
       "price": 500
     }
@@ -100,6 +80,16 @@
       "id": 5,
       "name": "Flying pole - rezerwacja na 1h",
       "price": 60
+    },
+    {
+      "id": 6,
+      "name": "Wynajem sali AERIAL",
+      "price": 50
+    },
+    {
+      "id": 7,
+      "name": "Wynajem sali POLE",
+      "price": 100
     }
   ]
 }

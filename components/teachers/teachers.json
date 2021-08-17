@@ -1,18 +1,13 @@
 [
   {
     "name": "Anna Łukasiak",
-    "desc": "Założycielka studia Pod Sufitem, instruktorka pole dance, aerial hoop i stretchingu, absolwentka Akademii Wychowania Fizycznego w Warszawie na kierunkach: fizjoterapia i wychowanie fizyczne.<br>Jako nastolatka tańczyłam, grałam w siatkówkę i biegałam. Na pole dance trafiłam dość późno, ale lepiej późno niż wcale ;) W gimnastyce powietrznej najbardziej cenię jej niekończące się możliwości rozwoju. Uwielbiam figury gibkościowe, ale nieustannie pracuję nad siłą, dynamiką i nowymi kombinacjami, aby stać się wszechstronnym sportowcem. Moje zajęcia charakteryzują się porządną rozgrzewką, profesjonalnym podejściem i swobodną atmosferą. Jako instruktor dbam o to, aby regularnie zdobywać nową wiedzę i uczestniczyć w szkoleniach.<br><br>Osiągnięcia:<ul><li>I miejsce - Mistrzostwa Polski w akrobatyce powietrznej 2019, kategoria: Pole Sport Professional</li><li>I miejsce - Mistrzostwa Polski w akrobatyce powietrznej 2019, kategoria: Aerial Hoop Amateur POSA</li><li>I miejsce - Mistrzostwa Świata Aerial Hoop Amateur POSA, Ibiza 2019</li><li>III miejsce - Mistrzostwa Polski w akrobatyce powietrznej PFAPA 2018, kategoria: Pole Sport Professional</li></ul>Ponadto brałam udział w wielu treningach, warsztatach, szkoleniach, kursach, sesjach zdjęciowych i pokazach cały czas poszerzając swoją wiedzę oraz propagując piękny sport, którym jest pole dance.",
+    "desc": "Założycielka studia Pod Sufitem, instruktorka pole dance, aerial hoop i stretchingu, absolwentka Akademii Wychowania Fizycznego w Warszawie na kierunkach: fizjoterapia i wychowanie fizyczne.<br>Jako nastolatka tańczyłam, grałam w siatkówkę i biegałam. Na pole dance trafiłam dość późno, ale lepiej późno niż wcale ;) W gimnastyce powietrznej najbardziej cenię jej niekończące się możliwości rozwoju. Uwielbiam figury gibkościowe, ale nieustannie pracuję nad siłą, dynamiką i nowymi kombinacjami, aby stać się wszechstronnym sportowcem. Moje zajęcia charakteryzują się porządną rozgrzewką, profesjonalnym podejściem i swobodną atmosferą. Jako instruktor dbam o to, aby regularnie zdobywać nową wiedzę i uczestniczyć w szkoleniach.<br><br>Osiągnięcia:<ul><li>I miejsce - Mistrzostwa Polski w akrobatyce powietrznej 2019, kategoria: Pole Sport Professional</li><li>I miejsce - Mistrzostwa Polski w akrobatyce powietrznej 2019, kategoria: Aerial Hoop Amateur POSA</li><li>I miejsce - Mistrzostwa Świata Aerial Hoop Amateur POSA, Ibiza 2019</li><li>III miejsce - Mistrzostwa Polski w akrobatyce powietrznej PFAPA 2018, kategoria: Pole Sport Professional</li></ul>",
     "photoId": "annaLukasiak"
   },
   {
     "name": "Marta Kaczorek",
     "desc": "Pole dance zaczęłam trenować pod koniec 2016 roku, zauroczona pełnymi gracji dziewczynami kręcącymi się na rurce i układającymi swoje ciała w sposób, o jakim nawet mi się nie śniło. Mimo braku większego doświadczenia sportowego stwierdziłam, że muszę spróbować swoich sił. Od pierwszych zajęć byłam zachwycona tym sportem i każdy, nawet najmniejszy sukces, przynosił mi ogrom satysfakcji. Rurka towarzyszyła mi przy pisaniu matury i aplikacji na medycynę na Warszawskim Uniwersytecie Medycznym i nadal stanowi dla mnie priorytet. Kieruję się myślą, że chcieć to móc i przy odrobinie zaparcia wszystko jest możliwe. Najbardziej w rurce lubię to, że nauka tego sportu tak naprawdę nigdy się nie kończy. Nadal się rozwijam, uczę nowych trików, a także mierzę z wyzwaniem jakim jest prowadzenie własnych zajęć jako instruktorka. Podczas treningów stawiam na dobrą zabawę i bezpieczne przygotowanie kursantek do odkrywania nowych figurek. Moimi faworytami są elementy rozciągnięcia, zwłaszcza figurki typu bendy, ciekawe przejścia i combosy.",
     "photoId": "martaKaczorek"
-  },
-  {
-    "name": "Aleksandra Szczepańska",
-    "desc": "Jestem certyfikowaną instruktorką Pole Sport. Na co dzień studiuję filologię hiszpańską. Od ponad 6 lat trenuję pole dance, a od 4 prowadzę zajęcia. Podczas treningu priorytetem są dla mnie bezpieczeństwo i dobry nastrój uczestników. Od 2015 regularnie uczęszczam na warsztaty. Na swoim koncie mam ich ponad 20, a lista nadal rośnie. Szkoliłam się między innymi u czterokrotnej mistrzyni świata - Pink Pumy oraz u innych gwiazd pole dance, takich jak: Bendy Kate , Lea Roth, Sarah Scott, Phoenix Kazree, Alex Shchukin.",
-    "photoId": "aleksandraSzczepanska"
   },
   {
     "name": "Karolina Świetlaga",
@@ -38,5 +33,10 @@
     "name": "Paulina Stolarczyk",
     "desc": "Jestem instruktorką pole dance od 2019 roku. Sport ten poznałam już 7 lat temu i od tego czasu intensywnie rozwijałam swoją pasje w wielu warszawskich szkołach. Podglądając różne techniki i podejścia do nauki u najlepszych instruktorów szukałam swojego stylu. Gdy traficie do mnie na zajęcia zorientujecie się, że moją drugą miłością jest joga, ponieważ często czerpię z niej w swoich rozgrzewkach. Podczas treningu poświęcam dużo uwagi prawidłowej technice oraz bezpiecznie i stopniowo rozwijam u kursantów siłę i rozciągnięcie. Na salę wracam po przerwie spowodowanej ciążą, dlatego mam nadzieje, że kondycję i kratkę na brzuchu będziemy powoli budować razem :)",
     "_photoId": "Paulina Stolarczyk"
+  },
+  {
+    "name": "Natalia Iwanowicz",
+    "desc": "",
+    "_photoId": "nataliaIwanowicz"
   }
 ]

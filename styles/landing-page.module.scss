@@ -206,6 +206,11 @@
   .landing {
     height: 200px;
   }
+  .heroImage {
+    height: 100%;
+    width: 200%;
+    object-fit: cover;
+  }
   .lead {
     &__text p {
       font-size: 1rem;
