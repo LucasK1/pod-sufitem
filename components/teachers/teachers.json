@@ -15,6 +15,11 @@
     "photoId": "karolinaSwietlaga"
   },
   {
+    "name": "Natalia Iwanowicz",
+    "desc": "Natalia Iwanowicz- zawodowa tancerka, instruktorka exotic i pole dance, zawodniczka, organizatorka międzynarodowych zawodów pole dance. Swoją przygodę z rurą rozpoczęłam ok. 8 lat temu. Szkoliłam się pod okiem takich gwiazd jak Olga Koda, Dimitry Politov, Anastasia Sokolova, Kaya Blum, Mark Buhantsov czy Natasha Wang. Można mnie zobaczyć w wielu produkcjach oraz teledyskach. ",
+    "photoId": "nataliaIwanowicz"
+  },
+  {
     "name": "Agata Woźnicka",
     "desc": "Instruktor fitness - Nowoczesne Formy Rekreacji Ruchowej, trener kręgosłupa, trener tenisa ziemnego, trener trx, fizjoterapeuta. Od najmłodszych lat jestem związana ze sportem. Specjalizuję się w treningach prozdrowotnych, w których koncentruję się na dolegliwościach związanych z narządem ruchu. Szeroki zakres wiedzy i duża praktyka w zakresie usprawniania i odnowy biologicznej przyczyniły się do mojego profesjonalnego i indywidualnego podejścia do klienta. Prowadzę zajęcia grupowe i treningi personalne. Nabyta wiedzę wykorzystuję również na zajęciach mentalnych. Masz problem z kręgosłupem? Boli kolano lub bark? Pomogę Ci pozbyć się bólu i dysfunkcji.",
     "_photoId": "agataWoznicka"
@@ -33,10 +38,5 @@
     "name": "Paulina Stolarczyk",
     "desc": "Jestem instruktorką pole dance od 2019 roku. Sport ten poznałam już 7 lat temu i od tego czasu intensywnie rozwijałam swoją pasje w wielu warszawskich szkołach. Podglądając różne techniki i podejścia do nauki u najlepszych instruktorów szukałam swojego stylu. Gdy traficie do mnie na zajęcia zorientujecie się, że moją drugą miłością jest joga, ponieważ często czerpię z niej w swoich rozgrzewkach. Podczas treningu poświęcam dużo uwagi prawidłowej technice oraz bezpiecznie i stopniowo rozwijam u kursantów siłę i rozciągnięcie. Na salę wracam po przerwie spowodowanej ciążą, dlatego mam nadzieje, że kondycję i kratkę na brzuchu będziemy powoli budować razem :)",
     "_photoId": "Paulina Stolarczyk"
-  },
-  {
-    "name": "Natalia Iwanowicz",
-    "desc": "",
-    "_photoId": "nataliaIwanowicz"
   }
 ]
