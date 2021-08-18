@@ -19,8 +19,8 @@ const Home = () => {
       <Head>
         <title>pod sufitem // Szkoła akrobatyki powietrznej</title>
       </Head>
-      <div id="home" />
-      <main>
+      <div />
+      <main id="main-content">
         <div className={styles.outerWrapper}>
           <img
             src="/static/images/bg.png"

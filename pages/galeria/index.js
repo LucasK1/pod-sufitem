@@ -24,7 +24,7 @@ const Gallery = () => {
   };
 
   return (
-    <section className={styles.container}>
+    <main id="main-content" className={styles.container}>
       {images.map((image, index) => (
         <img
           className={styles.imageThumbnail}
@@ -50,7 +50,7 @@ const Gallery = () => {
           }
         />
       )}
-    </section>
+    </main>
   );
 };
 

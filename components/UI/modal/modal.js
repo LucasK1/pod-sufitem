@@ -1,12 +1,12 @@
 import Overlay from '../overlay/overlay';
 import styles from './modal.module.scss';
 
-const Modal = ({ show, closeModal, children }) => {
+const Modal = ({ isVisible, closeModal, children }) => {
   return (
     <>
-      <Overlay show={show} clicked={closeModal} />
+      <Overlay isVisible={isVisible} onDismiss={closeModal} />
       <div
-        className={`${styles.modal} ${show ? styles.modal_show : ''}`}
+        className={`${styles.modal} ${isVisible ? styles.modal_show : ''}`}
         onClick={closeModal}
       >
         {children}

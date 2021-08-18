@@ -1,29 +1,26 @@
-import { useEffect, useState } from 'react';
+import { useState } from 'react';
+import useDocument from 'utils/use-document';
 import Modal from '../UI/modal/modal';
 import teachers from './teachers.json';
 import styles from './teachers.module.scss';
 
 const Teachers = () => {
-  const [modalOpen, setModalOpen] = useState(false);
+  const [isOpen, setIsOpen] = useState(false);
   const [selectedTeacher, setSelectedTeacher] = useState({});
-  const [_document, set_document] = useState(null);
-
-  useEffect(() => {
-    set_document(document);
-  }, []);
+  const _document = useDocument();
 
   function openModal(teacher) {
     _document.body.style.overflowY = 'hidden';
     setSelectedTeacher(teacher);
-    setModalOpen(true);
+    setIsOpen(true);
   }
 
   function closeModal() {
     setSelectedTeacher({});
-    setModalOpen(false);
+    setIsOpen(false);
   }
 
-  function handleKeyPress(e, teacher) {
+  function onKeyDown(e, teacher) {
     if (e.keyCode === 13) {
       openModal(teacher);
     }
@@ -45,7 +42,7 @@ const Teachers = () => {
           className={styles.teacher__container}
           key={teacher.name}
           onClick={() => openModal(teacher)}
-          onKeyDown={(e) => handleKeyPress(e, teacher)}
+          onKeyDown={(e) => onKeyDown(e, teacher)}
           tabIndex="0"
         >
           <img
@@ -66,7 +63,7 @@ const Teachers = () => {
           </figcaption>
         </figure>
       ))}
-      <Modal show={modalOpen} closeModal={closeModal}>
+      <Modal isVisible={isOpen} closeModal={closeModal}>
         <div className={styles.modal__container}>
           <img
             src={
@@ -86,9 +83,15 @@ const Teachers = () => {
             <p
               className={styles.modal__desc}
               dangerouslySetInnerHTML={{
+                __html: selectedTeacher.lead,
+              }}
+            />
+            <p
+              className={styles.modal__desc}
+              dangerouslySetInnerHTML={{
                 __html: selectedTeacher.desc,
               }}
-            ></p>
+            />
           </aside>
         </div>
       </Modal>

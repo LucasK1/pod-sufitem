@@ -6,6 +6,9 @@ import '@/styles/styles.scss';
 function MyApp({ Component, pageProps }) {
   return (
     <>
+      <a className="skip-link" href="#main-content">
+        Skip to Content
+      </a>
       <Navbar />
       <Component {...pageProps} />
       <Footer />
