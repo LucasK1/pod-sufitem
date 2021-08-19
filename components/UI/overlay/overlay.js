@@ -1,8 +1,6 @@
 import styles from './overlay.module.scss';
 
-const Overlay = (props) =>
-  props.show ? (
-    <div className={styles.overlay} onClick={props.clicked}></div>
-  ) : null;
+const Overlay = ({ isVisible, onDismiss }) =>
+  isVisible ? <div className={styles.overlay} onClick={onDismiss}></div> : null;
 
 export default Overlay;

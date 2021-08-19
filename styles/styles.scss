@@ -33,3 +33,18 @@ button {
   border: none;
   background-color: inherit;
 }
+
+.skip-link {
+  position: absolute;
+  left: -999px;
+  top: 130px;
+  z-index: 1000;
+  width: 100px;
+  height: fit-content;
+  background-color: $dark-background;
+  color: $font-secondary;
+
+  &:focus {
+    left: 0;
+  }
+}

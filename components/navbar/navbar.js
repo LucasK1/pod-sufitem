@@ -81,7 +81,7 @@ const Navbar = () => {
   return (
     <header className={styles.navbar}>
       <nav className={styles.navbar__nav}>
-        <Link href="/#home">
+        <Link href="/#">
           <div alt="Homepage" className={styles.navbar__logo} />
         </Link>
         <ul
