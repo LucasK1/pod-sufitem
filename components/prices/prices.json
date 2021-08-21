@@ -15,17 +15,17 @@
     {
       "id": 1,
       "name": "Karnet 4 wejścia",
-      "price": 120
+      "price": 130
     },
     {
       "id": 2,
       "name": "Karnet 8 wejść",
-      "price": 220
+      "price": 230
     },
     {
       "id": 3,
       "name": "Karnet 12 wejść",
-      "price": 300
+      "price": 320
     }
   ],
   "mix": [

@@ -84,17 +84,28 @@ const Classes = () => {
       ),
     },
     {
-      id: 'pilates',
-      name: 'Pilates',
+      id: 'exotic',
+      name: 'Exotic',
       desc: (
         <p>
-          Pilates stanowi jedną z najbezpieczniejszych form aktywności, dlatego
-          zajęćia przeznaczone są dla wszystkich, Trening oparty jest na
-          aktywizacji mięśni głębokich, stabilizujących, w połączeniu z
-          ćwiczeniami oddechowymi. W szczególności wzmocnieniu ulegają mięśnie
-          pleców i brzucha. Efektem jest szczuplejsza, wyrzeźbiona sylwetka,
-          lepsza postawa ciała, eliminacja bólu kręgosłupa, mniejsza podatność
-          na kontuzje.
+          Zajęcia te oznaczają zmysłowy i kobiecy taniec przy rurce. Prowadzone
+          są w butach na obcasie i platformie, tzw. szklankach. Podczas zajęć
+          nauczysz się choreografii, nastawionej na sensualność, płynność ruchu,
+          grację i flow. Poznasz również triki typowe dla tego stylu oraz
+          elementy floorwork. Warto zabrać ze sobą także nakolanniki.
+        </p>
+      ),
+    },
+    {
+      id: 'conditioning',
+      name: 'Conditioning',
+      desc: (
+        <p>
+          Zajęcia wzmacniające, przygotowujące ciało do trików siłowych na rurce
+          czy kole. Na zajęciach wykorzystywane są ćwiczenia zaczerpnięte z
+          treningów gimnastyki i kalisteniki. Mięśnie będą płonąć! Dzięki temu
+          treningowi wypracujesz siłową bazę, która pozwoli Ci w bezpieczny
+          sposób trenować akrobatykę powietrzną i osiągać regularne postępy.
         </p>
       ),
     },

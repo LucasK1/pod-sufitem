@@ -66,9 +66,10 @@ const Home = () => {
                 </p>
                 <ul className={styles.equipment__list}>
                   <li>Pole Choreo</li>
-                  <li>Spinning Pole</li>
+                  <li>Exotic Pole</li>
+                  <li>Aerial Hoop</li>
                   <li>Stretching</li>
-                  <li> Kalistenika</li>
+                  <li>Conditioning</li>
                   <li>Joga Kręgosłupa</li>
                 </ul>
               </div>
