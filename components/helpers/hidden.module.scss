@@ -1,0 +1,40 @@
+@import './styles/variables';
+@import './styles/media-query';
+
+.hiddenOnMobile {
+  display: none;
+}
+
+.hiddenOnDesktop {
+  display: inline;
+}
+
+@include for-tablet-landscape {
+  .hiddenOnDesktop {
+    display: none;
+  }
+
+  .hiddenOnMobile {
+    display: inline;
+  }
+}
+
+@include for-desktop {
+  .hiddenOnDesktop {
+    display: none;
+  }
+
+  .hiddenOnMobile {
+    display: inline;
+  }
+}
+
+@include for-big-desktop {
+  .hiddenOnDesktop {
+    display: none;
+  }
+
+  .hiddenOnMobile {
+    display: inline;
+  }
+}

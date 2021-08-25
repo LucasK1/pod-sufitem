@@ -3,6 +3,7 @@ import InfoBox from '@/components/info-box/info-box';
 import Prices from '@/components/prices/prices';
 import Teachers from '@/components/teachers/teachers';
 import styles from '@/styles/landing-page.module.scss';
+import { HiddenOnDesktop, HiddenOnMobile } from 'components/helpers/Hidden';
 import Head from 'next/head';
 import {
   FaCheck,
@@ -22,21 +23,32 @@ const Home = () => {
       <div />
       <main id="main-content">
         <div className={styles.outerWrapper}>
-          <img
-            src="/static/images/bg.png"
-            alt=""
-            width="1536"
-            height="1663"
-            className={styles.heroImage}
-          />
+          <HiddenOnDesktop>
+            <img
+              src="/static/images/bg.png"
+              alt=""
+              width="1536"
+              height="1663"
+              className={styles.heroImage}
+            />
+          </HiddenOnDesktop>
+          <HiddenOnMobile>
+            <img
+              src="/static/gallery/1.jpg"
+              alt=""
+              width="1536"
+              height="1663"
+              className={styles.heroImage}
+            />
+          </HiddenOnMobile>
           <div className={styles.innerWrapper}>
             <article className={styles.lead__text}>
-              <p>
+              <p style={{ maxWidth: '1000px', margin: '0 20px' }}>
                 Pod Sufitem to studio akrobatyki powietrznej, zlokalizowane w
                 Warszawie, w samym centrum Pragi Północ. <br />
                 Założycielką studia jest Anna Łukasiak - mistrzyni Polski Pole
                 Sport Professional POSA 2019, mistrzyni Polski i Świata Aerial
-                Hoop Amateur POSA 2019.
+                Hoop Amateur POSA&nbsp;2019.
               </p>
             </article>
             <a
