@@ -38,8 +38,11 @@
 .heroImage {
   width: 100%;
   height: auto;
-  object-fit: contain;
-  margin-top: 130px;
+  max-width: $max-width;
+  margin: 130px auto 0;
+  display: block;
+  max-height: calc(100vh - 130px);
+  object-fit: cover;
 }
 
 .innerWrapper {
