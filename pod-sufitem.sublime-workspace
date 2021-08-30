@@ -1,0 +1,265 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+		]
+	},
+	"buffers":
+	[
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"install",
+				"Package Control: Install Package"
+			],
+			[
+				"instal",
+				"Package Control: Install Package"
+			],
+			[
+				"sett",
+				"Preferences: Settings"
+			],
+			[
+				"theme",
+				"UI: Select Theme"
+			],
+			[
+				"color",
+				"UI: Select Color Scheme"
+			],
+			[
+				"settings",
+				"Preferences: Settings"
+			],
+			[
+				"set s",
+				"Set Syntax: JSX"
+			],
+			[
+				"Package Control: ",
+				"Package Control: Install Package"
+			],
+			[
+				"remove",
+				"Package Control: Remove Package"
+			],
+			[
+				"import",
+				"Import Helper: Initialize / Setup / Update modules"
+			],
+			[
+				"preference",
+				"Preferences: Key Bindings"
+			],
+			[
+				"key",
+				"Preferences: Emmet Key Bindings"
+			],
+			[
+				"preferen",
+				"Preferences: Settings"
+			],
+			[
+				"Package Control: ins",
+				"Package Control: Install Package"
+			],
+			[
+				"install pack",
+				"Package Control: Install Package"
+			]
+		],
+		"width": 0.0
+	},
+	"console":
+	{
+		"height": 100.0,
+		"history":
+		[
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"expanded_folders":
+	[
+		"/home/lucask/web-dev/pod-sufitem",
+		"/home/lucask/web-dev/pod-sufitem/components",
+		"/home/lucask/web-dev/pod-sufitem/components/teachers",
+		"/home/lucask/web-dev/pod-sufitem/components/UI",
+		"/home/lucask/web-dev/pod-sufitem/components/UI/modal"
+	],
+	"file_history":
+	[
+		"/home/lucask/web-dev/pod-sufitem/components/classes/classes.js",
+		"/home/lucask/web-dev/pod-sufitem/components/teachers/teachers.js",
+		"/home/lucask/Documents/Instrukcja obsługi Szyszki.txt",
+		"/home/lucask/web-dev/astro-test/src/layouts/Main.astro",
+		"/home/lucask/web-dev/astro-test/src/components/ThemeToggle.tsx",
+		"/home/lucask/.config/sublime-text/Packages/User/ImportJS.sublime-settings",
+		"/home/lucask/.config/sublime-text/Packages/ImportJS/ImportJS.sublime-settings",
+		"/home/lucask/.config/sublime-text/Packages/User/ESLint.sublime-settings",
+		"/home/lucask/.config/sublime-text/Packages/ESLint/ESLint.sublime-settings",
+		"/home/lucask/web-dev/pod-sufitem/.gitignore",
+		"/home/lucask/.config/sublime-text/Packages/sublime-react-ide/ReactIDE.sublime-settings",
+		"/home/lucask/sidnet/inkaso/components/molecules/settlement-column/settlement-column.tsx",
+		"/home/lucask/sidnet/inkaso/components/organisms/navbar/navbar.tsx",
+		"/home/lucask/sidnet/inkaso/components/atoms/paragraph/paragraph.styles.tsx"
+	],
+	"find":
+	{
+		"height": 25.0
+	},
+	"find_in_files":
+	{
+		"height": 0.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"figcaption"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+		],
+		"reverse": true,
+		"scrollbar_highlights": true,
+		"show_context": true,
+		"use_buffer2": true,
+		"use_gitignore": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"sheets":
+			[
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 25.0
+	},
+	"input":
+	{
+		"height": 34.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.diagnostics":
+	{
+		"height": 0.0
+	},
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"output.language servers":
+	{
+		"height": 0.0
+	},
+	"pinned_build_system": "",
+	"project": "pod-sufitem.sublime-project",
+	"replace":
+	{
+		"height": 46.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"class",
+				"components/classes/classes.js"
+			],
+			[
+				"teac",
+				"components/teachers/teachers.js"
+			]
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 500.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 380.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 217.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}
