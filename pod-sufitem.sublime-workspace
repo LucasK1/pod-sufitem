@@ -20,16 +20,24 @@
 		"selected_items":
 		[
 			[
+				"remove",
+				"Package Control: Remove Package"
+			],
+			[
+				"sett",
+				"Preferences: Settings"
+			],
+			[
+				"i",
+				"Package Control: Install Package"
+			],
+			[
 				"install",
 				"Package Control: Install Package"
 			],
 			[
 				"instal",
 				"Package Control: Install Package"
-			],
-			[
-				"sett",
-				"Preferences: Settings"
 			],
 			[
 				"theme",
@@ -50,10 +58,6 @@
 			[
 				"Package Control: ",
 				"Package Control: Install Package"
-			],
-			[
-				"remove",
-				"Package Control: Remove Package"
 			],
 			[
 				"import",
@@ -108,6 +112,9 @@
 	],
 	"file_history":
 	[
+		"/home/lucask/web-dev/pod-sufitem/components/UI/modal/modal.js",
+		"/home/lucask/.config/sublime-text/Packages/ESLint/Default (Linux).sublime-keymap",
+		"/home/lucask/web-dev/pod-sufitem/.gitignore",
 		"/home/lucask/web-dev/pod-sufitem/components/classes/classes.js",
 		"/home/lucask/web-dev/pod-sufitem/components/teachers/teachers.js",
 		"/home/lucask/Documents/Instrukcja obsługi Szyszki.txt",
@@ -117,7 +124,6 @@
 		"/home/lucask/.config/sublime-text/Packages/ImportJS/ImportJS.sublime-settings",
 		"/home/lucask/.config/sublime-text/Packages/User/ESLint.sublime-settings",
 		"/home/lucask/.config/sublime-text/Packages/ESLint/ESLint.sublime-settings",
-		"/home/lucask/web-dev/pod-sufitem/.gitignore",
 		"/home/lucask/.config/sublime-text/Packages/sublime-react-ide/ReactIDE.sublime-settings",
 		"/home/lucask/sidnet/inkaso/components/molecules/settlement-column/settlement-column.tsx",
 		"/home/lucask/sidnet/inkaso/components/organisms/navbar/navbar.tsx",
@@ -195,9 +201,17 @@
 		]
 	},
 	"menu_visible": true,
-	"output.diagnostics":
+	"output.SublimeLinter":
 	{
 		"height": 0.0
+	},
+	"output.diagnostics":
+	{
+		"height": 114.0
+	},
+	"output.exec":
+	{
+		"height": 352.0
 	},
 	"output.find_results":
 	{
