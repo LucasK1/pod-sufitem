@@ -20,6 +20,19 @@
   }
 }
 
+.modalCloseButton {
+  background: none;
+  outline: none;
+  width: 48px;
+  height: 48px;
+  position: absolute;
+  right: 12px;
+  top: 12px;
+  cursor: pointer;
+  border-radius: 3px;
+  padding: 11px;
+}
+
 @include for-phone-only {
   .modal {
     width: 86%;
@@ -47,5 +60,9 @@
   .modal {
     width: 70%;
     left: calc((100vw - 70%) / 2);
+  }
+
+  .modalCloseButton:hover {
+    background: lighten($font-primary-hover, 30%);
   }
 }

@@ -41,8 +41,13 @@
 }
 
 .poleDance__link {
-  padding-top: 30px;
   border-bottom: 1px solid black;
+}
+
+.poleDance__linkContainer {
+  display: flex;
+  align-items: center;
+  padding-top: 30px;
 
   &:hover {
     cursor: pointer;

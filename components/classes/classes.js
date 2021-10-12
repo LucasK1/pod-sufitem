@@ -2,7 +2,7 @@ import levels from 'components/classes/levels.json';
 import Modal from 'components/UI/modal/modal';
 import { useState } from 'react';
 import styles from './classes.module.scss';
-
+import { FiChevronsRight } from 'react-icons/fi';
 const Classes = () => {
   const [isVisible, setIsVisible] = useState(false);
 
@@ -27,9 +27,14 @@ const Classes = () => {
             się na różnych poziomach zaawansowania oraz w kameralnych grupach, 1
             osoba do rurki.
           </p>
-          <p className={styles.poleDance__link} onClick={openModal}>
-            Poziomy zaawansowania
-          </p>
+          <div className={styles.poleDance__linkContainer} onClick={openModal}>
+            <p className={styles.poleDance__link}>Poziomy zaawansowania</p>
+            <div>
+              <FiChevronsRight
+                style={{ marginLeft: '5px', marginTop: '3px' }}
+              />
+            </div>
+          </div>
         </>
       ),
     },
@@ -138,7 +143,7 @@ const Classes = () => {
   return (
     <>
       <article className={styles.classes}>{classesData}</article>
-      <Modal isVisible={isVisible} closeModal={closeModal}>
+      <Modal isVisible={isVisible} closeModal={closeModal} includeCloseButton>
         <dl className={styles.classes__levelList}>
           {levels.map(({ id, level, desc }) => (
             <div key={id}>
