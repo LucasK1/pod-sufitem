@@ -128,13 +128,11 @@ const Classes = () => {
     },
   ];
 
-  const classesData = classes.map(({ name, desc }) => (
-    <>
-      <section className={styles.classes__singleClass} key={name}>
-        <h3>{name}</h3>
-        {desc}
-      </section>
-    </>
+  const classesData = classes.map(({ id, name, desc }) => (
+    <section className={styles.classes__singleClass} key={id}>
+      <h3>{name}</h3>
+      {desc}
+    </section>
   ));
 
   return (
@@ -142,8 +140,8 @@ const Classes = () => {
       <article className={styles.classes}>{classesData}</article>
       <Modal isVisible={isVisible} closeModal={closeModal}>
         <dl className={styles.classes__levelList}>
-          {levels.map(({ level, desc }) => (
-            <div>
+          {levels.map(({ id, level, desc }) => (
+            <div key={id}>
               <dt>{level}</dt>
               <dd>{desc}</dd>
             </div>
