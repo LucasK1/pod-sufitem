@@ -40,6 +40,35 @@
   }
 }
 
+.poleDance__link {
+  padding-top: 30px;
+  border-bottom: 1px solid black;
+
+  &:hover {
+    cursor: pointer;
+    color: $font-secondary;
+  }
+}
+
+.classes__levelList {
+  margin: 20px;
+  text-align: left;
+
+  & div {
+    padding: 16px 0;
+
+    dt {
+      padding-bottom: 15px;
+      font-size: 1.1em;
+      font-style: italic;
+    }
+
+    dd {
+      margin: 0;
+    }
+  }
+}
+
 @include for-phone-only {
   .classes {
     display: block;
