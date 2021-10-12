@@ -32,27 +32,27 @@
     {
       "id": 1,
       "name": "Karnet 4 wejścia",
-      "price": 160
+      "price": 170
     },
     {
       "id": 2,
       "name": "Karnet 8 wejść",
-      "price": 260
+      "price": 280
     },
     {
       "id": 3,
       "name": "Karnet 12 wejść",
-      "price": 360
+      "price": 380
     },
     {
       "id": 4,
       "name": "Karnet 16 wejść",
-      "price": 460
+      "price": 480
     },
     {
       "id": 5,
       "name": "Karnet 20 wejść",
-      "price": 500
+      "price": 540
     }
   ],
   "rent": [
