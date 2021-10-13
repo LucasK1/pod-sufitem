@@ -1,19 +1,41 @@
+import levels from 'components/classes/levels.json';
+import Modal from 'components/UI/modal/modal';
+import { useState } from 'react';
 import styles from './classes.module.scss';
-
+import { FiChevronsRight } from 'react-icons/fi';
 const Classes = () => {
+  const [isVisible, setIsVisible] = useState(false);
+
+  const openModal = () => {
+    setIsVisible(true);
+  };
+  const closeModal = () => {
+    setIsVisible(false);
+  };
   const classes = [
     {
       id: 'poleDance',
       name: 'Pole Dance',
       desc: (
-        <p>
-          Zajęcia łączące w sobie elementy gimnastyki, akrobatyki i tańca przy
-          użyciu drążka pionowego. Połączenie siły, gracji, gibkości i dynamiki.
-          Na tych zajęciach nie tylko nauczysz się obrotów, wspinaczki i
-          kombinacji figur, ale także wyrzeźbisz sylwetkę, zyskasz pewność
-          siebie i poprawisz samopoczucie. Zajęcia odbywają się na różnych
-          poziomach zaawansowania oraz w kameralnych grupach, 1 osoba do rurki.
-        </p>
+        <>
+          <p>
+            Zajęcia łączące w sobie elementy gimnastyki, akrobatyki i tańca przy
+            użyciu drążka pionowego. Połączenie siły, gracji, gibkości i
+            dynamiki. Na tych zajęciach nie tylko nauczysz się obrotów,
+            wspinaczki i kombinacji figur, ale także wyrzeźbisz sylwetkę,
+            zyskasz pewność siebie i poprawisz samopoczucie. Zajęcia odbywają
+            się na różnych poziomach zaawansowania oraz w kameralnych grupach, 1
+            osoba do rurki.
+          </p>
+          <div className={styles.poleDance__linkContainer} onClick={openModal}>
+            <p className={styles.poleDance__link}>Poziomy zaawansowania</p>
+            <div>
+              <FiChevronsRight
+                style={{ marginLeft: '5px', marginTop: '3px' }}
+              />
+            </div>
+          </div>
+        </>
       ),
     },
     {
@@ -111,14 +133,28 @@ const Classes = () => {
     },
   ];
 
-  const classesData = classes.map(({ name, desc }) => (
-    <section className={styles.classes__singleClass} key={name}>
+  const classesData = classes.map(({ id, name, desc }) => (
+    <section className={styles.classes__singleClass} key={id}>
       <h3>{name}</h3>
       {desc}
     </section>
   ));
 
-  return <article className={styles.classes}>{classesData}</article>;
+  return (
+    <>
+      <article className={styles.classes}>{classesData}</article>
+      <Modal isVisible={isVisible} closeModal={closeModal} includeCloseButton>
+        <dl className={styles.classes__levelList}>
+          {levels.map(({ id, level, desc }) => (
+            <div key={id}>
+              <dt>{level}</dt>
+              <dd>{desc}</dd>
+            </div>
+          ))}
+        </dl>
+      </Modal>
+    </>
+  );
 };
 
 export default Classes;

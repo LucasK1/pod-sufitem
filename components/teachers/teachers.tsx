@@ -63,7 +63,7 @@ const Teachers = () => {
           </figcaption>
         </figure>
       ))}
-      <Modal isVisible={isOpen} closeModal={closeModal}>
+      <Modal isVisible={isOpen} closeModal={closeModal} includeCloseButton>
         <div className={styles.modal__container}>
           <img
             src={

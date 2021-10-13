@@ -1,0 +1,32 @@
+[
+  {
+    "id": 0,
+    "level": "Poziom 0 — wprowadzenie",
+    "desc": "Grupa dla osób zaczynających naukę pole dance. Pierwsze kilkanaście godzin zajęć (ok. 3 miesiące). Na tym poziomie poznasz podstawowe obroty, pierwsze figury statyczne, jak pole sit, martini czy crucifix oraz nauczysz się wspinaczki przodem."
+  },
+  {
+    "id": 1,
+    "level": "Poziom 1 — początkujący",
+    "desc": "Grupa dla osób z opanowanymi podstawami/trenujących około 3 miesiące. Na tym poziomie doskonalimy figury z poziomu 0, poznajemy wspinaczkę bokiem, połączenia spinów i kolejne figury statyczne."
+  },
+  {
+    "id": 2,
+    "level": "Poziom 2 — początkujący wyższy",
+    "desc": "Przygotowanie do poziomu średnio zaawansowanego. Na tym poziomie wprowadzamy naukę pierwszych figur odwróconych jak: basic invert, open V, scorpio i gemini. Spróbujesz  połączeń prostych figur w krótkie kombinacje."
+  },
+  {
+    "id": 3,
+    "level": "Poziom 3 — średniozaawansowany",
+    "desc": "Grupa dla typowych średniaczków. Superman, butterfly, scorpio, gemini, open V, brass monkey, parasolka, cupid - szlifujemy te figury i łączymy je w combosy. Uczymy się shoulderów, V-ki z góry i trudniejszych elementów."
+  },
+  {
+    "id": 4,
+    "level": "Poziom 4 — wyższy średniozaawansowany",
+    "desc": "Grupa dla średniaków aspirujących do grupy zaawansowanej :) Do tej grupy zapraszamy osoby, które potrafią wykonać brass monkey z różnych wejść, mają bardzo dobrze opanowane figury takie jak: aerial open V, shouldermount (cup grip i twisted grip), potrafią zrobić handspringa i prawidłowy reverse grab spin"
+  },
+  {
+    "id": 5,
+    "level": "Poziom 5 — zaawansowany",
+    "desc": "Grupa dla prawdziwych wymiataczy. Nauka handspringów na różnych chwytach, phoenix spin, pierwsze regripy, wymagające kombinacje, dynamiczne przejścia, siłowe wejścia do figur."
+  }
+]
