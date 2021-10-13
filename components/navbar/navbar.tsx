@@ -84,7 +84,11 @@ const Navbar = () => {
     <header className={styles.navbar}>
       <nav className={styles.navbar__nav}>
         <Link href="/#" passHref>
-          <img alt="" className={styles.navbar__logo} />
+          <img
+            src="/static/images/transparentLogo.png"
+            alt=""
+            className={styles.navbar__logo}
+          />
         </Link>
         <ul
           className={`${styles.navbar__navlist} ${

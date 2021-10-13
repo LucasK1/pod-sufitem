@@ -1,14 +1,8 @@
-import { FC } from 'react';
-import { GrClose } from 'react-icons/gr';
-import Overlay from '../overlay/overlay';
-import { ModalProps } from './modal.interfaces';
-import styles from './modal.module.scss';
-
-const ModalCloseButton = ({ onClick }) => (
-  <button className={styles.modalCloseButton} onClick={onClick}>
-    <GrClose style={{ fontSize: '24px' }} />
-  </button>
-);
+import type { ModalProps } from 'components/UI/modal/modal.interfaces';
+import styles from 'components/UI/modal/modal.module.scss';
+import ModalCloseButton from 'components/UI/modal/scaffold/modal-close-button';
+import Overlay from 'components/UI/overlay/overlay';
+import type { FC } from 'react';
 
 const Modal: FC<ModalProps> = ({
   isVisible,

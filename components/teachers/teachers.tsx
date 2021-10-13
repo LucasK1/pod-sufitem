@@ -1,26 +1,31 @@
+import { Teacher } from 'components/teachers/teachers.interfaces';
+import teachers from 'components/teachers/teachers.json';
+import styles from 'components/teachers/teachers.module.scss';
+import Modal from 'components/UI/modal/modal';
+import { sanitize } from 'isomorphic-dompurify';
 import { CSSProperties, KeyboardEvent, useState } from 'react';
 import useDocument from 'utils/use-document';
-import Modal from '../UI/modal/modal';
-import teachers from './teachers.json';
-import styles from './teachers.module.scss';
 
 const Teachers = () => {
   const [isOpen, setIsOpen] = useState(false);
-  const [selectedTeacher, setSelectedTeacher] = useState(null);
+  const [selectedTeacher, setSelectedTeacher] = useState<Teacher>(null);
   const _document = useDocument();
 
-  function openModal(teacher) {
+  function openModal(teacher: Teacher) {
     _document.body.style.overflowY = 'hidden';
     setSelectedTeacher(teacher);
     setIsOpen(true);
   }
 
   function closeModal() {
-    setSelectedTeacher({});
+    setSelectedTeacher(null);
     setIsOpen(false);
   }
 
-  function onKeyDown(e: KeyboardEvent<HTMLElement>, teacher: typeof teachers[0]) {
+  function onKeyDown(
+    e: KeyboardEvent<HTMLElement>,
+    teacher: typeof teachers[0],
+  ) {
     if (e.key === 'Enter') {
       openModal(teacher);
     }
@@ -67,7 +72,7 @@ const Teachers = () => {
         <div className={styles.modal__container}>
           <img
             src={
-              selectedTeacher.photoId
+              selectedTeacher?.photoId
                 ? `/static/teachers/${selectedTeacher.photoId}.webp`
                 : `/static/images/backgroundLogo.png`
             }
@@ -79,17 +84,17 @@ const Teachers = () => {
             className={styles.modal__photo}
           />
           <aside className={styles.modal__content}>
-            <h4 className={styles.modal__title}>{selectedTeacher.name}</h4>
+            <h4 className={styles.modal__title}>{selectedTeacher?.name}</h4>
             <p
               className={styles.modal__desc}
               dangerouslySetInnerHTML={{
-                __html: selectedTeacher.lead,
+                __html: sanitize(selectedTeacher?.lead),
               }}
             />
             <p
               className={styles.modal__desc}
               dangerouslySetInnerHTML={{
-                __html: selectedTeacher.desc,
+                __html: sanitize(selectedTeacher?.desc),
               }}
             />
           </aside>

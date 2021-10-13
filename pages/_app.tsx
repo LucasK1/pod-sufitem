@@ -1,8 +1,8 @@
-import Footer from '@/components/footer/footer';
-import Navbar from '@/components/navbar/navbar';
-import '@/styles/normalize.scss';
-import '@/styles/styles.scss';
-import './galeria/style.css';
+import Footer from 'components/footer/footer';
+import Navbar from 'components/navbar/navbar';
+import 'pages/galeria/style.css';
+import 'styles/normalize.scss';
+import 'styles/styles.scss';
 
 function MyApp({ Component, pageProps }) {
   return (

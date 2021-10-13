@@ -1,9 +1,8 @@
-import Classes from '@/components/classes/classes';
-import InfoBox from '@/components/info-box/info-box';
-import Prices from '@/components/prices/prices';
-import Teachers from '@/components/teachers/teachers';
-import styles from '@/styles/landing-page.module.scss';
+import Classes from 'components/classes/classes';
 import { HiddenOnDesktop, HiddenOnMobile } from 'components/helpers/hidden';
+import InfoBox from 'components/info-box/info-box';
+import Prices from 'components/prices/prices';
+import Teachers from 'components/teachers/teachers';
 import Head from 'next/head';
 import {
   FaCheck,
@@ -13,6 +12,7 @@ import {
   FaMapMarkerAlt,
   FaPhoneAlt,
 } from 'react-icons/fa';
+import styles from 'styles/landing-page.module.scss';
 
 const Home = () => {
   return (
@@ -203,7 +203,7 @@ const Home = () => {
           <InfoBox title="Instruktorki" id="instruktorki">
             <Teachers />
           </InfoBox>
-          <InfoBox title="Cennik" id="cennik" prices>
+          <InfoBox title="Cennik" id="cennik" isPricesBox>
             <Prices />
           </InfoBox>
         </div>

@@ -1,6 +1,7 @@
-import { MouseEventHandler } from "react";
+import { MouseEventHandler } from 'react';
 
 export interface ModalProps {
-	isVisible: boolean;
-	closeModal: MouseEventHandler<HTMLDivElement>;
+  isVisible: boolean;
+  closeModal: MouseEventHandler<HTMLDivElement>;
+  includeCloseButton: boolean;
 }
