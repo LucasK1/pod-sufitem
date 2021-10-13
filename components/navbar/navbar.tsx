@@ -83,7 +83,7 @@ const Navbar = () => {
   return (
     <header className={styles.navbar}>
       <nav className={styles.navbar__nav}>
-        <Link href="/#">
+        <Link href="/#" passHref>
           <img alt="" className={styles.navbar__logo} />
         </Link>
         <ul

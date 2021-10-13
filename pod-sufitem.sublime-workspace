@@ -3,10 +3,56 @@
 	{
 		"selected_items":
 		[
+			[
+				"InfoBoxProps",
+				"InfoBoxProps"
+			],
+			[
+				"ModalProps",
+				"ModalProps"
+			],
+			[
+				"Mous",
+				"MouseEventHandler"
+			],
+			[
+				"MouseEven",
+				"MouseEventHandler"
+			],
+			[
+				"KeyboardEvent",
+				"KeyboardEvent"
+			],
+			[
+				"spac",
+				"border-spacing"
+			],
+			[
+				"tex-",
+				"text-decoration"
+			]
 		]
 	},
 	"buffers":
 	[
+		{
+			"file": "pages/_app.tsx",
+			"settings":
+			{
+				"buffer_size": 450,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "pages/index.tsx",
+			"settings":
+			{
+				"buffer_size": 8126,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		}
 	],
 	"build_system": "",
 	"build_system_choices":
@@ -20,6 +66,30 @@
 		"selected_items":
 		[
 			[
+				"setting",
+				"Preferences: Settings"
+			],
+			[
+				"settings",
+				"Preferences: Settings"
+			],
+			[
+				"install",
+				"Package Control: Install Package"
+			],
+			[
+				"esl",
+				"ESLint"
+			],
+			[
+				"eslint",
+				"ESLint"
+			],
+			[
+				"jsx",
+				"Set Syntax: JSX"
+			],
+			[
 				"remove",
 				"Package Control: Remove Package"
 			],
@@ -29,10 +99,6 @@
 			],
 			[
 				"i",
-				"Package Control: Install Package"
-			],
-			[
-				"install",
 				"Package Control: Install Package"
 			],
 			[
@@ -46,10 +112,6 @@
 			[
 				"color",
 				"UI: Select Color Scheme"
-			],
-			[
-				"settings",
-				"Preferences: Settings"
 			],
 			[
 				"set s",
@@ -106,24 +168,47 @@
 	[
 		"/home/lucask/web-dev/pod-sufitem",
 		"/home/lucask/web-dev/pod-sufitem/components",
+		"/home/lucask/web-dev/pod-sufitem/components/classes",
+		"/home/lucask/web-dev/pod-sufitem/components/footer",
+		"/home/lucask/web-dev/pod-sufitem/components/helpers",
+		"/home/lucask/web-dev/pod-sufitem/components/info-box",
+		"/home/lucask/web-dev/pod-sufitem/components/navbar",
+		"/home/lucask/web-dev/pod-sufitem/components/prices",
+		"/home/lucask/web-dev/pod-sufitem/components/prices/price-item",
 		"/home/lucask/web-dev/pod-sufitem/components/teachers",
 		"/home/lucask/web-dev/pod-sufitem/components/UI",
-		"/home/lucask/web-dev/pod-sufitem/components/UI/modal"
+		"/home/lucask/web-dev/pod-sufitem/components/UI/modal",
+		"/home/lucask/web-dev/pod-sufitem/components/UI/overlay",
+		"/home/lucask/web-dev/pod-sufitem/pages"
 	],
 	"file_history":
 	[
+		"/home/lucask/web-dev/pod-sufitem/pages/_document.tsx",
+		"/home/lucask/web-dev/pod-sufitem/components/helpers/hidden.tsx",
+		"/home/lucask/web-dev/pod-sufitem/components/info-box/info-box.interfaces.ts",
+		"/home/lucask/web-dev/pod-sufitem/components/info-box/info-box.module.scss",
+		"/home/lucask/web-dev/pod-sufitem/components/info-box/info-box.tsx",
+		"/home/lucask/web-dev/pod-sufitem/components/classes/classes.module.scss",
+		"/home/lucask/web-dev/pod-sufitem/components/teachers/teachers.tsx",
+		"/home/lucask/web-dev/pod-sufitem/components/navbar/navbar.tsx",
+		"/home/lucask/web-dev/pod-sufitem/components/prices/price-item/price-item.tsx",
+		"/home/lucask/web-dev/pod-sufitem/components/prices/price-item/price-item.interfaces.ts",
+		"/home/lucask/web-dev/pod-sufitem/components/UI/modal/modal.interfaces.ts",
+		"/home/lucask/web-dev/pod-sufitem/components/UI/overlay/overlay.interfaces.ts",
+		"/home/lucask/web-dev/pod-sufitem/components/UI/modal/modal.tsx",
+		"/home/lucask/web-dev/pod-sufitem/components/classes/classes.js",
+		"/home/lucask/web-dev/pod-sufitem/components/UI/overlay/overlay.tsx",
+		"/home/lucask/.config/sublime-text/Packages/ESLint/ESLint.sublime-settings",
+		"/home/lucask/.config/sublime-text/Packages/User/ESLint.sublime-settings",
 		"/home/lucask/web-dev/pod-sufitem/components/UI/modal/modal.js",
 		"/home/lucask/.config/sublime-text/Packages/ESLint/Default (Linux).sublime-keymap",
 		"/home/lucask/web-dev/pod-sufitem/.gitignore",
-		"/home/lucask/web-dev/pod-sufitem/components/classes/classes.js",
 		"/home/lucask/web-dev/pod-sufitem/components/teachers/teachers.js",
 		"/home/lucask/Documents/Instrukcja obsługi Szyszki.txt",
 		"/home/lucask/web-dev/astro-test/src/layouts/Main.astro",
 		"/home/lucask/web-dev/astro-test/src/components/ThemeToggle.tsx",
 		"/home/lucask/.config/sublime-text/Packages/User/ImportJS.sublime-settings",
 		"/home/lucask/.config/sublime-text/Packages/ImportJS/ImportJS.sublime-settings",
-		"/home/lucask/.config/sublime-text/Packages/User/ESLint.sublime-settings",
-		"/home/lucask/.config/sublime-text/Packages/ESLint/ESLint.sublime-settings",
 		"/home/lucask/.config/sublime-text/Packages/sublime-react-ide/ReactIDE.sublime-settings",
 		"/home/lucask/sidnet/inkaso/components/molecules/settlement-column/settlement-column.tsx",
 		"/home/lucask/sidnet/inkaso/components/organisms/navbar/navbar.tsx",
@@ -131,13 +216,14 @@
 	],
 	"find":
 	{
-		"height": 25.0
+		"height": 27.0
 	},
 	"find_in_files":
 	{
-		"height": 0.0,
+		"height": 101.0,
 		"where_history":
 		[
+			""
 		]
 	},
 	"find_state":
@@ -145,6 +231,11 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"prices",
+			"<InfoBox",
+			"border",
+			"styles",
+			"black",
 			"figcaption"
 		],
 		"highlight": true,
@@ -167,12 +258,115 @@
 		{
 			"sheets":
 			[
+				{
+					"buffer": 0,
+					"file": "pages/_app.tsx",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 450,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"auto_complete_triggers":
+							[
+								{
+									"characters": "<",
+									"selector": "text.html, text.xml"
+								},
+								{
+									"rhs_empty": true,
+									"selector": "punctuation.accessor"
+								},
+								{
+									"characters": ".\"'/@<",
+									"selector": "meta.tag, source - comment - string.quoted.double.block - string.quoted.single.block - string.unquoted.heredoc",
+									"server": "LSP-typescript"
+								}
+							],
+							"lsp_active": true,
+							"lsp_hover_provider_count": 1,
+							"lsp_uri": "file:///home/lucask/web-dev/pod-sufitem/pages/_app.tsx",
+							"show_definitions": false,
+							"syntax": "Packages/JavaScript/TSX.sublime-syntax",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"stack_multiselect": false,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "pages/index.tsx",
+					"selected": true,
+					"semi_transient": true,
+					"settings":
+					{
+						"buffer_size": 8126,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"auto_complete_triggers":
+							[
+								{
+									"characters": "<",
+									"selector": "text.html, text.xml"
+								},
+								{
+									"rhs_empty": true,
+									"selector": "punctuation.accessor"
+								},
+								{
+									"characters": ".\"'/@<",
+									"selector": "meta.tag, source - comment - string.quoted.double.block - string.quoted.single.block - string.unquoted.heredoc",
+									"server": "LSP-typescript"
+								}
+							],
+							"lsp_active": true,
+							"lsp_hover_provider_count": 1,
+							"lsp_uri": "file:///home/lucask/web-dev/pod-sufitem/pages/index.tsx",
+							"show_definitions": false,
+							"syntax": "Packages/JavaScript/TSX.sublime-syntax",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"stack_multiselect": false,
+					"type": "text"
+				}
 			]
 		}
 	],
 	"incremental_find":
 	{
-		"height": 25.0
+		"height": 27.0
 	},
 	"input":
 	{
@@ -221,11 +415,15 @@
 	{
 		"height": 0.0
 	},
+	"output.mdpopups":
+	{
+		"height": 0.0
+	},
 	"pinned_build_system": "",
 	"project": "pod-sufitem.sublime-project",
 	"replace":
 	{
-		"height": 46.0
+		"height": 50.0
 	},
 	"save_all_on_build": true,
 	"select_file":

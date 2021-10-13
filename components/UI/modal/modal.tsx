@@ -1,7 +1,9 @@
+import { FC } from 'react';
 import Overlay from '../overlay/overlay';
+import { ModalProps } from './modal.interfaces';
 import styles from './modal.module.scss';
 
-const Modal = ({ isVisible, closeModal, children }) => {
+const Modal: FC<ModalProps> = ({ isVisible, closeModal, children }) => {
   return (
     <>
       <Overlay isVisible={isVisible} onDismiss={closeModal} />

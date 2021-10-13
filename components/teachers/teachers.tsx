@@ -1,4 +1,4 @@
-import { CSSProperties, useState } from 'react';
+import { CSSProperties, KeyboardEvent, useState } from 'react';
 import useDocument from 'utils/use-document';
 import Modal from '../UI/modal/modal';
 import teachers from './teachers.json';
@@ -20,7 +20,7 @@ const Teachers = () => {
     setIsOpen(false);
   }
 
-  function onKeyDown(e: KeyboardEvent, teacher: typeof teachers[0]) {
+  function onKeyDown(e: KeyboardEvent<HTMLElement>, teacher: typeof teachers[0]) {
     if (e.key === 'Enter') {
       openModal(teacher);
     }
@@ -72,7 +72,7 @@ const Teachers = () => {
                 : `/static/images/backgroundLogo.png`
             }
             loading="lazy"
-            type="image/webp"
+            // type="image/webp"
             alt=""
             height="300"
             width="225"
