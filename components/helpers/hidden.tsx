@@ -1,12 +1,12 @@
-import React from 'react';
+import React, { FC } from 'react';
 
 import styles from './hidden.module.scss';
 
-const HiddenOnMobile = ({ children }) => {
+const HiddenOnMobile: FC = ({ children }) => {
   return <div className={styles.hiddenOnMobile}>{children}</div>;
 };
 
-const HiddenOnDesktop = ({ children }) => {
+const HiddenOnDesktop: FC = ({ children }) => {
   return <div className={styles.hiddenOnDesktop}>{children}</div>;
 };
 

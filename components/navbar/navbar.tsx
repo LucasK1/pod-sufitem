@@ -62,8 +62,10 @@ const Navbar = () => {
       key={item.id}
     >
       {item.isLink ? (
-        <Link href={item.url} className={styles.navbar__navlink} tabIndex="0">
-          {item.name}
+        <Link href={item.url}>
+          <a className={styles.navbar__navlink} tabIndex={0}>
+            {item.name}
+          </a>
         </Link>
       ) : (
         <a
@@ -81,8 +83,12 @@ const Navbar = () => {
   return (
     <header className={styles.navbar}>
       <nav className={styles.navbar__nav}>
-        <Link href="/#">
-          <div alt="Homepage" className={styles.navbar__logo} />
+        <Link href="/#" passHref>
+          <img
+            src="/static/images/transparentLogo.png"
+            alt=""
+            className={styles.navbar__logo}
+          />
         </Link>
         <ul
           className={`${styles.navbar__navlist} ${
