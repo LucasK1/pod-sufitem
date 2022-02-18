@@ -1,13 +1,13 @@
 import { useEffect, useState } from 'react';
 
 const useDocument = () => {
-  const [_document, set_document] = useState(null);
+  const [pageDocument, setPageDocument] = useState<Document>();
 
   useEffect(() => {
-    set_document(document);
+    setPageDocument(document);
   }, []);
 
-  return _document;
+  return pageDocument;
 };
 
 export default useDocument;

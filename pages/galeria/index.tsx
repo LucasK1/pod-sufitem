@@ -17,7 +17,7 @@ const Gallery = () => {
     '/static/gallery/8.jpg',
   ];
 
-  const imageClickHandler = (index) => {
+  const imageClickHandler = (index: number) => {
     setIsOpen(true);
     setPhotoIndex(index);
   };

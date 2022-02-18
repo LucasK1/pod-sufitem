@@ -8,11 +8,13 @@ import useDocument from 'utils/use-document';
 
 const Teachers = () => {
   const [isOpen, setIsOpen] = useState(false);
-  const [selectedTeacher, setSelectedTeacher] = useState<Teacher>(null);
+  const [selectedTeacher, setSelectedTeacher] = useState<Teacher | null>(null);
   const _document = useDocument();
 
   function openModal(teacher: Teacher) {
-    _document.body.style.overflowY = 'hidden';
+    if (_document) {
+      _document.body.style.overflowY = 'hidden';
+    }
     setSelectedTeacher(teacher);
     setIsOpen(true);
   }
@@ -85,18 +87,22 @@ const Teachers = () => {
           />
           <aside className={styles.modal__content}>
             <h4 className={styles.modal__title}>{selectedTeacher?.name}</h4>
-            <p
-              className={styles.modal__desc}
-              dangerouslySetInnerHTML={{
-                __html: sanitize(selectedTeacher?.lead),
-              }}
-            />
-            <p
-              className={styles.modal__desc}
-              dangerouslySetInnerHTML={{
-                __html: sanitize(selectedTeacher?.desc),
-              }}
-            />
+            {selectedTeacher && (
+              <>
+                <p
+                  className={styles.modal__desc}
+                  dangerouslySetInnerHTML={{
+                    __html: sanitize(selectedTeacher.lead),
+                  }}
+                />
+                <p
+                  className={styles.modal__desc}
+                  dangerouslySetInnerHTML={{
+                    __html: sanitize(selectedTeacher?.desc),
+                  }}
+                />
+              </>
+            )}
           </aside>
         </div>
       </Modal>

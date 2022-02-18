@@ -5,3 +5,7 @@ export interface ModalProps {
   closeModal: MouseEventHandler<HTMLDivElement>;
   includeCloseButton: boolean;
 }
+
+export interface ModalCloseButtonProps {
+  onClick: MouseEventHandler;
+}
