@@ -24,6 +24,7 @@
     height: 70%;
     width: 70%;
     transition: transform 100ms linear, box-shadow 100ms linear;
+
     &:hover {
       cursor: pointer;
       transform: scale(1.05);
@@ -43,18 +44,22 @@
     display: flex;
     gap: 20px;
   }
+
   &__photo {
     width: 300px;
     height: 300px;
     object-fit: contain;
   }
+
   &__content {
     display: inline-block;
   }
+
   &__title {
     font-size: 1.8rem;
     line-height: 1rem;
   }
+
   &__desc {
     text-align: left;
     line-height: 1.3rem;
@@ -87,10 +92,12 @@
     &__container {
       display: block;
     }
+
     &__photo {
       height: 250px;
       width: 250px;
     }
+
     &__title {
       font-size: 1.3rem;
     }
@@ -104,6 +111,7 @@
       height: 150px;
     }
   }
+
   .container {
     justify-content: space-around;
   }

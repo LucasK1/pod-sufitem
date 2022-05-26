@@ -28,13 +28,3 @@
     display: inline;
   }
 }
-
-@include for-big-desktop {
-  .hiddenOnDesktop {
-    display: none;
-  }
-
-  .hiddenOnMobile {
-    display: inline;
-  }
-}
