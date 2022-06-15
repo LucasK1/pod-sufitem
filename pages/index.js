@@ -191,8 +191,7 @@ const Home = () => {
                   <FaMapMarkerAlt className={styles.icons} />
                 </a>
                 <address>
-                  <p>Skoczylasa 10/12 lok. 81</p>
-                  <p>03-465 Warszawa</p>
+                  <p>Zmiana lokalizacji</p>
                 </address>
               </div>
             </div>

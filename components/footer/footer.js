@@ -13,9 +13,7 @@ const Footer = () => {
           <p>
             Studio Pod Sufitem
             <br />
-            ul. Skoczylasa 10/12 lok. 81
-            <br />
-            03-465 Warszawa
+            zmiana lokalizacji
           </p>
           <a href="tel:+48799079809" className={styles.telMail}>
             +48 799 079 809
